@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>border-image／shadow</title>
+
+	<style type="text/css">
+		div{
+			border: 15px solid transparent;
+			width: 250px;
+			padding: 10px 20px;
+		}
+
+		#round{
+		/*-moz-border-image:url('1.jpg') 30 round; 
+		-o-border-image:url('1.jpg') 30 round;
+		-webkit-border-image:url('1.jpg') 30 round;*/
+		border-image: url('1.jpg') 30 round; 
+	}
+	#stretch{
+		border-image: url('1.jpg') 30 stretch; //30 30 60 30
+	}
+
+	input{
+		padding: 4px;
+		border: 1px solid #e5e5e5;
+		font:sans-serif;
+		width: 200px;
+		background: #fff;
+		-moz-box-shadow: rgba( 0,0,0,0.5) 10px 9px 8px;
+		-o-box-shadow: rgba( 0,0,0,0.5) 10px 9px 8px;
+		-webkit-box-shadow: rgba( 0,0,0,0.5) 10px 9px 8px;
+		box-shadow: rgba( 0,0,0,0.5) 10px 9px 8px;
+	}
+	input:hover,input:focus{
+		border-color: #c9c9c9;
+	}
+	label{
+		margin-left: 10px;
+		color: #999;
+	}
+	.submit input{
+		width: auto;
+		padding: 9px 15px;
+		background: #617798;
+		border: 0;
+		font-size: 14px;
+		color: #fff;
+	}
+	.oDiv{
+		width: 300px;
+		height: 100px;
+		background-color: yellow;
+		-moz-box-shadow: 10px 5px 2px #888;
+		-o-box-shadow: 10px 5px 2px #888;
+		-webkit-box-shadow: 10px 5px 2px #888;
+		box-shadow: 10px 5px 2px #888;
+	}
+	.border{
+		width:150px;
+		height:150px;
+		padding: 30px;
+		margin: 0 auto;
+		background: url(1.jpg);
+		background-repeat: no-repeat;
+		background-position: left top;
+		border: 30px dashed rgba(255,0,0,0.5); 
+		background-origin: padding-box;//默认padding content border
+	/*	-webkit-
+		-o-
+		-webkit-*/
+		background-clip:  padding-box;//border content padding
+
+
+		background-size: 50% 100%;//contain percentage cover
+	}
+</style>
+</head>
+<body>
+	<h3>border-image</h3>
+	<div id="round">round填充</div>
+	<br>
+	<div id="stretch">stretch填充</div>
+	<hr>
+	<h3>box-shadow</h3>
+	<div class="oDiv"></div>
+	<h3>表单</h3>
+	<form>
+		<p class="name">
+			<label for="name">姓名</label>
+			<input type="text" name="name" id="name">
+		</p>
+
+		<p class="email">
+			<label for="email">邮箱</label>
+			<input type="text" name="email" id="email">
+		</p>
+
+		<p class="submit">
+			<input type="submit" value="提交">
+		</p>
+	</form>
+	<hr>
+	<h3>background-origin|clip</h3>
+	<div class="border">1</div>
+</body>
+</html>

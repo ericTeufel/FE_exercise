@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>透明度</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		body,div{margin: 0;padding: 0;}
+		div{width: 200px;height: 200px;background: red;filter: alpha(opacity:30);opacity: 0.3;float: left;margin-left: 10px;}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			var oDiv = document.getElementsByTagName('div');
+			for (var i = 0; i < oDiv.length; i++) {
+				oDiv[i].alpha = 30;
+				oDiv[i].time = null;
+				oDiv[i].onmouseover = function(){
+					move(this,100);
+				}
+				oDiv[i].onmouseout = function(){
+					move(this,30);
+				}
+			}
+			
+		}
+		
+		function move (obj,oTarget){
+
+			// var oDiv = document.getElementById('div1');
+			clearInterval(obj.time);
+			// obj.alpha = 30;
+			obj.time = setInterval(function(){
+				var speed = 0;
+				if (obj.alpha > oTarget) {
+					speed = -10;
+				} else {
+					speed = 10;
+				}
+				if (obj.alpha == oTarget) {
+					clearInterval(obj.time);
+				} else {
+					obj.alpha += speed;
+				obj.style.filter = 'alpha(opacity:'+obj.alpha+')';//IE
+				obj.style.opacity = obj.alpha/100;//ff chrome
+			}
+		},30)
+		}
+	</script>
+</head>
+<body>
+	<div id="div1"></div>
+	<div id="div2"></div>
+	<div id="div3"></div><br>
+	<p><abbr title="123">1</abbr></p>
+</body>
+</html>

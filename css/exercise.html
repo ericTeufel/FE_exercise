@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>动画菜单</title>
+    <style type="text/css">
+        * { margin: 0; padding: 0; font-size: 14px; }
+        a { color: #333; text-decoration: none }
+        ul{ list-style: none; }
+        .nav {height: 30px; border-bottom: 5px solid #F60; margin-left:50px; width:600px;}
+        .nav li { float: left; position:relative; height:30px; width:120px }
+        .nav li a { display: block; height: 30px; text-align: center; line-height: 30px; width:120px; background: #efefef; margin-left: 1px; }
+        .subNav{ position:absolute; top:30px; left:0; width:120px; height:0; overflow:hidden}
+        .subNav li a{ background:#ddd }
+        .subNav li a:hover{ background:#efefef}
+    </style>
+    <script>
+        window.onload=function(){
+            var aLi=document.getElementsByTagName('li');
+            for(var i=0; i<aLi.length; i++){
+                aLi[i].onmouseover=function(){ 
+                    startMove(this,120);
+                }
+
+                aLi[i].onmouseout=function(){
+                    startMove(this,30);
+                }
+            }
+        }
+        
+        function startMove(obj,oTarget){
+            var oSubNav = obj.getElementsByTagName('ul')[0];
+            if (oSubNav) {
+                clearInterval(oSubNav.time);
+                oSubNav.time = setInterval(function(){
+                    var speed = speed>0?Math.ceil(speed):Math.floor(speed);
+                    if (oSubNav.offsetHeight == oTarget) {
+                        clearInterval(oSubNav.time);
+                    } else {
+                        oSubNav.style.height = oSubNav.offsetHeight+speed+'px';
+                    }
+                },30); 
+            }
+        }
+// window.onload=function(){
+//     var aLi=document.getElementsByTagName('li');
+//     for(var i=0; i<aLi.length; i++){
+//         aLi[i].onmouseover=function(){
+//             //鼠标经过一级菜单，二级菜单动画下拉显示出来
+//             var oSubNav = this.getElementsByTagName('ul')[0];
+//             if (oSubNav) {
+//                 clearInterval(oSubNav.time);
+//                 oSubNav.time = setInterval(function(){
+//                     oSubNav.style.height = oSubNav.offsetHeight+16+'px';
+//                     if (oSubNav.offsetHeight>=120) {
+//                         clearInterval(oSubNav.time);
+//                     }
+//                 },50)
+//             }
+//         }
+//         //鼠标离开菜单，二级菜单动画收缩起来。        
+//         aLi[i].onmouseout=function(){
+//               var oSubNav = this.getElementsByTagName('ul')[0];
+//             if (oSubNav) {
+//                 clearInterval(oSubNav.time);
+//                 oSubNav.time = setInterval(function(){
+//                     oSubNav.style.height = oSubNav.offsetHeight-16+'px';
+//                     if (oSubNav.offsetHeight<=30) {
+//                         oSubNav.style.height = 30;
+//                     }
+//                 },50)
+//             }   
+//         }
+//     }
+// }
+    </script>
+</head>
+<body>
+    <ul class="nav">
+        <li><a href="#">一级菜单</a>
+           <ul class="subNav">
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+           </ul>
+       </li>
+       <li><a href="#">一级菜单</a>
+           <ul class="subNav">
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+               <li><a href="#">二级菜单</a></li>
+           </ul>
+       </li>
+       <li><a href="#">一级菜单</a></li>
+       <li><a href="#">一级菜单</a></li>
+       <li><a href="#">一级菜单</a></li>
+   </ul>
+</body>
+</html>
+<!--要求：
+1.鼠标经过一级菜单，二级菜单动画下拉显示出来；
+2.鼠标离开菜单，二级菜单动画收缩起来。-->

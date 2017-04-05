@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>canvas</title>
+	<style type="text/css">
+		#myCanvas,#myCanvas2{border:2px solid #9c9898;background-color: #77ffcc}
+		body{margin: 0;padding: 0;}
+	</style>
+</head>
+<body>
+	<canvas id="myCanvas" width="700" height="200">
+		您的浏览器不支持canvas元素，请更新或更换您的浏览器
+	</canvas>
+	<span>裁切之后</span>
+	<canvas id="myCanvas2" width="700" height="200">
+		您的浏览器不支持canvas元素，请更新或更换您的浏览器
+	</canvas>
+<!-- 	<p>图像的使用</p>
+	<img src="1.jpg" id="butterfly"><br>
+	<button onclick="draw(repeat)">repeat</button>
+	<button onclick="draw(repeat-x)">repeat-x</button>
+	<button onclick="draw(repeat-y)">repeat-y</button>
+	<button onclick="draw(no-repeat)">no-repeat</button>
+	<br> -->
+	<script type="text/javascript">
+
+		var c = document.getElementById('myCanvas');
+		var context = c.getContext('2d');
+	// context.fillStyle = '#ff0000'; //矩形demo
+	// context.fillRect(50,25,100,50);
+	//直线
+	// context.beginPath();
+	// context.moveTo(200,c.height/2);
+	// context.lineTo(c.width-200,c.height/2);
+	// context.lineWidth = 20;
+	// context.strokeStyle = '#f00';
+	// context.lineCap = 'round';
+	// context.stroke();
+
+	// context.beginPath();
+	// context.moveTo(200,c.height/2+50);
+	// context.lineTo(c.width-200,c.height/2+50);
+	// context.lineWidth = 20;
+	// context.strokeStyle = '#f00';
+	// context.lineCap = 'square';
+	// context.stroke();
+
+	// context.beginPath();
+	// context.moveTo(200,c.height/2-50);
+	// context.lineTo(c.width-200,c.height/2-50);
+	// context.lineWidth = 20;
+	// context.strokeStyle = '#f00';
+	// context.lineCap = 'butt';
+	// context.stroke();
+	// 曲线
+	// context.beginPath();
+	// context.moveTo(20,20);
+	// context.lineTo(100,20);
+	// context.arcTo(150,20,150,70,50);
+	// context.lineTo(150,120)
+	// context.stroke();
+	// 二次贝塞尔曲线
+	// context.beginPath();
+	// context.moveTo(200, c.height/2);//起始点
+	// context.quadraticCurveTo(288, 0, 388, 150);
+	// context.lineWidth = 5;//粗细
+	// context.strokeStyle = "blue";
+	// context.stroke();
+	//三次贝塞尔曲线
+	// context.moveTo(500, 130);
+	// context.bezierCurveTo(400,10,588,10,688,170);
+	// context.lineWidth=5;
+	// context.strokeStyle="blue";
+	// context.stroke();
+	// 
+	// 绘制路径
+	// context.beginPath();
+	// context.moveTo(100, 20);
+	// //第一条直线
+	// context.lineTo(200, 160);
+	// //二次曲线
+	// context.quadraticCurveTo(230, 200, 250, 120);
+	// //贝塞尔曲线
+	// context.bezierCurveTo(290, -40, 300, 200, 400, 150);
+	// //第二条直线
+	// context.lineTo(500,90);
+	// context.lineWidth=5;
+	// context.strokeStyle='blue';
+	// context.stroke();
+	// 
+	// 
+	// 线条的连接
+	//设置线的宽度
+	// context.lineWidth=25;
+	// //最左边的是miter样式
+	// context.beginPath();
+	// context.moveTo(99, 150);
+	// context.lineTo(149, 50);
+	// context.lineTo(199,150);
+	// context.lineJoin="miter";
+	// context.stroke();
+	// // 中间的是round样式
+	// context.beginPath();
+	// context.moveTo(239, 150);
+	// context.lineTo(289, 50);
+	// context.lineTo(339,150);
+	// context.lineJoin="round";
+	// context.stroke();
+	// // 右边的是bevel样式
+	// context.beginPath();
+	// context.moveTo(379, 150);
+	// context.lineTo(429, 50);
+	// context.lineTo(479,150);
+	// context.lineJoin="bevel";
+	// context.stroke();
+	// 矩形填充
+	// context.beginPath();
+	// context.rect(10, 50, 200, 100);
+	// context.lineWidth=5;
+	// context.strokeStyle = "black";
+	// context.stroke();
+	// context.fillStyle='#0f0';//设置填充色
+	// context.fill();//填充
+	//圆形 阴影 透明度
+	// context.beginPath();
+	// var centerX = c.width/1.5;
+	// var centerY = c.height/2;
+	// var radius = 80;//半径
+	// context.arc(centerX, centerY, radius, 0, 2*Math.PI, false);
+	// context.lineWidth = 4;//粗细
+	// context.strokeStyle = 'black';
+	// context.stroke();
+	// context.fillStyle = "#8ed6ff";//颜色
+	// //设置阴影 代码放在fill之前
+	// context.shadowColor='black';//阴影颜色
+	// context.shadowBlur=20;//模糊度
+	// context.shadowOffsetX=10;//偏移
+	// context.shadowOffsetY=10; //偏移
+	// context.globalAlpha=0.5;//半透明
+	// context.fill();
+	// 
+	//渐变
+	// var clg = context.createLinearGradient(0, 0, 200, 0);
+	// clg.addColorStop(0, "#f00");
+	// clg.addColorStop(0.5,"#0f0");
+	// clg.addColorStop(1,"#00f");
+	// context.fillStyle = clg;
+	// context.strokeStyle = clg;
+	// context.fillRect(10, 10, 200, 200);
+
+	// //径向渐变
+	// var crg = context.createRadialGradient(325, 100, 20, 325, 100, 80);
+	// crg.addColorStop(0,"#fff");
+	// crg.addColorStop(0.75,"#f00");
+	// crg.addColorStop(1,"#000");
+	// context.fillStyle = crg;
+	// context.fillRect(230,10,200,200);
+
+	//图案填充
+	// function draw (type) {
+	// 	var c  = document.getElementById('myCanvas');
+	// 	var ctx = c.getContext('2d');
+	// 	ctx.clearRect(0, 0, c.width, c.height);//清除矩形内部的内容
+	// 	var img = document.getElementById('butterfly');
+	// 	var pat = ctx.createPattern(img, type);
+	// 	ctx.rect(0, 0, 700, 200);
+	// 	ctx.fillStyle = pat;
+	// 	ctx.fill();
+	// }
+
+	//绘制图像
+	// var imageO = new Image();
+	// imageO.src = "1.jpg";
+	// imageO.onload = function(){
+	// // context.draw(imageO,10,10);//默认图片大小
+	// // context.drawImage(imageO,10,10.200.300);//指定图片大小
+	// context.drawImage(imageO, 50, 40, 300, 450, 50, 50, 350, 450);//截取图像
+	// }
+	
+	// 绘制文本
+	// var x = c.width/2;
+	// var y = c.height/2;
+	// context.font="italic 40px Arial";
+	// // context.fillStyle = "#f00";
+	// // context.fillText("hello", x, y);
+	// context.moveTo(c.width/2, 0);
+	// context.lineTo(c.width/2, c.height);
+	// context.lineWidth=5;
+	// context.strokeStyle='#f00';
+	// context.stroke();
+
+	// context.strokeStyle="#00f";
+	// context.lineWidth=2;//设置描边的宽度
+	// context.textAlign='left';//right center start end
+	// context.strokeText("hello", x, y);
+
+	// var metrics = context.measureText('hello world');
+	// var width = metrics.width;
+	// context.font = '30px Arial';
+	// context.textAlign='center';
+	// context.fillStyle = '#555';
+	// context.fillText("("+width+"px wide)",x,y
+	// 	+40);
+	
+	//绘制文本换行
+	// function wrapText(context,text,x,y,maxWidth,lineHeight){
+	// 	var words = text.split(" "),
+	// 	line = "";
+	// 	for (i in words) {
+	// 		var testLine = line +words[i]+" ",
+	// 		metrics = context.measureText(testLine),
+	// 		testWidth = metrics.width;
+	// 		if (testWidth>maxWidth) {
+	// 			context.fillText(line,x,y);
+	// 			line = words[i]+" ";
+	// 			y+=lineHeight;
+	// 		}else {
+	// 			line = testLine;
+	// 		}
+	// 	}
+	// 	context.fillText(line,x,y);
+	// }
+	// var text = "all the world's a stage,and all the men and women"+" merely players.They have their exits and their entrances; And one man in "+"his time plays many parts",
+	// 	 maxWidth = 400,//每一行绘制的行高
+	// 	 lineHeight = 25,//设置行间隔
+	// 	 x = (c.width-maxWidth)/2,
+	// 	 y = 60;
+	// 	 context.font='16px Arial'
+	// 	 context.fillStyle="#333";
+	// 	 wrapText(context,text,x,y,maxWidth,lineHeight);
+	//图形变换
+	// var recWidth = 150,
+	// 	recHeight = 75;
+	// context.fillStyle = '#f00';
+	// //把坐标原点移动到canvas中心
+	// context.translate(c.width/2, c.height/2);
+	// //顺时针方向旋转
+	// context.rotate(0.25*Math.PI);
+	// //坐标在纵向上缩小一半
+	// context.scale(1, 0.5);
+	// context.fillRect(-recWidth/2, -recHeight/2, recWidth, recHeight);
+
+	//状态保存与恢复
+	// var recWidth = 150;
+	// var recHeight = 75;
+	// context.save();//保存状态1 起始坐标 00
+
+	// context.translate(c.width/2, c.height/2);
+	// context.save();//保存状态2 坐标移至画布中央
+
+	// context.rotate(Math.PI/4);
+	// context.save();//保存状态3 旋转45度
+
+	// context.scale(2, 2);//放大
+	// context.fillStyle='blue';
+	// context.fillRect(-recWidth/2, -recHeight/2, recWidth, recHeight);
+
+	// context.restore();//恢复状态3
+	// context.fillStyle='#f00';
+	// context.fillRect(-recWidth/2, -recHeight/2, recWidth, recHeight);
+
+	// context.restore();//恢复状态2
+	// context.fillStyle='yellow';
+	// context.fillRect(-recWidth/2, -recHeight/2, recWidth, recHeight);
+
+	// context.restore();//恢复状态1
+	// context.fillStyle='green';
+	// context.fillRect(-recWidth/2,-recHeight/2,recWidth,recHeight);
+	
+	//图形组合
+	// context.beginPath();
+	// context.rect(200, 20, 100, 100);
+	// context.fillStyle='blue';
+	// context.fill();
+
+	// // context.globalCompositeOperation = 'source-over';
+	// // context.globalCompositeOperation = 'source-atop';
+	// // context.globalCompositeOperation = 'source-in';
+	// // context.globalCompositeOperation = 'source-out';
+	// // context.globalCompositeOperation = 'destination-atop';
+	// // context.globalCompositeOperation = 'destination-in';
+	// // context.globalCompositeOperation = 'destination-out';
+	// // context.globalCompositeOperation = 'destination-over';
+	 // // context.globalCompositeOperation = 'lighter';
+	 // // context.globalCompositeOperation = 'darker';
+	 // // context.globalCompositeOperation = 'xor';
+	 // // context.globalCompositeOperation = 'copy';
+	 //    //绘制图形
+	 //    context.beginPath();
+	 //    context.arc(320, 120, 30, 0, 2*Math.PI, false);
+	 //    context.fillStyle = 'red';
+	 //    context.fill();
+
+	 //裁切
+	 context.rect(50, 20, 200, 120);
+	 context.stroke();
+	 context.fillStyle='red';
+	 context.fillRect(0, 0, 150, 100);
+
+	 var c=  document.getElementById('myCanvas2');
+	 var ctx = c.getContext('2d');
+	 ctx.rect(50, 20, 200, 120);
+	 ctx.stroke();
+	 ctx.clip();
+	 ctx.fillStyle = '#f00';
+	 ctx.fillRect(0,0,150,100);
+
+	</script>
+</body>
+</html>

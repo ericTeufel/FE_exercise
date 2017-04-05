@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pototype</title>
+	<script type="text/javascript">
+
+		// function Person(){}
+		// Person.prototype = {
+		// 	name:'niki',
+		// 	age:29,
+		// 	job:'soft engineer',
+		// 	friends:['mike','jim'],
+		// 	sayName:function(){
+		// 		alert(this.name);
+		// 	}
+		// };
+		// var person1 = new Person();
+		// var person2 = new Person();
+		// person1.friends.push('van');
+		// alert(person1.friends);// mike jim van
+		// alert(person2.friends);// mike jim van p1没有自己的属性 push时添加到原型中 所以p2调用时输出原型的属性值
+//组合原型和构造方法
+	// function Person(name,age,job){
+	// 	this.name = name;
+	// 	this.job = job;
+	// 	this.age = age;
+	// 	this.friends = ['mike','jim'];
+	// }
+
+	// Person.prototype={
+	// 	constructor:Person,
+	// 	sayName:function(){
+	// 		alert(this.name);
+	// 	}
+	// };
+	// var person1 = new Person('mike',29,'engineer');
+	// var person2 = new Person('jim',550,'player');
+	// person1.friends.push('van');
+	// alert(person1.friends);//mike jim van
+	// alert(person2.friends);//mike jim
+	// alert(person1.friends === person2.friends);//false
+	// alert(person1.sayName === person2.sayName); //true. 如果写方法的话会先输出共有的朋友 Mike jim 在输出true
+// if (confirm('还要继续么')) {
+// 	alert('继续');
+// }else{
+// 	alert('再见');
+// }
+// var name = prompt('你的名字是：');
+// alert('你好'+name);
+
+// window.onload = function(){
+// 	var test = document.getElementById('123');
+// 	test.onmouseover = function(){
+// 	window.status = "hello"
+
+// };
+// test.onmouseout = function(){
+// 	window.status = ""
+// }
+// }
+// window.onload = function(){
+// 	setInterval(show(),200);
+// }
+// var images = new Array(6);
+// var index = 1;
+// for (var i = 0; i < 6; i++) {
+// 	images[i] = new image();
+// 	images[i].src = i+'.jpg';
+// }
+// function show(){
+// 	document.anm.src = images[index].src;
+// 	index = (index+1)%6;
+// }
+ var array = [1,2,3,5,9,1,2,8];
+function unique1(a){
+    var n = [];
+    for(var i = 0; i < a.length;i++){
+        //如果当前数组的第I已经保存进了临时数组，那么跳过，
+        //否则把当前项push到临时数组里面
+        if(n.indexOf(a[i]) == -1){ 
+        n.push(a[i]);
+        }
+    }
+    return n;
+}
+console.log(unique1(array));
+</script>
+</head>
+<body>
+
+</body>
+</html>

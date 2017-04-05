@@ -1,0 +1,22 @@
+<!DOCTYPE  HTML>
+<html >
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>函数</title>
+
+	<script type="text/javascript">
+//最大公约数
+function ys(a,b){
+	for (var i = a; i > 0; i--) {
+		if (a%i==0 && b%i==0) {
+			return i;
+		}
+	}
+}
+var n = ys(15,10);
+alert(n);
+</script>
+</head>
+<body>
+</body>
+</html>

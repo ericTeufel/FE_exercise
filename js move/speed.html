@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>速度运动</title>
+	<style type="text/css">
+		body,div,span{margin: 0;padding: 0;}
+		#div1{
+			width: 200px;height: 200px;background: red;position:relative;left: -200px; 
+		}
+		#div1 span{
+			width: 20px;height: 50px;background: blue;position: absolute;left: 200px;top: 75px;
+		}
+	</style>
+	<script type="text/javascript">
+		window.onload=function(){
+			var oDiv = document.getElementById('div1');
+			oDiv.onmouseover=function(){
+				oMove(0);
+			}
+			oDiv.onmouseout =function(){
+				oMove(-200);
+			} 
+		}
+		function oMove(oTarget){
+			var oDiv = document.getElementById('div1');
+			var speed = 0;
+
+			
+			if (oDiv.offsetLeft<oTarget) {
+				speed = 10;
+			} else {
+				speed = -10;
+			}
+			clearInterval(oDiv.time);
+			oDiv.time = setInterval(function(){
+				if (oDiv.offsetLeft==oTarget) {
+					clearInterval(oDiv.time);
+				}else{
+					oDiv.style.left = oDiv.offsetLeft+speed+'px';
+				}
+			},30)
+		}
+		// function oMove1(){
+		// 	var oDiv = document.getElementById('div1');
+		// 	clearInterval(oDiv.time);
+		// 	oDiv.time= setInterval(function(){
+		// 		if (oDiv.offsetLeft<=-200) {
+		// 			clearInterval(oDiv.time);
+		// 		}else{
+		// 			oDiv.style.left = oDiv.offsetLeft-10+'px';
+		// 		}
+		// 	},30);
+		// }
+
+	</script>
+</head>
+<body>
+	<div id="div1"><span id="share">分享</span></div>
+</body>
+</html>

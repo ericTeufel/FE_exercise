@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>混合布局编程挑战</title>
+	<style type="text/css">
+		body{ margin:0; padding:0; font-size:30px; color:#fff}
+		.top{background: grey; height: 100px;}
+		.main{height:600px;background: red;}
+		.left{ width: 200px;height: 600px;background: blue;position: absolute;left: 0;top: 100px;}
+		.right{height:600px;background: #fcc;margin-left: 210px;}
+		.foot{height: 50px;background: #9f9;clear: both;}
+	</style>
+
+</head>
+
+<body>
+	<div class="top">top</div>
+	<div class="main">
+		<div class="right">right</div>
+		<div class="left">left</div>
+	</div>
+	<div class="foot">foot</div>
+
+</body>
+</html>
+<!--任务1：完成顶部（top）、底部（foot）宽度自适应
+
+任务2：中间分为2两栏，其中，左侧（left）宽度为200px， 右侧（right）宽度自适应
+
+任务3：要求右侧（right）先加载，左侧（left）后加载
+
+任务4：编写的代码要兼容ie6
+
+-->

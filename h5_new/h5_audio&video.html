@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>多媒体</title>
+</head>
+<body>
+	<audio width='320' height='240' controls="controls">
+		<source src="1.mp3" type="audio/mpeg">
+			<source src="1.ogg" type="audio/ogg">
+				您的电脑不支持audio标签
+			</audio>
+
+			<video width="320" height="240" controls="controls" id="myVideo">
+				<source src="1.ogg" type="video/ogg">
+					<source src="1.mp4" type="video/mp4">
+						您的电脑不支持video标签
+					</video>
+					<br>
+					<button onclick="getFirstBufferRange()" type="button">获得第一个缓冲范围</button>
+					<button onclick="getVid()" type="button">获取视频url</button>
+					<button onclick="getCurTime()" type="button">获取当前播放时间</button>
+					<button onclick="setCurTime()" type="button">设置当前播放时间</button>
+					<button onclick="getPlaySpeed()" type="button">获取视频默认播放速度</button><br>
+					<button onclick="setPlaySpeed()" type="button">设置视频默认播放速度</button>
+					<button onclick="getVidDur()" type="button">获取长度</button>
+					<button onclick="enableLoop()" type="button">设置循环</button>
+					<button onclick="disableLoop()" type="button">取消循环</button>
+					<button onclick="checkLoop()" type="button">是否循环</button>
+					<button onclick="enableMute()" type="button">设置静音</button>
+					<button onclick="disableMute()" type="button">取消静音</button><br>
+					<button onclick="checkMute()" type="button">是否静音</button>
+					<button onclick="getNWState()" type="button">获取网络状态</button>
+					<button onclick="isVidPaused()" type="button">视频是否暂停</button>
+					<button onclick="getPlaySpeed()" type="button">获取视频播放速度</button>
+					<button onclick="setPlaySpeed ()">减慢视频速度</button>
+					<button onclick="getFirstPlayedRange ()">获得首段播放的范围</button>
+					<button onclick="enablePreload ()">设置预加载</button>
+					<button onclick="disablePreload ()">取消预加载</button>
+					<button onclick="checkPreload ()">检查预加载状态</button>
+					<button onclick="getReadyState ()">获取视频的就绪状态</button>
+					<button onclick="getFirstSeekableRange ()">获得第一次可寻址范围</button>
+					<button onclick="getVolume ()">获取当前音量</button>
+					<button onclick="setHalfVolum ()">设置音量为0.2</button>
+					<button onclick="setFullVolum ()">设置音量为1.0</button>
+					<hr>
+					<p>浏览器是否支持播放mp4 
+						<span>
+							<button onclick="supportType('video/mp4','avc1.42e01e,mp4a.40.2')" type="button">test1</button>
+						</span>
+					</p>
+					<p>浏览器是否支持播放ogg
+						<span>
+							<button onclick="supportType('video/ogg','theora,vorbis')" type="button">test2</button>
+						</span>
+					</p>
+					<button onclick="changeSource()" type="button">切换视频资源</button><br>
+					<button onclick="playVid()" type="button">播放视频</button>
+					<button onclick="pauseVid()" type="button">暂停视频</button><br>
+					<video id="my_video" width="320" height="240" controls="controls" autoplay="autoplay">
+						<source  id="mp4_src" src="resource/mov_bbb.mp4" type="video/mp4">
+						<source id="ogg_src" src="b.ogg" type="video/ogg">
+						您的浏览器不支持video标签
+					</video>
+<script type="text/javascript">
+	var myVid = document.getElementById('myVideo');
+//返回timerange对象 表示缓冲范围
+function getFirstBufferRange () {
+	alert('start:'+myVid.buffered.start(0)+'end:'+myVid.buffered.end(0));
+}
+//返回当前视频URL
+function getVid () {
+	alert(myVid.currentSrc);
+}
+//获取或设置当前播放位置 返回值为时间 单位为秒
+function getCurTime(){
+	alert(myVid.currentTime);
+}
+//设置当前时间的播放点
+function setCurTime () {
+	myVid.currentTime = 5;
+}
+//设置或返回默认播放速度
+function getPlaySpeed () {
+	alert(myVid.defaultPlayBackRate);
+}
+//	设置播放速度
+function setPlaySpeed () {
+	myVid.defaultPlayBackRate = 0.5;
+	myVid.load();
+}
+//duration
+function getVidDur () {
+	alert(myVid.duration);
+}
+//设置循环
+function enabLoop () {
+	myVid.loop = true;
+	myVid.load();
+}
+function disableLoop () {
+	myVid.loop = false;
+	myVid.load(0):
+}
+function checkLoop () {
+	alert('myVid.loop');
+}
+function enableMute () {
+	myVid.muted = true;
+}
+function disableMute () {
+	myVid.muted = false;
+}
+function checkMute () {
+	alert('myVid.muted');
+}
+//返回当前的网络状态
+function getNWState () {
+	alert(myVid.networkState);
+}
+// 检查是否暂停
+function isVidPaused () {
+	alert(myVid.paused);
+}
+
+function getPlaySpeed () {
+	alert(myVid.playBackRate);
+}
+function setPlaySpeed () {
+	myVid.playBackRate = 0.5;
+}
+
+function getFirstPlayedRange () {
+	alert('start:'+myVid.played.start(0)+'end:'+myVid.played.end(0));
+}
+
+function enablePreload () {
+	myVid.preload = 'auto';
+}
+
+function disablePreload () {
+	myVid.preload = 'none';
+}
+
+function checkPreload () {
+	alert(myVid.preload);
+}
+
+function getReadyState () {
+	alert(myVid.readyState);
+}
+
+function getFirstSeekableRange () {
+	alert('start:'+myVid.seekable.start(0)+'end:'+myVid.seekable.end(0));
+}
+
+function getVolume () {
+	alert(myVid.volum);
+}
+
+function setHalfVolum () {
+	myVid.volum = 0.2;
+}
+
+function setFullVolum () {
+	myVid.volum = 1.0;
+}
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>任意值</title>
+	<meta charset="utf-8">
+	<style type="text/css">
+		*{margin: 0;padding: 0;}
+		ul,li{list-style: none;}
+		ul li{width: 200px;height: 100px;background: yellow;margin-bottom: 20px;border:2px solid #000;filter: alpha(opacity:30);opacity: 0.3;}
+	</style>
+	<script type="text/javascript">
+		window.onload = function(){
+			// var oLi = document.getElementsByTagName('li');
+			// for (var i = 0; i < oLi.length; i++) {
+				// oLi[i].onmouseover = function(){
+				// 	move(this,'width',400);
+				// }
+				// oLi[i].onmouseout = function(){
+				// 	move(this,'width',200);
+				// }
+			// }
+			var li1 = document.getElementById('li1');
+			var li2 = document.getElementById('li2');
+			var li3 = document.getElementById('li3');
+
+			li1.onmouseover = function(){
+				move(this,'width',400);
+			}
+			li1.onmouseout = function(){
+				move(this,'width',200);
+			}
+			li2.onmouseover = function(){
+				move(this,'height',200);
+			}
+			li2.onmouseout = function(){
+				move(this,'height',100);
+			}
+			li3.onmouseover = function(){
+				move(this,'opacity',100);
+			}
+			li3.onmouseout = function(){
+				move(this,'opacity',30);
+			}
+			
+		}
+		function move(obj,attr,oTarget){
+			clearInterval(obj.time);
+			obj.time = setInterval(function(){
+				var oAttr = 0;
+				
+				if (attr == 'opacity') {
+					oAttr = Math.round(parseFloat(getStyle(obj.attr))*100);
+				} else {
+					oAttr = parseInt(getStyle(obj,attr));
+				}
+				var speed = (oTarget-oAttr)/10;
+				speed = speed>0?Math.ceil(speed):Math.floor(speed);
+				if (oAttr == oTarget) {
+					clearInterval(obj.time);
+				} else {
+					if (attr == 'opacity' ) {
+						obj.style.filter = 'alpha(opacity:'+(oAttr+speed)+')';
+						obj.style.opacity = (oAttr+speed)/100;
+					} else {
+						obj.style[attr] = oAttr+speed+'px';
+					}
+				}
+			},30); 
+		}
+
+		function getStyle(obj,attr){
+			if (obj.currentStyle) {
+				return obj.currentStyle;
+			} else {
+				return getComputedStyle(obj,false)[attr];
+			}
+		}
+	</script>
+</head>
+<body>
+	<ul>
+		<li id="li1"></li>
+		<li id="li2"></li>
+		<li id="li3"></li>
+	</ul>
+</body>
+</html>

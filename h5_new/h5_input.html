@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>h5新增input功能</title>
+	<style type="text/css">
+		input{margin-right: 15px;}
+	</style>
+</head>
+<body onload="multi()">
+	<!-- <form action="login.js" method="post"> -->
+<!-- 	<input type="email" name="user_email" >email<br>
+	<input type="url" name="user_url">url<br>
+	<input type="number" name="user_number" value="1" min="1" max="99" step="2">number<br>
+	<input type="range" name="user_range" value="1" min="1" max="99" step="2" >range<br>
+	<input type="date" name="user_date">date<br>
+	<input type="month" name="user_month">month<br>
+	<input type="week" name="user_week">week<br>
+	<input type="time" name="user_time" value="12:10:14" min="01:00:00" max="23:59:59" step="2">time<br>
+	<input type="datetime" name="user_datetime">datetime<br>
+	<input type="datetime_local" name="user_datetime_local">datetime_local<br>
+	<input type="search" name="user_search">search<br>
+	<input type="tel" name="user_tel">tel<br>
+	<input type="color" name="user_color">color<br> -->
+<!-- 	<hr>
+	用户名：<input type="text" name="username" autocomplete="on">
+	密码：<input type="text" name="password" autocomplete="off">
+	<input type="submit" value="提交">
+	<hr>
+	<p>
+		<label for="textarea1">请仔细阅读许可协议</label>
+	</p>
+	<p>
+		<textarea name="textarea1" id="textarea1" cols="46" rows="5">许可协议许可协议许可协议许可协议许可协议许可协议</textarea>
+	</p>
+	<p>
+		<input type="submit" value="agree" autofocus="on">
+		<input type="submit" value="denie">
+	</p> -->
+	<!-- <button type="submit">提交</button> -->
+
+<!-- 	<hr>
+	<form action="" method="get" id="form1">
+		请输入姓名<input type="text" name="username" autofocus="on">
+		<input type="submit" value="提交">
+	</form>
+	<p>下面的输入框在form之外 但因为指定了form属性 且值为表单的id 所以该输入框仍然是表单的一员</p>
+	请输入地址<input type="text" name="useraddress" form="form1"> -->
+
+<!-- 	<hr>
+	<form action="" method="get">
+		请输入网址：<input type="url" list="url_list" name="weblink">
+		<datalist id="url_list">
+			<option label="sina" value="http://www.sina.com.cn"></option>
+			<option label="sohu" value="http://www.sohu.com"></option>
+			<option label="netease" value="http://www.163.com"></option>
+		</datalist>
+		<input type="submit" value="提交">
+	</form> -->
+
+<!-- 	<hr>
+	<form action="" method="get">
+		请选择要上传的图片：<input type="file" name="img" multiple>
+		<input type="submit" value ="提交">
+	</form> -->
+<!-- 
+<hr>
+<form action="#" method="get">
+	请输入国家代码	<input type="text" name="country_code" pattern="[A-Za-z]{3}" placeholder="3个字母的国家代号" title="3个字母的国家代号" required="required">
+	<input type="submit" value="提交">
+	<input type="image" src='#' width="64" height="64">
+</form>
+ -->
+ 	
+<!-- <hr>
+<form action="#" method="get" id="testform" enctype="application/x-www-form-urlencoded">
+请输入email地址<input type="email" name="userId"><br>
+<input type="email" value="formaction" formaction="list.html">
+<input type="email" value="formenctype" formenctype="multipart/form-data">
+<input type="email" value="formmethod" formmethod="post">
+<input type="email" value="formnovalidate" formnovalidate="formnovalidate">
+<input type="email" value="formtarget" formtarget="_self" >
+
+</form> -->
+
+<!-- <hr>
+<form action="#" method="get">
+请输入用户名:<input type="text" name="user_name"><br>
+请选择加密强度:<keygen name="security"></keygen><br>
+<input type="submit" name="提交">
+</form> -->
+
+<hr>
+<script type="text/javascript">
+	function multi(){
+		a=parseInt(prompt("请输入第一个数字",0));
+		b=parseInt(prompt('请输入第二个数字',0));
+		document.forms['form']['result'].value=a*b;//找name为form的 name为result
+	}
+</script>
+<form action="#" method="get" name="form">
+两数的乘积：<output name="result"></output>
+</form>
+ </body>
+</html>

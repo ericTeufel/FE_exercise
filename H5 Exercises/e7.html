@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>浏览器对象</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=gkb"/>
+ </head>
+ <body>
+  <!--先编写好网页布局-->
+<h2>操作成功</h2>
+<span id ="sec">5</span>
+<span>秒后回到首页</span>
+<a href="javascript:back()">返回</a>
+
+  <script type="text/javascript">
+    function count(){
+      var num = document.getElementById("sec").innerHTML;
+      num --;
+      document.getElementById("sec").innerHTML = num;
+      if (num == 0) {
+        location.assign("http://www.baidu.com");
+      }
+    }
+    setInterval("count()",1000);
+    function back(){
+      window.history.go(1);
+    }
+
+ </script>
+</body>
+</html>
+
+<!--制作一个跳转提示页面：
+
+要求：
+
+1. 如果打开该页面后，如果不做任何操作则5秒后自动跳转到一个新的地址，如慕课网主页。
+
+2. 如果点击“返回”按钮则返回前一个页面。
+第一步： 先编写好网页布局，如下:
+
+   操作成功
+   x秒后返回主页 返回
+
+第二步： 获取显示秒数的元素，通过定时器来更改秒数。
+
+第三步： 通过window的location和history对象来控制网页的跳转
+-->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>其他选择器</title>
+
+	<style type="text/css">
+		/*	选择匹配的所有元素 且匹配元素位于匹配的元素后面*/
+		/*div ~p{
+			background-color: pink;
+		}*/
+		/*选择匹配e的所有元素 且过滤匹配s选择符的任意元素*/
+		/*p:not(.red){
+			background-color: #ff0;
+		}*/
+
+		:target{
+			border: 2px solid #d4d4d4;
+			background-color: #e5eecc;
+		}
+	</style>
+</head>
+<body>
+	<p>0</p>
+
+	<div>
+		<p>1</p>
+	</div>
+
+	<div>
+		<p class="red">2</p>
+	</div>
+	<p>3</p>
+
+	<p><a href="#news1">跳转到内容1</a></p>
+	<p><a href="#news2">跳转到内容2</a></p>
+
+	<p>点击以上的链接，：target选择器会高亮显示你所跳转的当前活动的锚标记</p>
+
+	<p id="news1"><b>新的内容1</b></p>
+	<p id="news2"><b>新的内容2</b></p>
+</body>
+</html>

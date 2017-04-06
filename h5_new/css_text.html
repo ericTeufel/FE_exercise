@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3-text</title>
+	<style type="text/css">
+		body{
+			padding: 0;
+			margin: 0;
+			text-align: center;
+		}
+		p{
+			font:bold 60px sans-serif;
+			color: #000;
+			text-shadow: 3px 3px 9px #f00; 
+		}
+		
+		div.test{
+			width: 12em;
+			border: 1px solid #000;
+			white-space: nowrap;
+			overflow: hidden;
+		} 
+		h3.test{
+			width: 11em;
+			border: 1px solid #000;
+			word-wrap: break-word;
+		}
+/*		@font-face{
+			font-family: 
+			src: format;
+			font-weight: bold;
+			font-style:italic;
+		}*/
+	</style>
+</head>
+<body>
+	<p>css3-text</p>
+	<h2>text-overflow:ellipsis</h2>
+	<div class="test" style="text-overflow: ellipsis;">这是一段长文本 没法完整在容器中显示</div><br>
+
+	<h2>text-overflow:clip</h2>
+	<div class="test" style="text-overflow: clip;">这是一段长文本 没法完整在容器中显示</div><br>
+
+	<h2>word-wrap:normal/break-word</h2>
+	<h3 class="test">this paragraph contains a very long word:qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqq. break and wrap to the next line</h3><br>
+</body>
+</html>

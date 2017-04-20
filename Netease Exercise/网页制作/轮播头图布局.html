@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+        body{padding: 0;margin: 0;font-size: 14px;}
+        .main{
+            background-color: #ccc;
+            width: 900px;
+            height: 700px;
+            position: absolute;
+            top: 50px;
+            left: 600px;
+        }
+        .info{
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 500px;
+          height: 50px;
+          background-color: yellow;
+          text-align: center;
+          line-height: 50px;
+          opacity: 0.4;
+        }
+        .ctr{
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 400px;
+          height: 50px;
+          background-color: #000;
+          color: #fff;
+          text-align: center;
+          line-height: 50px;
+        }
+        .ctr span{
+          float: right;
+          padding-right: 15px;
+        }
+
+  </style>
+</head>
+<body>
+<div class="main">
+  pciture
+   <div class="ctr">
+ctr
+<span id="s1">1</span>
+<span>2</span>
+<span>3</span>
+<span>4</span>
+   </div>
+   <div class="info">
+  info
+   </div>
+</div>
+<script type="text/javascript">
+  window.onload=function(){
+    var ctr=document.getElementById('s1');
+    ctr.onclick = function(){
+      alert('s1');
+    }
+  }
+</script>
+</body>
+</html>

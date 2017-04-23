@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    body,div,i{margin: 0;padding: 0}
+    .slide{
+      width: 200px;
+      height: 100px;
+      background-color:rgb(178,209,235);
+      margin: 0 auto;
+      position: relative;
+    }
+    .pointer{
+      position: absolute;
+      right:10px;
+      bottom: 10px;
+    }
+    i{
+      background-color: #000;
+      height: 10px;
+      width: 10px;
+      float: left;
+      margin-left: 5px;
+      border-radius: 5px;
+    }
+/*    .current{
+      background-color: white;
+    }*/
+    i:hover{background-color: white;}
+
+  </style>
+</head>
+<body>
+  <div class="slide">
+    <div class="pointer"><i class="current"></i><i></i><i></i></div>
+  </div>
+</body>
+</html>

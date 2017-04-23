@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    div{padding: 0;margin: 0;}
+    .wrap:after{
+      content: ".";
+      visibility: hidden;
+      display: block;
+      height: 0;
+      clear: both;
+    }
+    .wrap{
+      margin: 0 auto;
+      width: 810px;
+      zoom:1;
+    }
+    .aside{
+      background-color: red;
+      float: left;
+      width:200px;
+      height: 500px;
+      color: white;
+      text-align: center;
+      line-height: 500px;
+    }
+    .main{
+      background-color: blue;
+      float: right;
+      height: 500px;
+      width: 600px;
+      color: white;
+      text-align: center;
+      line-height: 500px;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="aside">侧栏</div>
+    <div class="main">主栏</div>
+  </div>
+</body>
+</html>

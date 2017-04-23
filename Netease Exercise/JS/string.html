@@ -5,6 +5,47 @@
   <meta charset="utf-8">
 </head>
 <body>
+<script type="text/javascript">
+  function write(sth){
+    document.write(sth+'<br>');
+  }
+  var a = 'hello123';
+// write(a.length);
 
+// write(a.charAt(1));
+
+// if ('_hello'.charAt(0) == '_' ){
+//   write("can't begin with _");
+// }
+
+// if (a.indexOf('0') != -1) {
+//   write(a.indexOf('l'));
+// }else{
+//   write('doesnt exist');
+// }
+
+// if ('hello123'.search(/[A-Z]/) != -1) {
+//   write(('hello123'.search(/[A-Z]/)));
+// }else{write('doesnt exist')}
+
+// if ('hello123'.match(/[0-9]/g) != null) {
+//     write('hello123'.match(/[0-9]/g));
+// }else{write('doesnt exist')}
+// write(a.replace(/[a-z]/g,'X'));
+    // write(a.substring(1,3));
+    // write(a.slice(1,3));//slice可以传入负数
+    // write(a.slice(1,-1));//-1表示倒数第2个 ello12
+    // write(a.substr(0,2));
+    // write('hello world'.split(' '));
+    // write('HeLLo'.toLowerCase());
+    // write(a.toUpperCase());
+    // write(typeof(String(163)));
+    var str='hello';
+    console.log(str.slice(1));
+    console.log(str.substring(1));
+    console.log(str.substr(1));
+    console.log(str.replace(str.charAt(0),''));
+    console.log(str.match(/ello/g)[0]);
+</script>
 </body>
 </html>

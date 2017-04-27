@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+function write(o){
+    document.write(o+'<br>');
+}
+var numArr  = [1,2,3,4,5,6];
+var array1 = new Array(9,8,7,6,5,4);
+var array = [
+    {id:1,s:80},
+    {id:2,s:99}
+];
+
+// write(numArr.length);
+// write(array.length);
+// write(array1[1]);
+// write(array[0].s);
+// write(array1.indexOf(5));
+
+   // array1.forEach(function(num){
+   //      num+=1;
+   //      write(num);
+   //  });
+   // numArr.forEach(function(num){num+=1;write(num);});
+// numArr.reverse();
+//
+// numArr.sort(function(a,b){
+//   return b-a;
+// });
+// numArr.sort();
+//加到最后
+// numArr.push(15);
+// //加到第一个
+// numArr.unshift(0);
+// write(numArr);
+// //截取第一位赋值给a
+// var a = numArr.shift();
+// write(a);
+// write(numArr);
+
+
+// write(numArr);
+// //截取最后一位赋值给a
+// var a = numArr.pop();
+// write(a);
+// write(numArr);
+
+
+// write(numArr);
+// //将指定位置2的值删除制定个数1的值 并插入新的值
+// //不设定新值即删除index=1的值
+// // 不设定删除个数即为插入不删除
+// numArr.splice(2,1,20);
+// write(numArr);
+
+
+
+
+
+//reverse  sort  push  unshift  shift  pop  splice  都会修改原有数组
+
+
+
+
+
+
+//从原字符串中复制 前包后不包 赋值给新字符串 原字符串不修改slice
+// var newArray1 = array1.slice(0,3);
+// write(newArray1);
+// write(array1);
+//
+
+//数组拼接concat
+// var arr = numArr.concat(array1,array);
+// var s1 = [{id:1,score:99},{id:2,score:58},{id:3,score:87}];
+// var s2 = [{id:4,score:79},{id:5,score:88},{id:6,score:61}];
+// var s3 = [{id:7,score:92},{id:8,score:65},{id:9,score:57}];
+// var student = s1.concat(s2,s3);
+// student.forEach(function(obj){console.log(obj.id+':'+obj.score);});
+
+
+//与String中split方法相反 以-为分割将数字合并成字符串 不填默认 ， 空字符串直接合并
+// var a = array1.join('-');
+// write(a);
+
+//旧数组遍历+5后赋予新数组 旧数组不变
+// var score = [60,70,80,90];
+// var newScores = [];
+// var addScore = function(item,index,arrau){
+//   newScores.push(item+5);
+// };
+// score.forEach(addScore);
+// for (var i = 0, l=score.length; i < l; i++) {
+//     write(i+':'+score[i]);
+// }
+// for (var i = 0, l=newScores.length; i < l; i++) {
+//     write(i+':'+newScores[i]);
+// }
+//
+// map实现👆的功能
+// var scores = [60,70,80,90];
+// var score = [];
+// var addScore = function(item,index,arrau){
+//   return item+5;
+// };
+// score = scores.map(addScore);
+// for (var i = 0, l=score.length; i < l; i++) {
+//     write(i+':'+score[i]);
+// }
+
+//累加reduce
+// var sum = function(perviousResult,item,index,array){
+//     return perviousResult+item;
+// }
+// var score;
+// score = array1.reduce(sum);
+// // for (var i = 0, l=score.length; i < l; i++) {
+// //     write(i+':'+score[i]);
+// // }
+// write(score);
+
+//slice concat join map reduce 不修改原有数组 而是返回一个新的数组
+
+var num = [1,2,3,4,5,6,7,8,9],
+    res = 0;
+//for循环
+for (var i = 0 , l=num.length; i < l; i++) {
+      res +=num[i];
+}
+console.log(res);
+
+//forEach
+num.forEach(function(n){
+  res+=n;
+});
+console.log(res);
+
+//reduce
+res = num.reduce(function(perviousResult,item,index,array){
+  return perviousResult+item;
+});
+console.log(res);
+
+//map
+ num.map(function(item) {
+  return res+=item;
+})
+ console.log(res);
+
+// forin
+for (i in num){
+  res+=num[i];
+}
+console.log(res);
+
+//while
+var i=0;
+while(i<num.length){
+  res+=num[i];
+  i++;
+}
+console.log(res);
+
+//dowhile
+var i=0;
+do{
+  res+=num[i];
+  i++;
+}while(i<num.length)
+console.log(res);
+</script>
+</body>
+</html>

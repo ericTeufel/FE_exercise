@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+
+// var date = new Date(2015,7,20,14,57,18)://2015-08-20 14:57:18
+
+// date.getFullYear();//2015
+// date.getMonth();//7  ->8月
+// date.getDate();//20
+// date.getHours();//14
+// date.getMinutes();//57
+// date.getSeconds();//18
+
+
+
+// function padding(number){
+//   return number < 10 ? '0' + number : '' + number;
+// }
+// function format(date){
+//   return date.getFullYear()+'-'+padding(date.getMonth()+1) +'-'+padding(date.getDate(0)) + ' ' + padding(date.getHours()) + ':' + padding(date.getMinutes()) + ':' + padding(date.getSeconds());
+// }
+// var date = new Date();
+// alert(date);
+// alert(format(date));
+
+
+// date.setFullYear(2012);
+// date.setMonth(5);
+// date.setDate(30);
+// date.setHours(8);
+// date.setMinutes(21);
+// date.setSeconds(55);
+
+
+//获取该月天数
+// function getDays(year,month){
+//   var date = new Date(year,month,0);
+//   return date.getDate();
+// }
+// alert('2012年2月有' + getDays(2012,2) + '天');
+// alert('2012年6月有' + getDays(2012,6) + '天');
+
+
+// date->number
+var date  = new Date(2015,7,20,14,57,18);//2015-08-20-14-57-18
+date.getTime();//1440053838000    距1970-1-1 00：00：00的毫秒数
+
+
+// number->date
+new Date(1440053838000);//2015-08-20-14-57-18
+date.setTime(1440053838000);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

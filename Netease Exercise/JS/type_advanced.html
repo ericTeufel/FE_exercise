@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<!-- 对象类型
+原生::
+构造函数: Boolean String Number Object Function Array Date RegExp Error
+对象: Math JSON 全局对象 arguments
+
+宿主对象:: window navigator document history...
+浏览器扩展对象:: ActiveXObject  XML Debug Script VBArray...
+
+原始类型和对象类型区别
+所有原始类型的值都存储在栈内存中 object类型的地址-指针存储在栈内存中 而值存储在堆内存中
+原始类型是值传递
+对象类型是引用传递
+
+如何复制对象类型
+
+
+隐式类型转换
+一个数字和其他类型进行计算时 +法会转换为字符串  其他方法会转换为数字
+
+(3.1415).toFixed(2)//3.14
+console.dir(3.1415) 数字调用toFixed时 会被隐式转换为Number对象类型
+
+'hello world'.splite(' ')  //['hello','world']
+也是将字符串转换为String类型对象再进行调用
+
+
+数字运算符、.、if语句、== 会触发隐式转换 -->
+
+  <script type="text/javascript">
+  var a = "10";
+console.log(10+Number(a));
+
+  </script>
+</body>
+</html>

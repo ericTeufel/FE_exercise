@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+//锚点 ^ 匹配起始位置
+console.log(/^http:/.test('http://www.google.com.hk'));
+console.log(/^http:/.test('hello world'));
+//$匹配结尾
+console.log(/\.jpg$/.test('a.jpg1'));
+console.log(/\.jpg$/.test('a.jpg'));
+//  \b 单词边界
+console.log(/\bis\b/.test('this'));
+console.log(/\bis\b/.test('this is'));
+//同时设置开头结尾
+console.log(/^1356668888$/.test('1213566688886'));
+console.log(/^1356668888$/.test('1356668888'));
+// 字符
+console.log(/[0-9]/.test('123456489'));
+console.log(/[0-9]/.test('a'));
+console.log(/[^0-9]/.test('a'));
+console.log(/./.test('a123'));
+console.log(/[a-zA-Z0-9]/.test('$%^'));
+console.log(/[^a-zA-Z0-9]/.test('$%^'));
+// 元字符
+console.log(/\w/.test('++'));
+// 量词
+console.log(/\d+/.test('abc'));
+console.log(/\d+/.test('123dd'));
+console.log(/\d+/.test('abc'));
+// 匹配手机号
+console.log(/^1\d{10}$/.test('13795278388'));
+console.log(/^1\d{10}$/.test('13798388'));
+
+//转义
+console.log(/@163\.com/.test('1@163.com'));
+console.log(/^http:\/\//.test('https://163.com'));
+
+// 多选分支 或
+console.log(/thi(n|c)k/.test('thick'));
+console.log(/thi[nc]k/.test('think'));
+console.log(/\.(png|jpg|jpeg|gif)$/.test('a.jpg'));
+
+// 捕获 保存匹配到的字符串 （）：捕获  （？：）：不捕获
+var url = 'http://blog.163.com/album?id=1#comment';
+var reg = /(^https?:)\/\/([^\/]+)(\/[^\?]*)?(\?[^#]*)?(#.*)?$/;
+var arr = url.match(reg);
+var protocol = arr[1];
+var host = arr[2];
+var pathname = arr[3];
+var search = arr[4];
+var hash = arr[5];
+console.log(arr);
+
+// replace
+var str  = 'The price of potato is 5. The price of apple is 10 ';
+str.replace(/(\d+)/g,'$1.00');
+console.log(str.replace(/(\d+)/g,'$1.00'));
+
+// regexpObj.exec(str)  更强大的检索 更详尽的结果 index 过程的状态lastIndex
+
+var reg = /(.)(\d+)/g,
+    money = 'Tom $88,Nicholas ￥100 , jack £35',
+   result;
+   while(result = reg.exec(money)){
+    console.log(result);
+    console.log(reg.lastIndex);
+    reg.lastIndex += 10;
+   }
+
+
+</script>
+</body>
+</html>

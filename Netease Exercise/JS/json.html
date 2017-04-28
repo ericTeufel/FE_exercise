@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+//JSON和对象的区别在于 属性名key JSON有双引号
+// json.parse()  JSON->JS
+// ie6\7不支持 手动添加
+// if (!window.JSON) {
+//   window.JSON = {
+//     parse:function(sJSON){
+//       return eval('('+sJSON+')');
+//     }
+//   };
+// }
+// var userJson = '{\
+//     "id":1,\
+//     "nick":"123",\
+//     "avatar":"1.jpg",\
+//     "tags":null,\
+//     "authed":false\
+// }';
+// var user = JSON.parse(userJson);
+// var user = JSON.parse(userJson,function(k,v){
+//   if (k === 'avatar') {
+//     return 'http://www.163.com/img/' + v;
+//   }
+//   return v;
+// });
+// debugger;
+
+
+// JSON.stringify()  JS->JSON序列化
+// if (!window.JSON) {
+//   window.JSON = {
+//     parse:function(sJSON){
+//       return eval('('+ sJSON +')');
+//     },
+//     stringify:function(sJS){
+
+//     }
+//   }
+// }
+// var user = {
+//   id:1,
+//   nick:"春鸟秋虫",
+//   avatar:"1.jpg",
+//   tags:null,
+//   authed:false
+// };
+// var userJSON = JSON.stringify(user);
+// var userJSON = JSON.stringify(user,['id','nick','avatar']);
+
+
+if (!window.JSON) {
+  window.JSON = {
+    parse: function(jsonStr) {
+      return eval('(' + jsonStr + ')');
+    },
+    stringify: function(jsonObj) {
+      var result = '',
+      curVal;
+      if (jsonObj === null) {
+        return String(jsonObj);
+      }
+      switch (typeof jsonObj) {
+        case 'number':
+        case 'boolean':
+        return String(jsonObj);
+        case 'string':
+        return '"' + jsonObj + '"';
+        case 'undefined':
+        case 'function':
+        return undefined;
+      }
+
+      switch (Object.prototype.toString.call(jsonObj)) {
+        case '[object Array]':
+        result += '[';
+        for (var i = 0, len = jsonObj.length; i < len; i++) {
+          curVal = JSON.stringify(jsonObj[i]);
+          result += (curVal === undefined ? null : curVal) + ",";
+        }
+        if (result !== '[') {
+          result = result.slice(0, -1);
+        }
+        result += ']';
+        return result;
+        case '[object Date]':
+        return '"' + (jsonObj.toJSON ? jsonObj.toJSON() : jsonObj.toString()) + '"';
+        case '[object RegExp]':
+        return "{}";
+        case '[object Object]':
+        result += '{';
+        for (i in jsonObj) {
+          if (jsonObj.hasOwnProperty(i)) {
+            curVal = JSON.stringify(jsonObj[i]);
+            if (curVal !== undefined) {
+              result += '"' + i + '":' + curVal + ',';
+            }
+          }
+        }
+        if (result !== '{') {
+          result = result.slice(0, -1);
+        }
+        result += '}';
+        return result;
+
+        case '[object String]':
+        return '"' + jsonObj.toString() + '"';
+        case '[object Number]':
+        case '[object Boolean]':
+        return jsonObj.toString();
+      }
+    }
+  };
+}
+
+</script>
+</body>
+</html>

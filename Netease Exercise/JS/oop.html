@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+// 全局变量
+// var test = '123';
+// window.test = '123';
+
+// (function(){//函数内部定义 但未使用var定义 默认为全局
+//     var a;
+// test = '123';
+// })();
+
+
+// function todo(){
+// var a = test = ‘123’;}//a使用了var 定义 但是test定义在了全局上
+// function todo(){
+// var a= ‘123’,
+//     b=‘123’;
+//     c=‘123’;}//c未用var定义 也是全局
+
+
+// var test1 = 'aaa';
+// function f1(){
+//   test1 = '1';
+// }
+// f1();
+// function f2(){
+//   test1 = '2';
+// }
+// f2();
+// debugger;
+
+
+// //js中封装 信息隐藏 非私有
+// function A(){
+//   this.a = null;
+//   this.b = null;
+//   this.step1 = function(){
+//     //todo
+//   }
+//   this.step2 = function(){
+
+//   }
+//   this.api = function(){
+//   }
+// }
+// //原型方式 非私有
+// function b(){
+//   this.a = null;
+//   this.b = null;
+// }
+// var pro = A.prototype;
+// pro.step1 = function(){}
+// pro.step2 = function(){}
+// pro.api = function(){}
+
+// // 私有 function a改造  模拟private
+// function A(){
+//   var _config = ['A','B','C'];
+//   this.getConfig = function(){
+//     return _config;
+//   }
+// }
+// var pro = A.prototype;
+// pro._step1 = function(){}
+// pro._step2 = function(){}
+// pro.api = function(){}
+
+// 模拟类继承 classb继承classa
+// (function(){
+//   function ClassA(){}
+//   ClassA.classMethod = function(){}
+//   ClassA.prototype.api = function(){}
+
+//   function ClassB(){
+//     ClassA.apply(this, arguments);
+//   }
+//   ClassB.prototype = new ClassA();
+//   ClassB.prototype.constructor = ClassB;
+//   ClassB.prototype.api = function(){
+//     ClassA.prototype.api.apply(this, arguments);
+//   }
+//   var b = new ClassB();
+//   b.api();
+// })();
+
+// 原型继承
+// (function(){
+//   var proto = {
+//     action1:function(){}
+//     action2:function(){}
+//   }
+//   var obj = Object.create(proto);
+// })();
+// //Object.create是es5中定义的 以下为低版本的兼容写法
+// var clone = (function(){
+//   var F = function(){};
+//   return function(proto){
+//     F.prototype = proto;
+//     return new F();
+//   }
+// })();
+// function Circle(r){
+//   this.r = r;
+// }
+// Circle.prototype.perimeter = function(r){
+//   return (2*Math.PI*this.r).toFixed(2);
+// }
+// Circle.prototype.area = function(r){
+//   return (this.r*2*Math.PI).toFixed(2);
+// }
+// var cr = new Circle(2);
+// console.log(cr.area());
+// console.log(cr.perimeter());
+
+
+// 请使用Js代码写出一个类继承的模型，需包含以下实现：
+// 定义父类和子类，并创建父类和子类的属性和方法
+// 子类继承父类的属性和方法
+// 在创建子类对象时，调用父类构造函数
+
+
+(function(){
+  function Fighter(model){
+    this.model = model;
+  }
+  Fighter.prototype.getModel = function(){
+    console.log(this.model);
+  };
+  function F35(belongsTo){
+      Fighter.call(this,'F35');
+      this.belongsTo = belongsTo;
+  }
+  F35.prototype = new Fighter();
+  F35.prototype.constructor = F35;
+  F35.prototype.getModel = function(){
+    Fighter.prototype.getModel.call(this);
+  };
+  F35.prototype.getBelongsTo = function(){
+    console.log(this.belongsTo);
+  }
+  var f35A = new F35('USAF');
+  f35A.getModel();
+  f35A.getBelongsTo();
+})();
+
+
+</script>
+</body>
+</html>

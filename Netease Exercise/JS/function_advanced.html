@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+    /* 1.函数声明定义函数的特点 */
+// add1(1);
+// function add1(i){
+//   console.log("函数声明："+(i+1));
+// }
+
+// var add2 = function(i){
+//   console.log("函数表达式："+(i+2));
+// }
+// add2(1);
+
+// var add2 = function(i){
+//   console.log("函数表达式："+(i+20));
+// }
+// add2(1);
+
+// var add3 = new Function("i","console.log('函数实例化：'+(i+3));");
+// add3(1);
+
+// function add1(i){
+//   console.log("函数声明："+(i+10));
+// }
+// add1(1);
+
+/* 思考题 */
+// function add1(i){
+//   console.log("函数声明："+(i+1));
+// }
+// add1(1);
+
+// var add1 = function(i){
+//   console.log("函数表达式："+(i+10));
+// }
+// add1(1);
+
+// function add1(i) {
+//     console.log("函数声明："+(i+100));
+// }
+// add1(1);
+
+/* 2.对象实例化定义函数的特点 */
+// var person = {name:"刘德华", age:50};
+// (function(){
+//   // var person = {name:"刘德华", age:30};
+//   (function() {
+//     // var person = {name:"刘德华", age:10};
+//     console.log(person.name+person.age+"岁");
+//   })()
+// })();
+
+
+// var person = {name:"刘德华", age:50};
+// (function(){
+//   var person = {name:"刘德华", age:30};
+//   var func = new Function("console.log(person.name+person.age+'岁');");
+//   func();
+// })();
+
+
+// /* 构造函数 */
+// function Car(type,color){
+//   this.type = type;
+//   this.color = color;
+//   this.status = "stop";
+//   this.light = "off";
+//   console.log(this);
+// }
+// Car.prototype.start = function(){
+//   this.status = "driving";
+//   this.light = "on";
+//   console.log(this.type + " is " + this.status);
+// }
+// Car.prototype.stop = function(){
+//   this.status = "stop";
+//   this.light = "off";
+//   console.log(this.type + " is " + this.status);
+// }
+// var benz = new Car("benz", "black");
+
+
+// // /* 函数调用模式(this) */
+// function add(i,j){
+//   console.log(this);
+//   // console.log(arguments);
+//   var sum = i+j;
+//   console.log(sum);
+//   (function(){
+//       console.log(this);
+//   })()
+//   return sum;
+// }
+// add(1,2);
+
+// 方法调用
+// var myNumber = {
+//   value: 1,
+//   add: function(i){
+//       console.log(this);
+//       this.value += i;
+//   }
+// }
+// myNumber.add(1);
+
+// apply调用
+// var youNumber = {
+//     value: 10
+// }
+// myNumber.add.apply(youNumber,[2]);
+// myNumber.add.call(youNumber,2);
+
+/* 思考题 */
+// 1.helper函数中this指向谁
+// 2.这段代码能否实现正确逻辑
+// 2.在不放弃helper函数的前提下 有哪些修改方法可以实现正确逻辑
+// var myNumber = {
+//   value: 1,
+//   add: function(i){
+//     var helper = function(i){
+//         console.log(this);
+//           this.value += i;
+//     }
+//     helper(i);
+//   }
+// }
+// var res = myNumber.add(1);
+// console.log(res);
+
+// /* bind的使用 */
+// function Point(x, y){
+//     this.x = x;
+//     this.y = y;
+// }
+// Point.prototype.move = function(x, y) {
+//     this.x += x;
+//     this.y += y;
+// }
+// var p = new Point(0,0);
+// var circle = {x:1, y:1, r:1};
+// var circleMove = p.move.bind(circle, 2, 1);
+// circleMove();
+
+// /* arguments转数组 */
+// (function() {
+//   var args = Array.prototype.slice.apply(arguments);
+//   args.forEach(function(item){
+//     console.log(item);
+//   })
+// })(1,2,3)
+
+// /* arguments.callee使用 */
+// console.log(
+//   (function(i){
+//     if (i==0) {
+//       return 1;
+//     }
+//     return i*arguments.callee(i-1);
+//   })(5)
+// );
+
+// /* 函数的传参 */
+// /* 原始类型按值传递call by value */
+// var count = 1;
+// var addOne = function(num) {
+//     num += 1;
+//     return num;
+// }
+// var ret = addOne(count);
+// console.log(ret);
+// console.log(count);
+
+/* 对象类型call by ? */
+// var count = {a:1,b:1};
+// var addOne = function(obj) {
+//     obj.a += 1;
+//     obj.b += 1;
+//     return obj;
+// }
+// var ret = addOne(count);
+// console.log(ret);
+// console.log(count);
+
+// var count = {a:1,b:1};
+// var addOne = function(obj) {
+//     obj = {a:2, b:2};
+//     return obj;
+// }
+// var ret = addOne(count);
+// console.log(ret);
+// console.log(count);
+
+
+// /* 递归 */
+// function factorial(i){
+//   if (i==0) {
+//     return 1;
+//   }
+//   return i*factorial(i-1);
+// }
+
+// 闭包
+// (function(){
+//     var a = 1;
+//     (function(){
+//         console.log(a)
+//         debugger;
+//     })()
+// })();
+
+/**
+ * 闭包使用举例1
+ * 将字符串中的一些特定字符按顺序用数组中的元素替换，例如：
+ * var arr = ['c','f','h','o'];
+ * var str = 'ab4de8g4ijklmn7';
+ * 替换后 str == 'abcdefghijklmno';
+ * replace的用法请参考https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+ **/
+// var arr = ['c','f','h','o'];
+// var str = 'ab4de8g4ijklmn1';
+// console.log(str);
+
+// var func = (function(){
+//   // count变量会保存在闭包作用域内，表示func被调用次数（即正在替换第几个字符）
+//   var count = 0;
+//   return function(){
+//     return arr[count++];
+//   }
+// })();
+
+// str = str.replace(/\d/g, func)
+// console.log(str);
+
+
+/**
+闭包使用举例2 -- 封装
+1.暴露type类型和start, stop, getStatus方法
+2.隐藏status，light对象状态
+**/
+// var Car = function(type){
+//   var status = "stop",
+//       light = "off";
+//   return {
+//     type: type,
+//     start: function(){
+//       status = "driving";
+//       light = "on";
+//     },
+//     stop: function(){
+//       status = "stop";
+//       light = "off";
+//     },
+//     getStatus: function(){
+//       console.log(type + " is " + status + " with light " + light);
+//     }
+//     }
+// }
+
+// var audi = new Car("audi");
+// audi.start();
+// audi.getStatus();
+// audi.stop();
+// audi.getStatus();
+
+/**
+闭包使用举例3 -- 性能优化1
+减少函数定义时间和内存消耗
+**/
+// 不使用闭包
+// function sum(i, j) {
+//   var add = function(i, j){
+//     return i+j;
+//   }
+//   return add(i, j)
+// }
+// var startTime = new Date();
+// for(var i = 0; i< 1000000; i++) {
+//   sum(1,1);
+// }
+// var endTime = new Date();
+// console.log(endTime - startTime);
+
+// // // 使用闭包
+// var sum = (function() {
+//   var add = function(i, j){
+//     return i+j;
+//   }
+//   return function(i,j) {
+//     add(i, j);
+//   }
+// })()
+// var startTime = new Date();
+// for(var i = 0; i< 1000000; i++) {
+//   sum(1,1);
+// }
+// var endTime = new Date();
+// console.log(endTime - startTime);
+
+
+/**
+闭包使用举例3 -- 性能优化2
+普通递归函数跟使用闭包记录调用返回结果的递归函数调用次数对比
+**/
+// // 普通递归函数
+// var factorial = (function(){
+//   var count = 0;
+//   var fac = function(i){
+//     count++;
+//     if (i==0) {
+//       console.log('调用次数：' + count);
+//       return 1;
+//     }
+//     return i*factorial(i-1);
+//   }
+//   return fac;
+// })();
+// for(var i=0;i<=10;i++){
+//   console.log(factorial(i));
+// }
+
+// // 使用闭包记录调用返回结果的递归函数 -- 记忆函数
+// var factorial = (function(){
+//   var memo = [1];
+//   var count = 0;
+//   var fac = function(i){
+//     count++;
+//     var result = memo[i];
+//     if(typeof result === 'number'){
+//       console.log('调用次数：' + count);
+//       return result;
+//     }
+//     result = i*fac(i-1);
+//     memo[i] = result;
+//     return result;
+//   }
+//   return fac;
+// })();
+// for(var i=0;i<=10;i++){
+//   console.log(factorial(i));
+// }
+
+
+/** bind的兼容性实现  */
+// 检查是否有定义
+// if (!Function.prototype.bind1) {
+//   Function.prototype.bind1 = function(thisObj) {
+//         // 获取函数本身
+//     var _func = this,
+//         // 获取函数调用者（bind方法的第一个参数）
+//         _this = thisObj,
+//         // 获取函数绑定的参数列表
+//         _params = Array.prototype.slice.call(arguments, 1);
+
+//     // 返回一个函数，外部变量通过持有这个函数引用保存_func,_this,_params这三个闭包变量,并随时执行函数以调用下面语句。
+//     return function(){
+//       var _localParams = Array.prototype.slice.call(arguments);
+//       _params = _params.concat(_localParams);
+//       _func.apply(_this, _params); // 实现函数调用
+//     }
+//   }
+// }
+
+
+/** 函数作为返回值--bind **/
+// move函数实现移动平面图上一个点位置功能
+// var move = function(x,y){
+//     this.x += x;
+//     this.y += y;
+// }
+// // // 定一个点p
+// var p = {x:1, y:1};
+// // bind方法收受一个参数，并返回一个接受余下参数的函数过程。此时p点并没有移动。
+// var pmove0 = move.bind(p);
+// console.log(p);
+// // 这时p移动到了（2,3）位置。
+// pmove0(1,2);
+// console.log(p);
+
+// // 当然你也可以这样调用
+// var pmove1 = move.bind(p,1);
+// console.log(p);
+// pmove1(2);
+// console.log(p);
+
+// 或者这样调用
+// var pmove2 = move.bind(p,1,2);
+// console.log(p);
+// pmove2();
+// console.log(p);
+
+
+//// 函数柯里化
+/*
+1. 函数柯里化通常是指把接受多个参数的函数变换成接受一个单一参数（最初函数的第一个参数）的并且返回一个接受余下的参数而且返回结果的新函数的技术。
+*/
+// // 1. 最简单的柯里化
+// // sum函数接受三个参数，并返回求和结果
+// var sum = function(a,b,c) {
+//     return a+b+c;
+// }
+// // // 最简单柯里化的sum函数
+// var sum_curry = function(a){
+//     return function(b,c){
+//         return a+b+c;
+//     }
+// }
+// /*
+
+/*
+2. 更泛化的定义是指给函数分步传递参数，每次函数接受部分参数后应用这些参数，并返回一个函数接受剩下的参数，这中间可嵌套多层这样的接受部分参数的函数，直至返回最后结果。归纳一下就是逐步传参，逐步缩小函数的适用范围，逐步求解的过程。
+*/
+// // 2. 泛化的柯里化
+// // currying实现将一个函数转变为柯里化函数
+// var currying = function (fn) {
+//    var _args = [];
+//    return function () {
+//     if (arguments.length === 0) {
+//       // 实现最终的计算
+//       return fn.apply(this, _args);
+//     }
+//     // 这里只是简单的将参数缓存起来（用于解释柯里化概念，并非实际应用场景）
+//     Array.prototype.push.apply(_args, [].slice.call(arguments));
+//     return arguments.callee;
+//    }
+// };
+// // sum函数接受任意参数，并返回求和结果
+// var sum=function () {
+//    var total = 0;
+//    for (var i = 0, c; c = arguments[i++];) {
+//        total += c;
+//    }
+//    return total;
+// };
+// // 或得一个泛化柯里化的sum函数
+// var sum_curry = currying(sum);
+// sum_curry(1)(2,3);
+// sum_curry(4);
+// console.log(sum_curry());
+
+/*
+3. 从更上层的角度去理解，柯里化允许和鼓励你将一个复杂过程分割成一个个更小的更容易分析的过程（这些小的逻辑单元将更容易被理解和测试），最后这样一个难于理解复杂的过程将变成一个个小的逻辑简单的过程的组合。
+*/
+
+// 3.上面两个例子很好的解释了什么是函数柯里化，但是什么时候用？任何能简化逻辑实现、提高可读性地方都鼓励使用（好像是废话...），举个稍微具体点的列子：
+// // refresh函数实现通过ajax请求更新页面上的相关模块的数据。
+// function refresh(url, callback){
+//     // ajax_get实现一个ajax get请求，请求成功后回调callback函数（这里不提供ajax_get实现，有兴趣的同学可以参考前面课程中有提到过类似的实现)。
+//     ajax_get(url, callback);
+// }
+
+// function update(data){
+//   // 更新的逻辑全部在这里处理
+// }
+// refresh("xxx?target=news", update);
+
+
+// // update函数是一个柯里化后函数，第一级函数根据传入参数将需要更新的模块分拆出来。
+// function update(target){
+// var _elm = document.getElementById(target); // 这里实现模块分拆,代码仅是举例
+//    return function(data){ // 返回一个用请求结果更新页面显示的函数
+//    _elm.innerHTML = data; // 这里实现用ajax请求返回结果更新页面显示过程,代码仅是举例
+//    }
+// }
+// // 更新页面可以写成这样
+// refresh("xxx?target=news", update("news"));
+// refresh("xxx?target=pictures", update("pictures"));
+
+// // 继续，如果新闻模块需要继续拆分成“社会”新闻，“娱乐”新闻，那我们柯里化的update函数该怎么写呢？可以这样写:
+// function update(target){
+//     var _elm = document.getElementById(target); // 这里实现第一级模块分拆,代码仅是举例
+//     return function(type){ // 返回一个接受其余参数的函数
+//        var _elm = document.getElementById(item); // 这里实现第二级模块分拆,代码仅是举例
+//        return function(data){ // 返回一个接受其余参数并最终更新页面显示的函数
+//            _elm.data = data; // 这里实现用ajax请求返回结果更新页面显示过程,代码仅是举例
+//        }
+//     }
+// }
+// // 更新页面就可以写成这样
+// refresh("action.do?target=news&type=society", update("news")("society"));
+// refresh("action.do?target=news&type=entertainment", update("news")("entertainment"));
+//
+//
+
+// function add1(i){
+//   console.log("函数声明："+(i+1));
+// }
+// add1(1);
+
+// var add1 = function(i){
+//   console.log("函数表达式："+(i+10));
+// }
+// add1(1);
+
+// function add1(i) {
+//     console.log("函数声明："+(i+100));
+// }
+// add1(1);
+// // 执行顺序
+// var add1;
+// function add1(i){
+//   console.log("函数声明："+(i+1));
+// }
+// function add1(i) {
+//     console.log("函数声明："+(i+100));
+// }
+// add1(1);
+// add1 = function(i){
+//   console.log("函数表达式："+(i+10));
+// }
+// add1(1);
+// add1(1);
+
+
+
+
+// 1.helper函数中this指向谁
+// 2.这段代码能否实现正确逻辑
+// 2.在不放弃helper函数的前提下 有哪些修改方法可以实现正确逻辑
+var myNumber = {
+  value: 1,
+  add: function(i){
+    var helper = function(i){
+      console.log(this);
+      this.value += i;
+    }
+    helper(i);
+  }
+}
+myNumber.add(1);
+// answer
+//方法一：把helper调整为方法函数，这样helper就可以正确引用myNumber为this了。
+var myNumber = {
+  value:1,
+  helper:function(i) {
+    console.log(this);
+    this.value +=i;
+  },
+  add: function(i) {
+    this.helper(i);
+  }
+}
+
+//方法二：使用闭包
+var myNumber = {
+  value: 1,
+  add: function(i){
+    var thisnew = this;
+   // 构建闭包
+   var helper = function(i){
+    console.log(thisnew);
+    thisnew.value += i;
+  }
+  helper(i);
+}
+}
+
+//方法三：使用方法调用模式，因为方法调用模式可以使this指向调用者
+var myNumber = {
+  value: 1,
+  add: function(i){
+    var helper = function(i){
+      console.log(this);
+      this.value += i;
+    }
+ // 新建一个o对象等于myNumber,将helper方法赋值给该对象，
+// 然后使用方法调用模式，这样可以让helper中的this指向调用者o,即myNumber
+var o = myNumber;
+o.fn = helper;
+o.fn(i);
+}
+}
+
+//方法四：使用apply（call）调用模式，将当前helper方法借用给myNumber对象使用
+var myNumber = {
+  value: 1,
+  add: function(i){
+    var helper = function(i){
+      console.log(this);
+      this.value += i;
+    }
+     // myNumber对象借用helper方法，helper中的this将指向myNumber对象
+     //helper.apply(myNumber,[i]); //apply方法
+    //helper.call(myNumber,i);  //call方法
+     var v = helper.bind(myNumber);//bind方法
+     v(i);
+   }
+ }
+
+ myNumber.add(1);
+ console.log(myNumber.value);
+
+
+</script>
+</body>
+</html>

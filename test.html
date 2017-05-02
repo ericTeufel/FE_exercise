@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+  <script type="text/javascript">
+
+    // (function(){
+
+    //   function ClassA(){}
+    //   ClassA.classMethod = function(){}
+    //   ClassA.prototype.api = function(){}
+
+    //   function ClassB(){
+    //     ClassA.apply(this, arguments);
+    //   }
+    //   ClassB.prototype = new ClassA();
+    //   ClassB.prototype.constructor = ClassB;
+    //   ClassB.prototype.api = function(){
+    //     ClassA.prototype.api.apply(this, arguments);
+    //   }
+    //   var b = new ClassB();
+    //   b.api();
+
+
+    // })();
+
+
+
+
+
+
+
+
+    // function Car(brand){//父类构造器
+    //   this.brand = brand;//定义父类属性 汽车品牌
+    // }
+    // Car.prototype.getBrand = function(){//定义父类方法
+    //   console.log(this.brand);
+    // };
+    // function Audi(owner){//子类构造器
+    //   Car.call(this,"Audi");//继承并设置父类属性
+    //   this.owner = owner;//定义子类属性
+    // }
+    // Audi.prototype = new Car();//设置子类原型为父类的一个实例，则子类原型的__proto__指向父类原型
+    // Audi.prototype.constructor = Audi;//设置子类的constructor为子类构造器
+    // Audi.prototype.getBrand = function(){
+    //   Car.prototype.getBrand.call(this);//继承父类方法
+    // };
+    // Audi.prototype.getOwner = function(){//定义子类方法
+    //   console.log(this.owner);
+    // }
+    // var a4 = new Audi("lyl");
+    // a4.getBrand();//Audi
+    // a4.getOwner();//lyl
+
+
+
+
+
+//父类构造函数
+function Parent() {
+    this.name = "父类";
+}
+//父类原型方法
+Parent.prototype.getName = function() {
+    console.log("我是"+this.name);
+    return this.name;
+}
+//子类构造函数
+function Child() {
+    this.name = "子类";
+}
+var classInherit = (function() {
+    //使用闭包防止多次继承时候创建大量的空的构造函数，从而减少消耗内存，
+    var F = function() {}
+    return function(P, C) {   
+        F.prototype = P.prototype; //防止C.prototype = P.prototype,防止在子类实例化后修改属性或方法时候，连同父类一起修改
+        C.prototype = new F();
+        C.prototype.constructor = C;
+    }
+})();
+//类式继承
+classInherit(Parent, Child);
+//实例
+var child = new Child();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
+

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+//Object.create
+  // var landRover = {
+  //   name:'landRover',
+  //   start:function(){
+  //     console.log('%s start', this.logo);
+  //   },
+  //   run:function(){
+  //     console.log('%s running',this.logo);
+  //   },
+  //   stop:function(){
+  //     console.log('%s stop',this.logo);
+  //   }
+  // }
+  // var landWind = Object.create(landRover);
+  // landWind.logo = 'landWind';
+
+  // var landCuriser = Object.create(landRover);
+  // landCuriser.logo = 'landCuriser';
+
+  // landWind.start();
+
+
+
+
+
+// Car构造函数
+// function Car(logo){
+//   this.logo = logo||'unknow name';
+// }
+// // 设置car的prototype属性
+// Car.prototype = {
+//     start:function(){
+//       console.log('%s start', this.logo);
+//     },
+//     run:function(){
+//       console.log('%s running',this.logo);
+//     },
+//     stop:function(){
+//       console.log('%s stop',this.logo);
+//     }
+// }
+// // 创建对象   1.创建对象xxx2.设置xxx的_proto_3.Car.apply(xxx,arguments);
+// var landRover = new Car('landRover');
+// var landWind = new Car('landWind');
+// // 调用方法
+// landRover.start();
+
+
+
+
+// 原型链
+function Car(logo){
+  this.logo = logo||'unknow name';
+}
+// 设置car的prototype属性
+Car.prototype = {
+    start:function(){
+      console.log('%s start', this.logo);
+    },
+    run:function(){
+      console.log('%s running',this.logo);
+    },
+    stop:function(){
+      console.log('%s stop',this.logo);
+    }
+}
+
+// landRover的构造函数
+function LandRover(serialNo){
+  this.serialNumber = serialNo;
+}
+// 设置LandRover的prototype属性
+LandRover.prototype = new Car('landRover');
+// 创建LandRover对象
+var landRover1 = new LandRover(100000);
+var landRover2 = new LandRover(100001);
+
+console.log(landRover1.serialNumber);
+console.log(landRover2.serialNumber);
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

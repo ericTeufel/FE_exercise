@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+//编码实现下面删除数组中重复元素的功能
+// [2,4,2,3,4].deleteRepeat()    返回：[2,4,3]
+
+Array.prototype.deleteRepeat = function(){
+  var arr = this,
+  res = [],
+  flag;
+  for(var i = 0, length1 = arr.length; i < length1; i++){
+    flag = true;
+      for(var j = 0, l = res.length; j < l; j++){
+        if (res[j] === arr[i]) {
+          flag = false;
+          break;
+        }
+      }
+      if (flag) {
+        res.push(arr[i]);
+      }
+  }
+  return res;
+}
+
+
+console.log([2,4,2,3,4].deleteRepeat());
+</script>
+</body>
+</html>

@@ -32,11 +32,150 @@ console.dir(3.1415) 数字调用toFixed时 会被隐式转换为Number对象类�
 
 
 数字运算符、.、if语句、== 会触发隐式转换 -->
-
+10 + <input type="text" id="num"/> <input type="button" value="等于" id="btn"/> <span id="ret"></span>
   <script type="text/javascript">
+var btn = document.getElementById("btn");
+var ret = document.getElementById("ret");
+var num = document.getElementById("num");
+btn.addEventListener('click', function(){
+  ret.innerText = 10 + num.value;
+})
+
+/*
+* 输入格式：
+* '2015-08-05'
+* 1438744815232
+* {y:2015,m:8,d:5}
+* [2015,8,5]
+* 返回格式：Date
+*/
+function toDate(param){
+  if (typeof(param) == 'string' ||
+      typeof(param) == 'number' ){
+    return new Date(param);
+  }
+  if (param instanceof Array){
+    var date = new Date(0);
+    date.setYear(param[0]);
+    date.setMonth(param[1]-1);
+    date.setDate(param[2]);
+    return date;
+  }
+  if (typeof(param) == 'object') {
+    var date = new Date(0);
+    date.setYear(param.y);
+    date.setMonth(param.m-1);
+    date.setDate(param.d);
+    return date;
+  }
+  return -1;
+}
+
+/*
+* 获取对象构造函数名称
+* 视频中关于getConstructorName函数写法存在bug，导致传入 0, false, "", NaN 这些值时，得到错误的返回结果。
+* 由于视频更新需要较长周期这里更正如下：
+* 视频中obj&&替换成(obj===undefined||obj===null)?obj:(...)这样一个表达式，该表达式实现
+* 1. 入参obj如果是undefined和null，则返回其自身;
+* 2. 入参obj如果是其他值，则返回obj.constructor&&obj.constructor.toString().match(/function\s*([^(]*)/)[1]的结果;
+*/
+function getConstructorName(obj){
+    return (obj===undefined||obj===null)?obj:(obj.constructor&&obj.constructor.toString().match(/function\s*([^(]*)/)[1]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   var a = "10";
 console.log(10+Number(a));
+// []instanceof Array;
+// /\d/ instanceof RegExp;
 
+// 1 instanceof Number;
+// 'jerry' instanceof String;
+
+// function Point(x,y){
+//   this.x = x;
+//   this.y = y;
+// }
+
+// function Circle(x,y,r){
+//   Point.call(this,x,y);
+//   this.radius = r;
+// }
+// Circle.prototype = new Point();
+// Circle.prototypt.constructor = Circle;
+// var c = new Circle(1,1,2);
+// c instanceof Circle:
+// c instanceof Point;
+//
+
+
+
+
+//Object.prototype.toString.call
+// function type(obj){
+//   return Object.prototype.toString.call(obj).slice(8,-1);
+// }
+
+// type(1);//number
+// type('abc');//String
+// type(true);//Boolean
+// type(undefined);//Undefined
+// type(null);//Null
+// type({});//Object
+// type([]);//Array
+// type(new Date);//Date
+// type(/\d/);//RegExp
+// type(function(){});//Function
+
+// function Point(x,y){
+//   this.x = x;
+//   this.y = y;
+// }
+// type(new Point(1,2));
+
+
+
+// 'jerry'.constructor === String;
+// (1).constructor === Number;
+// true.constructor === Boolean;
+// ({}).constructor === Object;
+
+// 获取对象构造函数名称
+// function getConstructorName(obj){
+//   return obj && obj.constructor && obj.constructor.toString().match(/function\s*([^(]*)/)[1];
+// }
+
+var obj1 = [1,2,3,4,5,6];
+var obj2 = [];
+//遍历赋值
+for (var i = 0,l=obj1.length; i < l; i++) {
+      obj2.push(obj1[i]);
+}
+//concat
+obj2 = obj1.concat();
+//slice
+obj2 = obj1.slice(0);
+obj2[1]=10;
+console.log('obj1: '+obj1);
+console.log('obj2: '+obj2);
   </script>
+
 </body>
 </html>

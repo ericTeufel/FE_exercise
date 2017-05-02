@@ -11,15 +11,21 @@
       height: 200px;
       background-color: blue;
     }
+
   </style>
+    <script src='http://libs.baidu.com/jquery/1.11.3/jquery.min.js'></script>
 </head>
 <body>
-  <p class="h" onclick="alert('123')">hello</p>
-  <script type="text/javascript">
-    // window.onload = function(){
-    // document.getElementById('h').onclick = function(){alert('1')};
+  <p id="h" >hello</p>
 
-    // };
+    <script type="text/javascript">
+
+    window.onload = function(){
+      var a = document.getElementById('h');
+      a.onclick = function(){
+        alert('123');
+    }
+    }
   </script>
 </body>
 </html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    *{
+      padding:0;margin: 0;list-style-type: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <p>1234560</p>
+    <p style="display: none">1234561</p>
+    <p class="cla">1234562</p>
+    <p>12345639</p>
+    <p></p><br>
+    <p></p><br>
+    <p a='a' ><span>666</span></p>
+    <p class="cla">1234564</p>
+    <p a='a'>12345659</p>
+    <input type="hidden" name="1" value="1">
+    <div>
+      <p>6661</p>
+      <p>6662</p>
+      <p>66639</p>
+    </div>
+  </div>
+
+
+
+  <script src='http://libs.baidu.com/jquery/1.11.3/jquery.min.js'></script>
+  <script>
+    $(function(){
+      // $('p:even').css({'color':'blue','font-size':'50px'});
+      // $('.box p:eq(3)').css({'color':'red','font-size':'25px'});
+      // $('.box p:gt(3)').css({'color':'red','font-size':'30px'});
+      // $('.box p:lt(3)').css({'color':'red','font-size':'30px'});
+      // $('.box p:contains(9)').css({"color": 'red',"font-size": '31px'});
+      // $('.box p:empty').css({'width':'300px','height':'400px','background':'#ccc','margin-bottom':'5px'});
+      // $('.box p:has(span)').css({'color':'red','font-size':'11px'});
+      // $('.box p:parent').css({'color':'blue','font-size':'25px'});
+      // $('.box p:hidden').css({'display':'block','color':'yellow'});
+        // $('.box p:visible').css({'color':'red'});
+        // $(".box p[class]").css({'color':'green'});
+        $(".box p[a]").css({'color':'orange'});
+
+    });
+  </script>
+</body>
+</html>

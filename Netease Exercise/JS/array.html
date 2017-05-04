@@ -85,8 +85,8 @@ var array = [
 
 
 //与String中split方法相反 以-为分割将数字合并成字符串 不填默认 ， 空字符串直接合并
-// var a = array1.join('-');
-// write(a);
+var a = array1.join('-');
+write(a);
 
 //旧数组遍历+5后赋予新数组 旧数组不变
 // var score = [60,70,80,90];
@@ -126,53 +126,53 @@ var array = [
 
 //slice concat join map reduce 不修改原有数组 而是返回一个新的数组
 
-var num = [1,2,3,4,5,6,7,8,9],
-    res = 0;
-//for循环
-for (var i = 0 , l=num.length; i < l; i++) {
-      res +=num[i];
-}
-console.log(res);
+// var num = [1,2,3,4,5,6,7,8,9],
+//     res = 0;
+// //for循环
+// for (var i = 0 , l=num.length; i < l; i++) {
+//       res +=num[i];
+// }
+// console.log(res);
 
-//forEach
-num.forEach(function(n){
-  res+=n;
-});
-console.log(res);
+// //forEach
+// num.forEach(function(n){
+//   res+=n;
+// });
+// console.log(res);
 
-//reduce
-res = num.reduce(function(perviousResult,item,index,array){
-  return perviousResult+item;
-});
-console.log(res);
+// //reduce
+// res = num.reduce(function(perviousResult,item,index,array){
+//   return perviousResult+item;
+// });
+// console.log(res);
 
-//map
- num.map(function(item) {
-  return res+=item;
-})
- console.log(res);
+// //map
+//  num.map(function(item) {
+//   return res+=item;
+// })
+//  console.log(res);
 
-// forin
-for (i in num){
-  res+=num[i];
-}
-console.log(res);
+// // forin
+// for (i in num){
+//   res+=num[i];
+// }
+// console.log(res);
 
-//while
-var i=0;
-while(i<num.length){
-  res+=num[i];
-  i++;
-}
-console.log(res);
+// //while
+// var i=0;
+// while(i<num.length){
+//   res+=num[i];
+//   i++;
+// }
+// console.log(res);
 
-//dowhile
-var i=0;
-do{
-  res+=num[i];
-  i++;
-}while(i<num.length)
-console.log(res);
+// //dowhile
+// var i=0;
+// do{
+//   res+=num[i];
+//   i++;
+// }while(i<num.length)
+// console.log(res);
 </script>
 </body>
 </html>

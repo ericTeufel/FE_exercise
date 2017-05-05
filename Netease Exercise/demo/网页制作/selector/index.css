@@ -1,0 +1,44 @@
+body{
+	/* 文本颜色 */
+	color:#333;
+}
+
+/* 链接设置 */
+a{color:#333;}
+
+/* 导航模块 */
+/* 链接 */
+.nav li a{
+	color:#888;
+}
+/* hover状态 */
+.nav li a:hover{
+	color:#888;
+}
+/* 选中状态 */
+.nav li.selected a,.nav li.selected a:hover{
+	color:#d35757;
+}
+
+/* 模块标题 */
+.title li a{
+	color:#666;
+}
+.title li.selected a{
+	color:#c20c0c;
+}
+
+/* 优秀新电台模块 */
+.newlist p{
+	color:#999;
+}
+
+/* 最热电台 */
+/* 作者链接 */
+.hotlist .author a{
+	color:#666;
+}
+/* 其他信息 */
+.hotlist .info{
+	color:#999;
+}

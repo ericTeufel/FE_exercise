@@ -16,16 +16,20 @@
     <script src='http://libs.baidu.com/jquery/1.11.3/jquery.min.js'></script>
 </head>
 <body>
-  <p id="h" >hello</p>
+  <p class="h" >hello</p>
 
     <script type="text/javascript">
-
-    window.onload = function(){
-      var a = document.getElementById('h');
-      a.onclick = function(){
-        alert('123');
+  // $(document).ready(function() {
+  //    $(".h").click(function() {
+  //      alert('1');
+  //    });
+  //  });
+    // window.onload = function(){
+      var a = document.getElementsByClassName('h')
+       a.onclick= function(){
+      alert('1');
     }
-    }
+    // }
   </script>
 </body>
 </html>

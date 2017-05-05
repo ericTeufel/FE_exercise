@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <h2>document object model Tree</h2>
+  <p id="hello" class="mooc">
+    hello,<span>mooc</span>
+    <img src="#">
+  </p>
+  <div>abc</div>
+  <div id="user">
+    <h2>xxxx人在学习该课程</h2>
+    <ul>
+      <li class="user">1</li>
+      <li class="user">2</li>
+      <li class="user last">3</li>
+    </ul>
+  </div>
+  <script type="text/javascript">
+  // document.onload = function(){
+    // var a = document.getElementById('hello');
+    // alert(a.innerHTML);
+    // a.onclick= function(){
+    //   alert('1');
+    // }
+  // }
+  // var users = document.getElementById('user');
+  // var a = users.getElementsByTagName('li');
+  //    // alert(a.length);
+  //    var b = users.getElementsByClassName('user last')[0];
+  //    b.innerHTML = '111';
+
+// collection = element.getElementsByTagName(tagname)   collection 动态
+// collection = element.getElementsByClassName(className); 动态 获取之后也会随着节点增删改动
+
+
+
+  // 兼容性写法
+  // function getElementsByClassName(root,className){
+  //   if (root.getElementsByClassName) {//特性侦测
+  //     return root.getElementsByClassName(className);//优先使用w3c规范
+  //   }else {
+  //     var element =  root.getElementsByTagName('*');//获取所有后代元素
+  //     var result = [];
+  //     for (var i = 0,element; element = element[i]; i++) {
+  //       if (hasClassName(element,className)) {  //选择包含类名的元素
+  //         result.push(element);
+  //       }
+  //     }
+  //     return result;
+  //   }
+  // }
+  //
+  // querySelector/All
+  // list = element.querySelector/All(selector) list不是动态 获取之后不会改变
+// var users = document.querySelector('#users');
+// users.querySelectorAll('.user');
+// document.querySelectorAll('#users .user');
+
+// 插入内容
+// 创建节点
+// 设置节点属性
+// 设置节点文本内容
+// 插入节点
+
+
+//创建节点
+// element = document.createElement(tagName);
+var a = document.createElement('a');
+// 设置节点内容
+//element.textContext  ie9不支持
+//element.innerText   同上 但不规范 ff不支持
+// 兼容写法火狐
+// if (!('innerText' in document.body)) {
+//   HTMLElement.prototype._defineGetter_('innerText',function(){
+//     return this.textContent;
+//   });
+//   HTMLElement.prototype._defineSetter_('innerText',function(s){
+//     return this.textContent = s;
+//   });
+// }
+
+a.innerText = 'xxx';
+
+// 插入节点 appendChild  添加在末尾
+// var achild = element.appendChild(achild);
+li.appendChild(a);
+
+// 在首位插入节点 insertBefore
+// var achild = element.insertBefore(achild,referenceChild);
+ul.insertBefore(li,ul.firstChild);
+
+// 删除节点 removeChild
+child = element.removeChild(child);
+
+// innerHTML 插入节点删除节点。。。 建议仅用于新节点、可控内容 不是用户操作的内容
+// 等于重新设置的html 原先设置的样式绑定的事件都没了
+// 内存泄露 安全问题
+// li.innerHTML = "<img src = '#'><a href = '#'>li</a>";
+
+
+</script>
+</body>
+</html>

@@ -5,48 +5,62 @@
   <meta charset="utf-8">
   <style type="text/css">
       body,div,button,p,i{margin: 0;padding: 0;}
+      body{
+        height: 100%;
+        width: 100%;
+
+      }
       .wrap{
         position: fixed;
         top: 50%;
         left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .popup{
-        width:300px;
+transform: translate(-50%,-50%);
+
+      }
+      .popup{
+        width: 300px;
+        /*min-height: 240px;*/
         border: 1px solid #ccc;
         border-radius: 5px;
+        margin: 0 auto;
+        position: relative;
     }
     .popup .title{
-        padding: 0 20px;
         background-color: #eee;
         height: 40px;
-        font: 14px/40px '宋体';
+        font:14px '微软雅黑';
+        line-height: 40px;
+
+
     }
     .popup .title p{
-        text-overflow:ellipsis;
-        overflow: hidden;
+        padding: 0 20px;
+        text-overflow: ellipsis;
         white-space: nowrap;
+        overflow: hidden;
     }
     .popup .title i{
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    top: 0px;
-    right: 15px;
+        position: absolute;
+        height: 10px;
+        width: 10px;
+        top: 0px;
+        right: 15px;
     }
     .popup .content{
         padding: 20px;
+        width: 260px;
         font: 12px/1.5em '宋体';
     }
-    .popup button{
+    .popup .content button{
         text-align: center;
-        background-color: blue;
         width: 80px;
         height: 30px;
-        border-radius: 5px;
+        background-color: blue;
         color: #fff;
-        margin-left: 90px;
+        border-radius: 5px;
         margin-top: 20px;
+        margin-left: 90px;
+
     }
 </style>
 </head>

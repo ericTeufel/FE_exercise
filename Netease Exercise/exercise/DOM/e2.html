@@ -5,9 +5,113 @@
   <meta charset="utf-8">
 </head>
 <body>
-<script type="text/javascript">
+  <ul>
+    <li data-id="123456" data-account-name="wwq"
+    data-name="魏文庆" data-email="wwq123@163.com"
+    data-mobile="13524543878">wwq</li>
+  </ul>
+  <script type="text/javascript">
   // element.dataset能够获取元素的自定义属性，但是低版本的ie不支持，如何在低版本的ie上兼容类似的功能。
+  function getDataSet(ele){
+    var attr = ele.attributes;
+    var res = [];
+    for(var i = 0, l = attr.length; i < l; i++){
+      var aName;
+      if (attr[i].nodeName.indexOf('data-')==0) {
+        aName = attr[i].nodeName.slice(5);
+        res[aName] = attr[i].nodeValue;
+      }
+    }
+    return res;
+  }
+  var a = document.getElementsByTagName('li')[0];
+  console.log(getDataSet(a));
+  console.log(getDataSet(a).email);
+  console.log(a.dataset);
 
-</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// <div id="users" data-id="123" name="ceshi" data-name="yl" data-sd="" data-class="ceshi">
+//     <h2>8882人在学习该课程</h2>
+//     <ul>
+//         <li data-class="user">Satoshi</li>
+//         <li class="user">春来草青</li>
+//     </ul>
+// </div>
+// <script type="text/javascript">
+// function dataset(element){
+//     // if(element.dataset){//如果支持element.dataset
+//     //     return element.dataset;//则使用W3C推荐标准
+//     // }else{//否则使用以下代码模拟实现
+//         var attributes=element.attributes;//获取节点的所有属性,数组形式
+//         var name=[],value=[];//定义两个数组保存属性名和属性值
+//         var obj={};//定义一个空对象
+//         for(var i=0;i<attributes.length;i++){//遍历节点的所有属性
+//             if(attributes[i].nodeName.slice(0,5)=="data-"){//如果属性名的前面5个字符符合"data-"
+//                 // 取出属性名的"data-"的后面的字符串放入name数组中
+//                 name.push(attributes[i].nodeName.slice(5));
+//                 //取出对应的属性值放入value数组中
+//                 value.push(attributes[i].nodeValue);
+//             }
+//         }
+//         for(var j=0;j<name.length;j++){//遍历name和value数组
+//             obj[name[j]]=value[j];//将属性名和属性值保存到obj中
+//         }
+//         return obj;//返回对象
+//     // }
+// }
+// var a =document.getElementById("users");
+// console.log(dataset(a));
+
+
+
+function getData(obj){
+  var data={};
+  var allAttr=obj.attributes;
+  for(var i=0,attr;attr=allAttr[i];i++){
+    var newAttr;
+    if(attr.nodeName.indexOf("data-")==0){
+                newAttr=attr.nodeName.slice(5); //截取属性名
+                newAttr=upperFirst(newAttr); //属性名格式化
+                data[newAttr]=attr.nodeValue; //对象属性赋值
+              }
+            }
+        return data;  //返回新的数据对象
+      }
+    // 把属性名修改为驼峰式
+    function upperFirst(s){
+      var newS="";
+      arr=s.split("-");
+      arr[0]=arr[0].toLowerCase();
+      for(var i=1;i<arr.length;i++){
+        arr[i]=arr[i][0].toUpperCase()+arr[i].slice(1).toLowerCase();
+      }
+      newS=arr.join("");
+      return newS;
+    }
+    // var a=document.getElementsByTagName("a")[0];
+    // console.log(getData(a)); //自定义方法
+    // console.log(a.dataset); //原生属性
+
+  </script>
 </body>
 </html>

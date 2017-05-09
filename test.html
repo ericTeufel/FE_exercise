@@ -1,73 +1,19 @@
-<!DOCTYPE html>
+​​<!DOCTYPE html>
 <html>
 <head>
-  <title></title>
+  <title>下拉菜单</title>
   <meta charset="utf-8">
-  <style type="text/css">
-      body,div,button,p,i{margin: 0;padding: 0;}
-      .wrap{
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-    }
-    .popup{
-        width:300px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-    }
-    .popup .title{
-        padding: 0 20px;
-        background-color: #eee;
-        height: 40px;
-        font: 14px/40px '宋体';
-    }
-    .popup .title p{
-        text-overflow:ellipsis;
-        overflow: hidden;
-        white-space: nowrap;
-    }
-    .popup .title i{
-    position: absolute;
-    height: 10px;
-    width: 10px;
-    top: 0px;
-    right: 15px;
-    }
-    .popup .content{
-        padding: 20px;
-        font: 12px/1.5em '宋体';
-    }
-    .popup button{
-        text-align: center;
-        background-color: blue;
-        width: 80px;
-        height: 30px;
-        border-radius: 5px;
-        color: #fff;
-        margin-left: 90px;
-        margin-top: 20px;
-    }
-</style>
+<link rel="stylesheet" type="text/css" href="index.css">
 </head>
-<body><div class="wrap">
-    <div class="popup">
-        <div class="title">
-            <p>标题栏1111111111111111111111111sssssssssssssssssssssssssssssssssssssddsds3214142sssss</p>
-            <i><img src="#"></i>
-        </div>
-        <div class="content">
-            <p>内容区段落</p>
-            <button type="conmit">确定</button>
-        </div>
+<body>
+  <div class="menu">
+    <button class="btn">按钮</button>
+    <div class="content">
+      <a href="#">下拉菜单项</a>
+      <a href="#">下拉菜单项</a>
+      <a href="#">下拉菜单项</a>
+      <a href="#">下拉菜单项</a>
     </div>
-</div>
+  </div>
 </body>
 </html>
-<!-- 总体：弹窗相对于浏览器窗口固定（即滚动条拖动时不影响弹窗位置）且水平垂直居中，弹窗总宽度302px，高度未知（由内容区的内容决定），圆角半径为5px，边框为1px的实线，边框颜色为#cccccc。
-标题栏：左右留白20px，高度为40px，文字为14px的微软雅黑且垂直居中，只显示单行文字且超出隐藏并显示“...”，背景色为#eeeeee。
-内容区：由一个段落和一个按钮组成，四周留白20px，背景为白色，段落与按钮距离20px，字体均为12px的宋体。
-段落：行高1.5倍。
-按钮：水平居中、宽80px、高30px、蓝底、白字、文字居中、圆角半径为5px。
-关闭：宽10px、高10px、距离上边框10px，距离右边框10px，鼠标为手型，假设关闭图标相对css的路径为“../x.png”
-http://img1.ph.126.net/qxhCS4Tgx6hIU7_cr634PQ==/6630265122210770224.png -->

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body,div,button,a{padding: 0;margin: 0;}
+        .menu{
+            display: inline-block;
+            font:12px '宋体';
+        }
+        .menu .but{
+            width: 50px;
+            height: 28px;
+            background-color: #eee;
+            border:1px solid #ddd;
+            margin-bottom:1px;
+        }
+        .menu .content{
+            display: none;
+            border:1px solid #ddd;
+        }
+        .menu .content a{
+            text-decoration: none;
+            display: block;
+            height: 30px;
+            padding: 0 10px;
+            line-height: 30px;
+            color: #000;
+        }
+        .menu .content a:nth-child(2){
+            border-top: 1px solid #ddd;
+            border-bottom: 1px solid #ddd;
+        }
+        .menu .content a:nth-child(3){
+           border-bottom: 1px solid #ddd;
+        }
+        .menu:hover .content{
+            display: block;
+        }
+        .menu .content a:hover{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <button class="but">按钮</button>
+        <div class="content">
+          <a href="#">下拉菜单项</a>
+          <a href="#">下拉菜单项</a>
+          <a href="#">下拉菜单项</a>
+          <a href="#">下拉菜单项</a>
+      </div>
+  </div>
+</body>
+</html>

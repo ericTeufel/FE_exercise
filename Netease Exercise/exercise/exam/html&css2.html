@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登录网易通行证</title>
+    <meta charset="utf-8">
+    <style type="text/css">
+        body,p,span,form,input,button,h3{
+            padding: 0;margin: 0;
+        }
+        .form{}
+        .form h3{
+            font: bold 14px/16px 'Microsoft YaHei';
+            margin-bottom: 15px;
+        }
+        .form p{
+            font: 12px '宋体';
+            margin-bottom: 15px;
+        }
+        .form input{
+            height: 20px;
+            width: 200px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        .form span{
+            width: 60px;
+            display: inline-block;
+        }
+        .form button{
+            width: 40px;
+            height: 20px;
+            background-color: #00f;
+            color: #fff;
+            font: 12px/20px '宋体';
+            margin-left: 60px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post" class="form">
+        <h3>登录网易通行证</h3>
+        <p><span>用户名：</span><input type="text" name="name"></p>
+        <p><span>密码：</span><input type="password" name="pwd"></p>
+        <button type="submit">登录</button>
+    </form>
+</body>
+ </html>

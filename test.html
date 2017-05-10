@@ -3,17 +3,28 @@
 <head>
   <title>下拉菜单</title>
   <meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="index.css">
+<style type="text/css">
+.side{
+ width: 200px;
+ float: left;
+}
+.main{
+ width: 600px;
+ float: left;
+ margin-left: 10px;
+}
+.parent{
+ clear: both;
+ overflow: hidden;
+}
+
+</style>
 </head>
 <body>
-  <div class="menu">
-    <button class="btn">按钮</button>
-    <div class="content">
-      <a href="#">下拉菜单项</a>
-      <a href="#">下拉菜单项</a>
-      <a href="#">下拉菜单项</a>
-      <a href="#">下拉菜单项</a>
-    </div>
-  </div>
+<div class="slide">
+  <!-- 图片省略 -->
+  <!-- 以下是指示器 -->
+  <div class="pointer"><i class="current"></i><i></i><i></i></div>
+</div>
 </body>
 </html>

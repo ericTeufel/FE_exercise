@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title></title>
+  <title>样式操作</title>
   <meta charset="utf-8">
+  <style type="text/css">
+    input{
+      border-color: blue;
+    }
+    .invalid{
+      border-color: red;
+      color: red;text-indent:
+    }
+  </style>
+  <link rel="stylesheet" type="text/css" href="#" id="href">
 </head>
 <body>
-<script type="text/javascript">
+<input type="text" name="text" id="i" >
+  <script type="text/javascript">
+// var i = document.getElementById('i');
+function $(id){
+  return document.getElementById(id);
+}
+// element.style
+// 更新一个属性需要一个语句 不是熟悉的CSS 样式混在逻辑中
+    // $('i').style.borderColor = 'red';
+    // $('i').style.color = '#ddd';
 
-</script>
+// element.style.cssText
+// 样式混在逻辑中
+// $('i').style.cssText='border-color:red;color:#ddd';
+
+// 更新class  推荐
+$('i').className += 'invalid';
+
+// 更换样式表  一次更新很多元素的样式 添加、删除样式表
+// $('skin').href = 'xxx.css';
+
+// 获取样式  element.style
+// element.style.color;如果没有内联样式 就无法获取 获取到的不一定是实际样式
+
+// window.getComputedStyle()  获取到的是只读的 ie9使用element.currentStyle
+// var style = window.getComputedStyle(elt: Element, pseudoElt?: DOMString)
+// alert(window.getComputedStyle($('i')).color);
+//
+//StyleSheetList 列表 通过下标获取元素
+
+
+
+
+
+  </script>
 </body>
 </html>

@@ -46,7 +46,14 @@ $('i').className += 'invalid';
 //StyleSheetList 列表 通过下标获取元素
 
 
-
+function getStyle(ele,prop){
+  if (window.getComputedStyle) {
+    return window.getComputedStyle(ele)[prop];
+  }else {
+    return ele.currentStyle[prop];
+  }
+}
+console.log(getStyle($('i'),"height"));
 
 
   </script>

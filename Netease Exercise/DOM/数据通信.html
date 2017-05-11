@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+  // AJAX
+var xhr = new XMLHttpRequest();               //创建XHR对象
+xhr.onreadystatechange = function(callback){    //处理返回数据    也可以监听xhr。onload事件 只有readyState==4 status==200才会触发
+  if (xhr.readyState == 4) {
+    if ((xhr.status >=200 && xhr.status < 300) || xhr.status == 304) {
+      callback(xhr.responseText);
+    }else {
+      alert('request was unsuccessful:' + xhr.status);
+    }
+  }
+}
+xhr.open('get','example.json',true);        //发送请求
+xhr.setRequestHeader('myHeader','myValue');
+xhr.send(null);
+
+open
+xhr.open(method,url[,async = true]);//开启请求 但不向服务器发送请求
+// method  请求方法get post delete put...
+//   url 请求资源的相对路径
+//  async   是否异步 默认true
+xhr.setRequestHeader(header,value);//open方法之后调用 不是一定要调用  在请求体头部设置字段
+//header  头部字段 如 Content-Type
+//value    值      application/x-www-form-urlencoded
+xhr.send([data = null]);//正式向服务器端发送请求
+//String 或 FormData类型
+
+//请求参数序列化
+// xhr.open('get','example.json?'+'name1=value&name2=value2',true);
+//对象序列化
+function serialize(data){
+  if (!data) {return ''};
+  var pairs = [];
+  for (var name in data) {
+    if (!data.hasOwnProperty(name)) {continue;}
+    if (typeof data[name] === 'function') {continue;}
+    var value = data[name].toString();
+    name = encodeURIComponent(name);
+    value = encodeURIComponent(value);
+    pairs.push(name + '=' + value);
+  }
+  return pairs.join('&');
+}
+// get请求
+var url = 'example.json?' + serialize(formdata);
+xhr.open('get',url,true);
+xhr.send(null);
+// post方法
+xhr.open('post','example.json',true);
+xhr.send(serialize(formdata));
+
+//同源策略 两个页面拥有相同的协议 端口和主机 那么两个页面就属于同一个源
+//url     http://www.163.com:8080/index.html?r=admin&lang=zh-CN#news
+//protocol http:
+//host      www.163.com:8080
+//hostname   www.163.com
+//port       8080
+//pathname   index.html
+//search     r=admin&lang=zh-CN
+//hash       news
+
+//跨域访问
+//不满足同源策略的资源访问叫跨域资源访问
+//w3c定义了 CORS 现代浏览器已支持
+//其他跨域技术  frame jsonp comet webSockets
+//
+//frame代理
+//优点 参照cors 支持各种请求方法
+//缺点 需要在目标服务器放置代理文件 首次加载代理文件之前的所有请求都会有所延迟  低版本浏览器受限于消息通讯机制 并发量大的请求发送返回时可能有较大延迟
+//jsonp
+//json with padding  填充式JSON
+//利用<script>可以跨域的原理 请求一段js代码实现跨域
+//script
+function handleResponse(response){
+  alert('my name is' + response.name);
+}
+var script = document.createElement('script');
+script.src = 'http:127.0.0.1:3000/json?callback=handleResponse';
+document.body.insertBefore(script,document.body.firstChild);
+//json.js
+handleResponse({name:'NetEase'});
+//
+//
+//
+
+
+</script>
+</body>
+</html>

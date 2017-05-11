@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    #div1{
+      position: absolute;top: 0;left: 0;
+      border: 1px solid #000;
+      width: 100px; height: 100px;
+    }
+  </style>
+</head>
+<body>
+  <div id="div1"></div>
+
+  <script type="text/javascript">
+  var addEvent = document.addEventListener ?
+    function (ele,type,listener,useCapture) {
+      ele.addEventListener(type, listener, useCapture);
+    } :
+    function (ele,type,listener,useCapture) {
+      ele.attachEvent('on'+type,listener);
+    };
+
+var delEvent  = document.removeEventListener ?
+    function (ele,type,listener,useCapture) {
+      ele.removeEventListener(type, listener, useCapture);
+    } :
+      function (ele,type,listener,useCapture) {
+        ele.detachEvent('on'+type,listener);
+      };
+
+
+    var ele = document.getElementById('div1');
+    var clientX,clientY,moving;
+    var mouseDownHandler = function(event){
+      event = event || window.event;
+      clientX = event.clientX;
+      clientY = event.clientY;
+      moving = !0;//true
+    }
+    var mouseMoveHandler = function(event){
+      if (!moving) {return;}
+      event = event || window.event;
+      var newClientX = event.clientX,
+          newClientY = event.clientY;
+      var left = parseInt(ele.style.left) || 0,
+          top = parseInt(ele.style.top) || 0;
+      ele.style.left = left + (newClientX - clientX) + 'px';//得到offset
+      ele.style.top = top + (newClientX - clientY) + 'px';
+      clientX = newClientX;
+      clientY = newClientY;
+    }
+    var mouseUpHandler = function(event){
+      moving = !1;
+    }
+    addEvent(ele,'mousedown',mouseDownHandler);
+    addEvent(ele,'mousemove',mouseMoveHandler);
+    addEvent(ele,'mouseup',mouseUpHandler);
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

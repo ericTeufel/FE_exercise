@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>DOM事件</title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <button id="btn">hello</button>
+  <script type="text/javascript">
+  // 事件流
+// 鼠标点击 键盘按键 输入框输入 页面加载完成
+// 捕获 capture phase 从window->触发事件的父节点 ie低版本中没有捕获
+// 触发 target              从触发元素->父节点
+// 冒泡 bubble phase  父节点->window           load事件在内部分事件是没有bubble的
+
+
+// 注册事件
+// eventTarget.addEventListener(type,listener[,useCapture])
+function $(ele) {
+  return document.getElementById(ele);
+}
+var clickHandler = function(event){ //event事件对象
+    event = event || window.event;   //ie低版本使用window.event
+    alert('hello');
+}
+$('btn').addEventListener('click', clickHandler, false);
+// $('btn').onclick = clickHandler;//只能注册一个事件处理函数
+
+//取消事件注册
+$('btn').removeEventListener('click', clickHandler, false);
+// $('btn').onclick=null;
+
+// 事件触发
+// eventTarget.dispatchEvent(type)
+
+// ie678兼容
+// 事件注册与取消
+// attachEvent/detachEvent
+// 事件触发
+// fireEvent(e)
+// nocapture
+
+
+// 浏览器兼容写法
+var addEvent = document.addEventListener ?
+    function (ele,type,listener,useCapture) {
+      ele.addEventListener(type, callback, capture);
+    } :
+    function (ele,type,listener,useCapture) {
+      ele.attachEvent('on'+type,listener);
+    };
+
+var delEvent  = document.removeEventListener ?
+    function (ele,type,listener,useCapture) {
+      ele.removeEventListener(type, callback, capture);
+    } :
+      function (ele,type,listener,useCapture) {
+        ele.detachEvent('on'+type,listener);
+      };
+
+// 事件对象
+// var clickHandler = function(event){ //event事件对象
+//     event = event || window.event;   //ie低版本使用window.event
+//     alert('hello');
+// }
+
+// 属性
+//     type
+//     target（srcElement）
+//     currentTarget//如果事件设在父节点上  那么当前目标就是父节点
+
+// 方法
+//  stopPropagation()(w3c)//阻止事件冒泡
+// preventDefault()(w3c)
+// stopImmediatePropagation()(w3c)
+
+
+// 阻止事件传播
+//  stopPropagation()(w3c)//阻止事件冒泡
+// event.cancelBubble=true  (ie)
+// event.stopImmediatePropagation()(w3c) 阻止冒泡且阻止当前节点的之后事件
+
+
+// 阻止默认行为
+// event.preventDefault() (w3c)
+// event.returnValue=false (ie)
+
+// 事件分类
+// mouseEvent
+// wheelEvent
+// focusEvent
+//InputEvent
+//keyboardEvent
+//Event
+//
+//window
+//   load
+//     unload 退出页面
+// error
+// abort
+
+// Image
+// load
+// error
+// abort
+// <image alt=‘photo’ src=‘xxxxx.jpg’ onerror=’this.src=‘xxxxxx/default.jpg''>
+
+// UIEvent
+// 事件代理
+//   <ul>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+//     <li></li>
+//   </ul>
+// 因为冒泡 所以把li上的事件注册到ul上
+// 优点
+// 不用注册那么多事件 内存分配少不用配置那么多handler
+// 缺点
+// 事件太多的话 管理复杂难以维护
+</script>
+</body>
+</html>

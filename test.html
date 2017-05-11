@@ -1,30 +1,58 @@
 ​​<!DOCTYPE html>
 <html>
 <head>
+<meta charset="utf-8">
   <title>下拉菜单</title>
-  <meta charset="utf-8">
-<style type="text/css">
-.side{
- width: 200px;
- float: left;
-}
-.main{
- width: 600px;
- float: left;
- margin-left: 10px;
-}
-.parent{
- clear: both;
- overflow: hidden;
-}
+  <style>
+  *{
+          color:black;
+          font:12px "sim-sun";
+          padding:0;
+          margin:0;
+      }
+    .dropdown{
+        position:relative;
+        display:inline-block;
+    }
+      .button{
+          width:50px;
+          height: 28px;
+          background-color: #eee;
+          line-height: 28px;
+          text-align: center;
+      }
+    .dropdown-content{
+        border:1px solid #ddd;
+        position:absolute;
+        top:29px;
+        display:none;
+    }
 
-</style>
-</head>
-<body>
-<div class="slide">
-  <!-- 图片省略 -->
-  <!-- 以下是指示器 -->
-  <div class="pointer"><i class="current"></i><i></i><i></i></div>
-</div>
-</body>
-</html>
+    .dropdown:hover .dropdown-content{
+        display:block;
+    }
+    .dp-content:hover{
+        background-color: #ddd;
+    }
+    .dp-content{
+        border:1px solid #ddd;
+        width:75px;
+        height:28px;
+        line-height: 28px;
+        text-align: center;
+    }
+  </style>
+  </head>
+  <body>
+      <div class="dropdown">
+        <p class="button">按钮</p>
+        <div class="dropdown-content">
+            <p class="dp-content">选项1</p>
+            <p class="dp-content">选项2</p>
+            <p class="dp-content">选项3</p>
+            <p class="dp-content">选项4</p>
+        </div>
+    </div>
+  </body>
+  </html>
+

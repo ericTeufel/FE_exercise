@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+// js动画
+// 三要素
+// 定时器  setInterval setTimeout  requestAnimationFrame
+//  doom对象
+// 属性width、height、opacity、left
+var intervalId = setInterval(func, delay, arguments);//改变的操作 时间间隔 func变量可选
+clearInterval(intervalId);    //清除
+
+var intervalID2 = setTimeout(func, delay, arguments);//操作  后两者可选 不设置时间则立即触发 异步
+clearTimeout(intervalID2);
+两者区别在于 setTimeout delay也是可选 同时在指定触发时间之后只执行一次 setInterval每隔指定时间会重复执行
+
+var intervalID3 = requestAnimationFrame(func);//按显示器刷新频率自动刷新
+cancelAnimationFrame(intervalID3);
+
+// 常见动画实现
+var animation = function(ele,attr,from,to){//dom对象 要改变的属性 属性要从from改变至to
+  var distance = Math.abs(to-from);       //目的地-起始地得到距离
+  var stepLength = distance/100;          //除以次数得到步长
+  var sign = (to - from)/distance;
+  var offset = 0;
+  var step = function(){
+    var tmpOffset = offset + steLength;
+    if (tmpOffset < distance) {               //步长可能不是整数 所以每次计算前判断是否超过目的地
+      ele.style[attr] = from + tmpOffset*sign + 'px';
+      offset = tmpOffset;
+    }else {
+      ele.style[attr] = to +'px';             //超过的话直接到达目的地
+      clearInterval(intervalId);
+    }
+  }
+  ele.style[attr] = from + 'px';
+  var intervalId = setInterval(step, 10);
+}
+
+
+
+//轮播点击
+var process = function(prcsswrap,drth,intrvl,callback){ //进度条  对象父元素 进度条时间 定时器间隔 回调函数
+  var width = prcsswrap.clientWidth;
+  var prcss = prcsswrap.getElementsByClassName('prcss')[0];//获取对象
+  var count = drtn/intrvl;
+  var offset = Math.floor(width/count);
+  var tmpCurrent = CURRENT;
+
+  var step = function(){                                    //修改属性值
+    if (tmpCurrent !== CURRENT) {
+      prcss.style.width = '0px';
+      return;
+    }
+    var des = getNum(prcss.style.width) + offset;
+    if (des<width) {                          //当前值+位移值会不会超过目的地
+      prcss.style.width = getNum(prcss.style.width) + offset + 'px';//没超过 则正常进行
+    }else if(des=width){                            //到达目的地
+      clearInterval(intervalId);                    //清除定时器
+      prcss.style.width = '0px';                    //初始化
+      PREV = CURRENT;
+      CURRENT = NEXT;
+      NEXT ++;
+      NEXT = NEXT%NUMBER;
+      if (callback) {
+        callback();                             //调用回调函数
+      }
+    }else {
+      prcss.style.width = width + 'px';           //如果超过了目的地的值 那么僵当前值设为目的地
+    }
+  }
+
+  var intervalId = setInterval(step, intrvl);                 //触发定时器
+};
+
+
+
+
+
+
+</script>
+</body>
+</html>

@@ -78,19 +78,86 @@ xhr.send(serialize(formdata));
 //json with padding  填充式JSON
 //利用<script>可以跨域的原理 请求一段js代码实现跨域
 //script
-function handleResponse(response){
-  alert('my name is' + response.name);
+// function handleResponse(response){
+//   alert('my name is' + response.name);
+// }
+// var script = document.createElement('script');
+// script.src = 'http:127.0.0.1:3000/json?callback=handleResponse';
+// document.body.insertBefore(script,document.body.firstChild);
+// //json.js
+// handleResponse({name:'NetEase'});
+
+
+
+//get方法封装
+function get (url,options,callback) {
+  var xhr = window.XMLHttpRequest ? new XMLHttpRequest(): new ActiveObject("Microsoft.XMLHTTP");
+  xhr.onreadystatechange = function  (callback) {
+    if (xhr.readyState == 4) {
+      if ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304) {
+        callback(xhr.responseText);
+      }else {
+        alert('request was unsuccessful:' + xhr.status)
+      }
+    }
+  }
+  xhr.open('get',url+'?'+serialize(options),true);
+  xhr.send(null);
 }
-var script = document.createElement('script');
-script.src = 'http:127.0.0.1:3000/json?callback=handleResponse';
-document.body.insertBefore(script,document.body.firstChild);
-//json.js
-handleResponse({name:'NetEase'});
-//
-//
-//
+
+function serialize(data){
+  if (!data) {return ''};
+  var pairs = [];
+  for (var name in data) {
+    if (!data.hasOwnProperty(name)) {continue;}
+    if (typeof data[name] === 'function') {continue;}
+    var value = data[name].toString();
+    name = encodeURIComponent(name);
+    value = encodeURIComponent(value);
+    pairs.push(name + '=' + value);
+  }
+  return pairs.join('&');
+}
+get(‘/information’, {name: ‘netease’, age: 18}, function (data) {
+  console.log(data);
+});
 
 
-</script>
-</body>
-</html>
+// post方法封装
+function post(url,options,callback){
+  var xhr = window.XMLHttpRequest ?  new XMLHttpRequest() : new ActiveObject('Microsoft.XMLHTTP');
+  xhr.onreadystatechange = function(callback){
+    if (xhr.readyState == 4) {
+      if ((xhr.status >=200 && xhr.status <300) || xhr.status == 304) {
+        callback(xhr.responseText);
+      } else {
+        alert('request was unsuccessful:' + xhr.status);
+      }
+    }
+  }
+  xhr.open('post', url, true);
+  xhr.send(serialize(options));
+}
+
+function serialize(data){
+  if (!data) {return ''};
+  var pairs = [];
+  for (var name in data) {
+    if (!data.hasOwnProperty(name)) {continue;}
+    if (typeof data[name] === 'function') {continue;}
+    var value = data[name].toString();
+    name = encodeURIComponent(name);
+    value = encodeURIComponent(value);
+    pairs.push(name + '=' + value);
+  }
+  return pairs.join('&');
+}
+
+post('/addUser', {name: 'jerry', age: 1}, function(data) {
+        // 处理返回数据
+ });
+
+
+    </script>
+  </body>
+  </html>

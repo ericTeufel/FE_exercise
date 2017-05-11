@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <script type="text/javascript">
+// 读取cookie
+function getcookie () {
+  var cookie = {};
+  var all = document.cookie;
+  if (all === '') {return cookie;}
+  var list = all.split(';');
+  for(var i = 0, l = list.length; i < l; i++){
+    var item = list[i];
+    var p = item.indexOf('=');
+    var name = item.substring(0, p);
+    name = decodeURIComponent(name);
+    var value = item.substring(p+1);
+    value = decodeURIComponent(value);
+    cookie[name] = value;
+  }
+  return cookie;
+}
+
+设置/修改
+document.cookie = 'name=value';
+
+function setCookie (name,value,expires,path,domain,secure) {
+  var cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+  if (expires) {cookie += '; expires=' + expires.toGMTString(0);}
+  if (path) {cookie += '; path=' + path;}
+  if (domain) {cookie += '; domain=' + domain;}
+  if (secure) {cookie += '; secure=' + secure;}
+  document.cookie = cookie;
+}
+
+// 删除
+function removeCookie (name, path,domain) {
+  document.cookie = name + '=' + '; path=' + path + '; domain=' + domain + '; max-age=0';
+}
+
+// Storage
+// localStorage ，默认有效期为永久                        作用域由协议主机名端口决定
+// sessionStorage 默认为浏览器会话时间                                窗口 协议 主机名端口 不同窗口不共享
+
+//     大小5mb
+
+
+// js对象
+// 读取  localStorage.name
+// 添加/修改 localStorage.name = ‘xx’//string
+// 删除                delete.localStorage.name
+
+// api
+// 可以向下兼容 不支持则用cookie模拟
+// 获取键值对数量
+localStorage.length
+// 读取
+localStorage.getItem('name'),localStorage.key(i)
+// 添加修改
+localStorage.setItem('name', 'xxx')
+// 删除对应
+localStorage.removeItem('name')
+//删除所有
+localStorage.clear();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

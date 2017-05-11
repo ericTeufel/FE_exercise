@@ -1,58 +1,48 @@
 ​​<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="utf-8">
-  <title>下拉菜单</title>
-  <style>
-  *{
-          color:black;
-          font:12px "sim-sun";
-          padding:0;
-          margin:0;
-      }
-    .dropdown{
-        position:relative;
-        display:inline-block;
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style media="screen">
+    *{
+       margin:0;
+       padding:0;
     }
-      .button{
-          width:50px;
-          height: 28px;
-          background-color: #eee;
-          line-height: 28px;
-          text-align: center;
-      }
-    .dropdown-content{
-        border:1px solid #ddd;
-        position:absolute;
-        top:29px;
-        display:none;
+    .form1{
+      border:1px solid #ddd;
     }
-
-    .dropdown:hover .dropdown-content{
-        display:block;
+    .button1{
+      width: 50px;
+      height: 28px;
+      background-color: #eee;
     }
-    .dp-content:hover{
-        background-color: #ddd;
+    .select1{
+      float: top;
+      height: 30px;
+      border-color: white;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top:1px;
     }
-    .dp-content{
-        border:1px solid #ddd;
-        width:75px;
-        height:28px;
-        line-height: 28px;
-        text-align: center;
+    a:hover{
+      background:#ddd
     }
   </style>
-  </head>
-  <body>
-      <div class="dropdown">
-        <p class="button">按钮</p>
-        <div class="dropdown-content">
-            <p class="dp-content">选项1</p>
-            <p class="dp-content">选项2</p>
-            <p class="dp-content">选项3</p>
-            <p class="dp-content">选项4</p>
-        </div>
-    </div>
-  </body>
-  </html>
+</head>
+<body>
+  <div class="form1">
+    <button class="button1" type="button" name="button">按钮</button>
+  <div class="select1">
+      <select id="menu">
+        <option value="0"><a href="">下拉菜单项</a></option>
+        <option value="1" selected=""><a href="">下拉菜单项</a></option>
+        <option value="2"><a href="">下拉菜单项</a></option>
+        <option value="3"><a href="">下拉菜单项</a></option>
+      </select>
+  </div>
+  </div>
+</body>
+</html>
 

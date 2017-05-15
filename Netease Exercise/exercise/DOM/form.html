@@ -33,13 +33,7 @@
       {text:'2.3 事件应用',value:'2.3'}
       ]
   };
-//   function addEvent(node,event,handler){
-//     if (!!node.addEventListener){
-//         node.addEventListener(event,handler,!1);
-//     }else{
-//         node.attachEvent('on'+event,handler);
-//     }
-// }
+
 var demoForm = document.forms.course;
 var f = demoForm.chapter;
 // console.log(chapters[0]);
@@ -48,23 +42,12 @@ var f = demoForm.chapter;
         for(var i=select.length-1;i>0;i--){
             select.remove(i);
         }
-        for(var i=0,l=list.length,data;i<l;i++){
-            data = list[i];
-            var option = new Option(
-                data.text,data.value
-                );
-            select.add(option);
-        }
+       list.forEach(function(data){
+        var option = new Option(data.text,data.value);
+        select.add(option);
+     });
     }
         // 切换章目录
-        // addEvent(
-        //     demoForm.chapter,
-        //     'change',function(event){
-        //         var value = demoForm.chapter.value,
-        //         list = sections[value]||[];
-        //         fillSelect(demoForm.section,list);
-        //     }
-        //     );
         f.addEventListener('change',function(event){
             var value = f.value,
             list = sections[value] || [];

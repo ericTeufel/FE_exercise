@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>利用iframe进行表单的无刷新提交</title>
+        <style type="text/css">
+            .f-hidden {
+                display: none;
+            }
+        </style>
+    </head>
+    <body>
+        <iframe id="targetFrame" name="targetFrame" class="f-hidden"></iframe>
+        <form action="./api" method="post" target="targetFrame">
+            <p><label>请填写正确的内容：<input type="text" name="content"></label></p>
+            <button type="submit">提交内容</button>
+        </form>
+    </body>
+    <script type="text/javascript">
+        //获取iframe
+        var targetFrame = document.getElementById('targetFrame');
+        //注册onload事件
+        addEvent(targetFrame, 'load', function(event){
+            try{
+                var result = JSON.parse(targetFrame.contentWindow.document.body.textContent);
+                if(result.code === 200){
+                    //正确返回提交的结果
+                    callback(result.result.uname,result.result.psw);
+                }
+            }catch(e){
+                //捕获错误
+            }
+        });
+        //兼容IE注册事件
+        function addEvent(node, type, handler){
+             if (node.addEventListener){
+                  node.addEventListener(type, handler, false);
+             }else if(node.attachEvent){
+                  node.attachEvent('on' + type, handler);
+             }else{
+                  node['on' + type] = handler;
+             }
+        }
+    </script>
+
+</html>

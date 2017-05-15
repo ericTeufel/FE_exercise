@@ -63,14 +63,43 @@
     ];
 // console.log(data.length);
 function cascade(selectList,data){
+    //取出并赋值第一级菜单
+    // fillSelect(selectList[0],data);
+    // fillSelect(selectList[1],data[1].list);
+    // fillSelect(selectList[2],data[0].list);
+    // console.log(data[2].list[0].list[0])
+    var selectData = [];
+    for (var i = 0; i < selectList.length; i++) {
+        for (var j = 0; j < i; j++) {
+            selectData = data[0].list;
+        }
+        fillSelect(selectList[i],selectData);
+        selectList[i].addEventListener('change', function(event){
+            var target = event.target.value;
+            var reg = /\d+/g;
+            var arr = target.match(reg);
+            console.log(arr);
 
+
+
+
+
+
+        });
+    }
 }
 function fillSelect(select,list){
-
+ for(var i=select.length-1;i>0;i--){
+            select.remove(i);
+        }
+     list.forEach(function(data){
+        var option = new Option(data.text,data.value);
+        select.add(option);
+     });
 }
 var form = document.forms.l;
 var selectList = [form.l1,form.l2,form.l3];
-// cascade(selectList,data);
+cascade(selectList,data);
     </script>
   </body>
   </html>

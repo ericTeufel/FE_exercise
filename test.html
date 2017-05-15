@@ -64,33 +64,36 @@
 // console.log(data.length);
 function cascade(selectList,data){
     for(var i = 0;i<selectList.length;i++){
-        // console.log(selectList[i])
+        // 这里selectList为依次级联的选择器元素列表【s1,s2,s3】
         var selectData = data;
-
+        // 填充每个选择框
         for(var j = 0;j<i;j++){
+          // 初始化，选择每一级的第一组
             selectData = selectData[0].list;
         }
         fillSelect(selectList[i],selectData);
-
+        // 框变动事件
         selectList[i].addEventListener('change',function(event){
                 var targetStr = event.target.value;
                 var reg = /\d+/g;
                 var arr = targetStr.match(reg);
-
+                // value后面是1.2 1.2.2之类 这样按数字匹配出来放到组里
                 var num = arr.length;
                 if (num>=selectList.length) {
+                  // 如果是最后一级则跳出
                     return;
                 }
-
+                  // 获取需要变动的选择框
                 var newSelectList = [];
                 for(var k = num; k < selectList.length; k++){
                     newSelectList.push(selectList[k]);
                 }
-
+                  // 需要变动的数据
                 var newData = data;
                 for(var z=0;z<num;z++){
                     newData = newData[parseInt(arr[z]-1)].list;
                 }
+                // 重新赋值
                 cascade(newSelectList,newData);
         });
     }

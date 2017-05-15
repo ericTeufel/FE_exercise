@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>drawCircle</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<canvas width="300" height="300" id="circle">
+<!-- 兼容说明 -->
+您的浏览器不支持canvas动画，请更新或更换您的浏览器
+</canvas>
+<script type="text/javascript">
+// 学习资料 https://developer.mozilla.org/zh-CN/docs/Web/API/Canvas_API/Tutorial/Drawing_shapes
+var ctx = document.getElementById('circle').getContext('2d');
+//新建一条路径，生成之后，图形绘制命令被指向到路径上生成路径。
+ctx.beginPath();
+//圆心位置 半径  绘制起始、结束弧度 绘制方向默认顺时针
+ctx.arc(150,150,100,0,Math.PI*2,true);
+//设置填充色
+ctx.fillStyle = "#6a83ff";
+//设置边框色
+ctx.strokeStyle = "#4d4e53";
+//绘制填充
+ctx.fill();
+//绘制边框
+ctx.stroke();
+//闭合路径之后图形绘制命令又重新指向到上下文中。
+ctx.closePath();
+</script>
+</body>
+</html>

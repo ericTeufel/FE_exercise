@@ -29,28 +29,24 @@
 // 请写出函数parseQuery的实现代码。
 
 
-// function parseQuery(str){
-// var res=[];
-// var arr = str.replace(/\s/g,'').replace(/&$/g,'').split('&');
-// // console.log(arr);
-// for (var i = 0,l = arr.length; i < l; i++) {
-//       var tmp = arr[i].split('=');
-//       if (tmp[1]== undefined) {
-//         tmp.push('');
-//       }
-//       // console.log(tmp);
-//       var name = tmp.shift();
-//       // console.log(tmp);
-//       var val = tmp.join('=');
-//       console.log(res);
-//       res[name] = val;
-//     }
-// return res;
-// }
-// var tom = parseQuery("name= tom &age=12&gender&");
-// // console.log(tom);
-// var jerry = parseQuery("name=jerry&age=1");
-// console.log(jerry);
+function parseQuery(str){
+var res=[];
+var arr = str.replace(/\s/g,'').replace(/&$/g,'').split('&');
+for (var i = 0,l = arr.length; i < l; i++) {
+      var tmp = arr[i].split('=');
+      if (tmp[1]== undefined) {
+        tmp.push('');
+      }
+      var name = tmp.shift();
+      var val = tmp.join('=');
+      res[name] = val;
+    }
+return res;
+}
+var tom = parseQuery("name= tom &age=&gender&");
+console.log(tom);
+var jerry = parseQuery("name=jerry&age=1");
+console.log(jerry);
 
 
 
@@ -89,18 +85,18 @@
 // var tom = new Person("Tom", 12);
 //   tom.introduce();    返回值： "I am Tom, I am 12 years old! "
 // 请写出构造函数Person的实现代码。
-// function Person(name,age){
-//   this.name = name;
-//   this.age = age;
-// }
-// Person.prototype.introduce = function(){
-//     console.log('I am '+this.name+', I am '+this.age+' years old!');
-// }
-// var jerry = new Person('jerry',2);
-// jerry.introduce();
+function Person(name,age){
+  this.name = name;
+  this.age = age;
+}
+Person.prototype.introduce = function(){
+    console.log('I am '+this.name+', I am '+this.age+' years old!');
+}
+var jerry = new Person('jerry',2);
+jerry.introduce();
 
-// var tom = new Person('Tom',12);
-// tom.introduce();
+var tom = new Person('Tom',12);
+tom.introduce();
 
 
 
@@ -116,16 +112,16 @@
 //     '&lt;inputtype=&quot;text&quot; name=&quot;mobile&quot;&gt; '
 // 请写出函数escapeHTML的实现代码。
 
-// function escapeHTML(str){
-//       var res = str.replace(/&/g,'&amp;').
-//                     replace(/"/g,'&quot;').
-//                     replace(/>/g,'&gt;').
-//                     replace(/</g,'&lt;');
-//       return res;
-// }
+function escapeHTML(str){
+      var res = str.replace(/&/g,'&amp;').
+                    replace(/"/g,'&quot;').
+                    replace(/>/g,'&gt;').
+                    replace(/</g,'&lt;');
+      return res;
+}
 
-// console.log(escapeHTML('<div>Tom&Jerry</div> '));
-// console.log(escapeHTML('<input type="text" name="mobile"> '));
+console.log(escapeHTML('<div>Tom&Jerry</div> '));
+console.log(escapeHTML('<input type="text" name="mobile"> '));
 
 // 实现type函数用于识别标准类型和内置对象类型，语法如下：
 // var t = type(obj);
@@ -144,11 +140,11 @@
 // var t = type(function(){}) // t==="function"
 
 
-function type(obj){
-var res =  (obj===undefined||obj===null)?obj:(obj.constructor&&obj.constructor.toString().match(/function\s*([^(]*)/)[1]);
-console.log('t === "'+res+'"');
-}
-var t = type(5);
+// function type(obj){
+// var res =  (obj===undefined||obj===null)?obj:(obj.constructor&&obj.constructor.toString().match(/function\s*([^(]*)/)[1]);
+// console.log('t === "'+res+'"');
+// }
+// var t = type(5);
 
 
 

@@ -60,8 +60,10 @@ var process = function(prcsswrap,drth,intrvl,callback){ //进度条  对象父�
     var des = getNum(prcss.style.width) + offset;
     if (des<width) {                          //当前值+位移值会不会超过目的地
       prcss.style.width = getNum(prcss.style.width) + offset + 'px';//没超过 则正常进行
+      // setTimeout(step, intrvl);
+      // requestAnimationFrame(step);
     }else if(des=width){                            //到达目的地
-      clearInterval(intervalId);                    //清除定时器
+      clearInterval(intervalId);                    //清除定时器 setTimeout、requestAnimationFrame;不需要清除定时器
       prcss.style.width = '0px';                    //初始化
       PREV = CURRENT;
       CURRENT = NEXT;
@@ -76,9 +78,12 @@ var process = function(prcsswrap,drth,intrvl,callback){ //进度条  对象父�
   }
 
   var intervalId = setInterval(step, intrvl);                 //触发定时器
+  // var timeoutId = setTimeout(step, intrvl);
+  // var requestId = requestAnimationFrame(step);
 };
 
-
+//左右移动
+//
 
 
 

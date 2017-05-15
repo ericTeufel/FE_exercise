@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <!-- 本地图片预览 -->
+  <form>
+    <input type="file" accept="image/*" multiple>
+
+    <select name="course">
+      <option>课程选择</option>
+      <optgroup label="1.DOM基础">
+        <option value="1.1">1.1 文档树</option>
+        <option value="1.2">1.2 节点操作</option>
+        <option value="1.3">1.3 元素遍历</option>
+        <option value="1.4">1.4 样式操作</option>
+        <option value="1.5">1.5 属性操作</option>
+        <option value="1.6">1.6 表单操作</option>
+      </optgroup>
+      <optgroup label="2.事件模型">
+        <option value="2.1">2.1 事件类型</option>
+        <option value="2.2">2.2 事件模型</option>
+        <option value="2.3">2.3 事件应用</option>
+      </optgroup>
+    </select>
+  </form>
+  <hr>
+  <form name="course">
+    <select name="chapter">
+      <option>请选择章目录</option>
+    </select>
+    <select name="section">
+      <option>请选择节目录</option>
+    </select>
+  </form>
+  <script type="text/javascript">
+  //选中图片的缩略显示
+    // file.addEventListener('change', function(event){
+    //   var files = Array.prototype.slice.call(
+    //     event.target.files,0
+    //     );
+    //   files.forEach(function(item){
+    //     file2dataurl(item,function(url){
+    //       var image = new Image();
+    //       parent.appendChild(image);
+    //       image.src = url;
+    //     });
+    //   });
+    // });
+
+// 级联下拉菜单的数据定义
+var chapters = [
+  {text:'1. DOM基础',value:'1'},
+  {text:'2.事件模型',value:'2'}
+];
+var sections  = {
+  1:[
+  {text:'1.1 文档树',value:'1.1'},
+  {text:'1.2 节点操作',value:'1.2'},
+  {text:'1.3 元素遍历',value:'1.3'},
+  {text:'1.4 样式操作',value:'1.4'},
+  {text:'1.5 属性操作',value:'1.5'},
+  {text:'1.6 表单操作',value:'1.6'}
+  ],
+  2:[
+  {text:'2.1 事件类型',value:'2.1'},
+  {text:'2.2 事件模型',value:'2.2'},
+  {text:'2.3 事件应用',value:'2.3'}
+  ]
+};
+function fillSelect(select,list){
+  for(var i = select.length-1;i>0;i--){//倒序遍历 把原有的选项删除
+    select.remove(i);
+  }
+  list.forEach(function(data) {
+    var option = new Option(data.text,data.value);
+    select.add(option);
+  });
+}
+  fillSelect(chapterSelect,chapters);
+  chapterSelect.addEventListener('change',function (event) {
+    var value = event.target.value,
+        list = sections[value] || [];
+        fillSelect(selectionSelect,list);
+  });
+
+
+// - @输入提示
+//   - oninput
+//   - selectionStart
+//   - setRangeText
+textarea.addEventListener('input',function(event){
+  var target = event.target,
+  cursor = target.selectionStart;
+  if (target.value.charAt(cursor-1)==='@') {
+    doShowAtList(function(name){
+      var end = cursor+name.length;
+      target.setRangeText(
+        name,cursor,end,'end');
+    });
+  }
+});
+  </script>
+</body>
+</html>

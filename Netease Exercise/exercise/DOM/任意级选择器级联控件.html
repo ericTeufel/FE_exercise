@@ -63,49 +63,14 @@
     ];
 // console.log(data.length);
 function cascade(selectList,data){
-    for(var i = 0;i<selectList.length;i++){
-        // console.log(selectList[i])
-        var selectData = data;
 
-        for(var j = 0;j<i;j++){
-            selectData = selectData[0].list;
-        }
-        fillSelect(selectList[i],selectData);
-
-        selectList[i].addEventListener('change',function(event){
-                var targetStr = event.target.value;
-                var reg = /\d+/g;
-                var arr = targetStr.match(reg);
-
-                var num = arr.length;
-                if (num>=selectList.length) {
-                    return;
-                }
-
-                var newSelectList = [];
-                for(var k = num; k < selectList.length; k++){
-                    newSelectList.push(selectList[k]);
-                }
-
-                var newData = data;
-                for(var z=0;z<num;z++){
-                    newData = newData[parseInt(arr[z]-1)].list;
-                }
-                cascade(newSelectList,newData);
-        });
-    }
 }
 function fillSelect(select,list){
-    select.innerHTML = '';
-    list.forEach(function(data){
-        var option = new Option(data.text,data.value);
-        select.add(option);
-    });
+
 }
 var form = document.forms.l;
 var selectList = [form.l1,form.l2,form.l3];
-cascade(selectList,data);
+// cascade(selectList,data);
     </script>
   </body>
   </html>
-

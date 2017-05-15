@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<script type="text/javascript">
+  // 在当前窗口新开一个子窗口， url为” http://www.163.com”,宽度为400像素，高度为350像素，name值为“subwindow”，显示状态栏和工具栏，可拖动改变大小。5秒钟后自动关闭子窗口。请写出相应的代码。
+var w = window.open('http://www.163.com','subwindow','width=400,height=350,status=yes,toolbar=yes,resizable=yes');
+setTimeout(function(){w.close();},5000);
+</script>
+</body>
+</html>

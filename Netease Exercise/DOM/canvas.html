@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>canvas</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<canvas id="t" width="300" height="150"></canvas>
+<script type="text/javascript">
+// 渲染上下文
+// var canvas = document.getElementById('t');
+// var ctx = canvas.getContext('2d');
+
+// ctx.globalCompositeOperation = 'destination-over';//全局的组合方式 source-over source-in source-out source-atop destination-over destination-in destination-out destination-atop lighter darker copy xor
+//基本绘图步骤  清除画布  绘制图形-保存渲染上下文-绘制图形-恢复渲染上下文 again and again
+
+var sun =new Image();
+var moon = new Image();
+var earth = new Image();
+function init(){
+  sun.src = 'Canvas_sun.png';
+  moon.src = 'Canvas_moon.png';
+  earth.src = 'Canvas_earth.png';
+  window.requestAnimationFrame(draw);
+}
+function draw(){
+  var ctx = document.getElementById('t').getContext('2d');
+
+  ctx.globalCompositeOperation = 'destination-over';
+  ctx.clearRect(0,0,300,300);
+
+  ctx.fillStyle = 'rgba(0,0,0,0.4)';
+  ctx.StrokeStyle = 'rgba(0,153,255,0.4)';
+  ctx.save();                     //保存画布状态
+  ctx.translate(150,150,);
+
+  // earth
+  /var time = new new Date();
+  ctx.rotate(((2*Math.PI)/60)*time.getSeconds() + ((2*Math.PI)/60000)*time.getMilliseconds());
+  ctx.translate(105,0);
+  ctx.fillRect(0,-12,50,24);//shadow
+  ctx.drawImage(earth,-12,-12);
+
+  // moon
+  ctx.rotate(((2*Math.PI)/6)*time.getSeconds() + ((2*Math.PI)/6000)*time.getMilliseconds());
+  ctx.translate(0,28.5);
+  ctx.drawImage(moon,-3.5,-3.5);
+
+  ctx.restore();                //恢复画布状态
+
+  ctx.beginPath();
+  ctx.arc(150,150,105,0,Math.PI*2,false);//earth orbit
+  ctx.stroke();
+
+  ctx.drawImage(sun,0,0,300,300);
+
+  window.requestAnimationFrame(draw);
+
+}
+init();
+
+</script>
+</body>
+</html>

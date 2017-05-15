@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+<audio>
+  <source src="#.mp3" type="audio/mpeg">
+  <source src="#.wav" type="audio/x-wav">
+  <source src="#.ogg" type="audio/ogg">
+</audio>
+<video width="" height="">
+  <source src="xxx.webm" type="video/webm;codecs='vp8,vorbis'">
+  <source src="xxx.mp4" type="video/mp4;codecs='avc1.42E01E,mp4a.40.2'">
+</video>
+<script type="text/javascript">
+  // 检测兼容性
+var a = new Audio();//video没有
+a.canPlayType();
+</script>
+</body>
+</html>

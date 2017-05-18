@@ -26,7 +26,7 @@
 	    <div class="msg" id="message"></div>
 		<div>
 		  <label for="telephone">手机号：</label>
-		  <input id="telephone" name="telephone" type="tel" class="u-txt" maxlength="11" 
+		  <input id="telephone" name="telephone" type="tel" class="u-txt" maxlength="11"
 		         required pattern="^0?(13[0-9]|15[012356789]|18[0236789]|14[57])[0-9]{8}$"><br/>
 		  <span class="tip">11位数字手机号码</span>
 		</div>
@@ -43,11 +43,11 @@
         (function(){
             var form = document.forms.loginForm,
                 nmsg = document.getElementById('message');
-            
+
             function md5(msg){
             	return msg;
             }
-        
+
             function showMessage(clazz,msg){
             	if (!clazz){
         	    	nmsg.innerHTML = '';
@@ -58,24 +58,24 @@
         	    	nmsg.classList.add(clazz);
             	}
             }
-        
+
             function disableSubmit(disabled){
             	form.loginBtn.disabled = !!disabled;
             	var method = !disabled?'remove':'add';
                 form.loginBtn.classList[method]('j-disabled');
             }
-        
+
             function invalidInput(node,msg){
             	showMessage('j-err',msg);
             	node.classList.add('j-error');
             	node.focus();
             }
-        
+
             function clearInvalid(node){
             	showMessage();
             	node.classList.remove('j-error');
             }
-        
+
             form.telephone.addEventListener(
             	'invalid',function(event){
             		event.preventDefault();
@@ -83,7 +83,7 @@
         			invalidInput(input,'请输入正确的手机号码');
             	}
             );
-        
+
             form.addEventListener(
                 'input',function(event){
                 	// 还原错误状态
@@ -92,7 +92,7 @@
                     disableSubmit(false);
                 }
             );
-        
+
             form.addEventListener(
                 'submit',function(event){
                     // 密码验证
@@ -115,7 +115,6 @@
                     disableSubmit(true);
                 }
             );
-            
             var frame = document.getElementById('result');
             frame.addEventListener(
             	'load',function(event){
@@ -135,7 +134,7 @@
             		}
             	}
             );
-            
+
         })();
 	</script>
 </body>

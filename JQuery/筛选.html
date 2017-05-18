@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<body>
+  <div id="box">
+    <p>a1</p>
+    <span>s1</span>
+    <p class="q">a2 <p>p</p></p>
+    <p>a3 <span>sp</span></p>
+    <p>a4</p>
+    <p>a5</p>
+    <p id="six">a6</p>
+    <p>a7</p>
+    <p>a8</p>
+    <div>
+      <p>p2p</p>
+    </div>
+  </div>
+  <p>pp</p>
+  <div id="box">
+    <p>ppp</p>
+  </div>
+
+
+
+  <script type="text/javascript" src='http://libs.baidu.com/jquery/1.11.3/jquery.min.js'></script>
+  <script type="text/javascript">
+    $(function(){
+  // $('#box p').eq(5).css({'color':'red','font-size':'25px'});
+  // $('#box p').first().css({'color':'#f0f','font-size':'22px'});
+  // $('#box p').click(function(){
+  //     if ($(this).hasClass('q')) {
+  //       $(this).css({'color':'#0ff'});
+  //     }else{
+  //       alert('no');
+  //     }
+  // });
+// $('#box p').filter('.q').css({'color':'red'});
+// $('#box p').click(function(){
+//   if ($(this).is('#six')) {
+//     $(this).css({'color':'red'});
+//   }else{
+//     alert('no');
+//   }
+// });
+// $('#box p').has('span').css({'color':'#ff0'});
+// $('#box p').not('.q').css({'color':'red'});
+// $('#box p').slice(2,5).css({'color':'red'});
+// #box所有儿子辈的p
+// $('#box').children("p").css({'color':'red'});
+// #box所有晚辈的p
+// $('#box').find('p').css({'color':'red'});
+// 紧邻在。q之后的p标签 同>写法
+// $('.q').next('p').css({'color':'red'});
+// .q之后所有同级p标签
+// $('.q').nextAll('p').css({'color':'red'});
+// 直接父级元素
+// $('.q').parent().css({'color':'red'});
+// 所有父级元素中.a
+// $('.q').parents(".a").css({'color':'red'});
+// 兄弟元素
+$('.q').siblings().css({'color':'red'});
+
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>

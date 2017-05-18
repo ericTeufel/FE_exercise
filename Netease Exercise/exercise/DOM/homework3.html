@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <style type="text/css">
+    #fadeout{
+      width: 200px;
+      height: 200px;
+      border: 1px dotted #ccc;
+      background-color: #123456;
+      opacity: 1;
+  }
+</style>
+</head>
+<!-- 函数fadeout(element)实现了元素的淡出效果（即透明度从1变到0），动画时间为1秒钟。用定时器setInterval实现动画，写出函数fadeout的实现代码： -->
+<body>
+  <div id="fadeout">11</div>
+  <script type="text/javascript">
+      window.onload  = function(){
+        var fo = document.getElementById('fadeout');
+        fadeOut(fo);
+    };
+
+    function fadeOut(ele){
+        ele.style.opacity  = 1;
+        var step = 0.01;
+        var timer = setInterval(function(){
+            ele.style.opacity -= step;
+            if (ele.style.opacity<=0) {
+                clearInterval(timer);
+            }
+        },10);
+    }
+</script>
+</body>
+</html>

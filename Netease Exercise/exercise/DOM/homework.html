@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title></title>
+  <meta charset="utf-8">
+</head>
+<!-- getElementsByClassName函数实现获取指定类名的子元素列表，语法如下：
+var elements = getElementsByClassName(element, names);
+使用示例如下：
+如果html元素
+<div id="example">
+  <p id="p1" class="aaa bbb"/>
+  <p id="p2" class="aaa ccc"/>
+  <p id="p3" class="bbb ccc"/>
+</div>
+对应的DOM节点为example, 那么
+getElementsByClassName(example, “aaa”); 运行结果为包含id为p1, id为p2的元素列表
+getElementsByClassName(example, “bbb ccc”);运行结果为包含id为p3的元素列表
+getElementsByClassName(example, “ccc bbb”);运行结果为包含id为p3的元素列表
+请实现getElementsByClassName方法，要求浏览器兼容。 -->
+<body>
+<div id="example">
+  <p id="p1" class="aaa bbb">a</p>
+  <p id="p2" class="aaa ccc">b</p>
+  <p id="p3" class="bbb ccc">c</p>
+</div>
+
+<script type="text/javascript">
+      function getElementsByClassName(element, names) {
+        if (element.getElementsByClassName) {
+            return element.getElementsByClassName(names);
+        } else {
+            var elements = element.getElementsByTagName('*');
+            var result = [];
+            var element,
+                classNameStr,
+                flag;
+            names = names.split(' ');
+            for (var i = 0; element = elements[i]; i++) {
+                classNameStr = ' ' + element.className + ' ';
+                flag = true;
+                for (var j = 0, name; name = names[j]; j++) {
+                    if (classNameStr.indexOf(' ' + name + '') == -1) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag) {
+                    result.push(element);
+                }
+            }
+            return result;
+        }
+    }
+var example = document.getElementById("example");
+var a = getElementsByClassName(example,'aaa')[0];
+a.addEventListener('click',function(event){
+  alert('1');
+});
+a.innerHTML = 'hello';
+// console.log(a);
+</script>
+</body>
+</html>
+

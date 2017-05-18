@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+<script type="text/javascript">
+  function Modal(){
+
+  }
+  Modal.prototype.show = function(){
+    // 显示逻辑
+  }
+  Modal.prototype.hide = function(){
+    // 隐藏逻辑
+  }
+
+  function animateClass(node,classNmae,callback){
+      function onAnimateEnd () {
+        // 2.移除类名
+        delClass(node,className);
+        node.removeEventListener('animationend',onAnimateEnd)
+        // 3.执行回调
+        callback && callback();
+      }
+
+        // 1.添加类名触发animation
+        addClass('node'.className);
+        node.addEventListener('animationend',onAnimateEnd)
+
+  }
+
+  var modal = new Modal();
+  modal.on('confirm',function(){
+    console.log('confirm');
+  });
+
+_onConfirm:function(){
+  // this.onConfirm();
+  this.emit('confirm');
+  this.hide();
+},
+
+var emitter = {
+  // 注册事件
+on: function(event,fn){}
+  // 解绑事件
+off: function(event,fn){}
+  // 触发事件
+emit:function(event){}
+}
+
+//使用混入Mixin的方式使得Slider具有事件发射器功能
+extend(Modal.prototype, emitter);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

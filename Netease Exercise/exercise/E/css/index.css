@@ -1,0 +1,88 @@
+/*
+* @Author: ericjiang
+* @Date:   2017-05-19 16:02:12
+* @Last Modified by:   ericjiang
+* @Last Modified time: 2017-05-19 16:48:41
+*/
+*{
+      padding: 0;
+      margin: 0;
+      font-size: 12px;
+    }
+    ul,li{list-style: none;}
+    body{
+      background-color: #ccc;
+    }
+    .wrap{
+      width:1616px;
+      height: 100%;
+      background-color: #fff;
+      margin: 0 auto;
+    }
+    .notice {
+      background-color: rgb(241,241,241);
+      line-height: 36px;
+      overflow: hidden;
+      /*position: relative;*/
+    }
+    .notice p{
+      float: left;
+      margin-left: 190px;
+    }
+    .notice>a{
+      margin-right: 205px;
+      float: right;
+    }
+    .nav{
+      margin-top: 15px;
+    }
+    .nav div{
+      margin-left: 190px;
+    }
+    .nav div>img{
+      width: 235px;
+      height: 24px;
+      background: url(../img/1.png) no-repeat;
+    }
+    .nav div button{
+      background-color: rgb(0,157,77);
+      color: #fff;
+      width: 54px;
+      height: 21px;
+      border-radius: 1px;
+    }
+    .nav ul {
+      position: absolute;
+      right:205px;
+      top:72px;
+    }
+    header {
+      margin-top: 37px;
+    }
+    header+ul li{
+      float: left;
+    }
+    .nav ul li{
+      float: left;
+    }
+    header .img img{
+      width:320px;
+      height: 200px;
+      float: left;
+      /*padding: 7px;*/
+      padding-left: 0;
+      padding-right: 3px;
+    }
+
+    .banner{
+      background: url(../img/banner1.jpg);
+      width: 100%;
+      height: 460px;
+    }
+
+    footer{
+      background-color: rgb(38,45,50);
+      width: 100%;
+      height: 262px;
+      color: #fff;
+    }

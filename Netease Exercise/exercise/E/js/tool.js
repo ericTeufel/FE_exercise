@@ -28,7 +28,7 @@ function getCookie() {
 }
 
 
-// ajax
+// ajax仿JQuery封装
 function ajax(options) {
     options = options || {};
     options.type = (options.type || "GET").toUpperCase();

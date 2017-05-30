@@ -1,21 +1,24 @@
 // 添加cookie
 function setCookie(name, value, expires, path, domain, secure) {
     var cookie = encodeURIComponent(name) + '=' + encodeURIComponent(value);
-    if (expires) { cookie += '; expires=' + expires.toGMTString(0); }
-    if (path) { cookie += '; path=' + path; }
-    if (domain) { cookie += '; domain=' + domain; }
-    if (secure) { cookie += '; secure=' + secure; }
+    if (expires)
+        cookie += '; expires=' + expires.toGMTString();
+    if (path)
+        cookie += '; path=' + path;
+    if (domain)
+        cookie += '; domain=' + domain;
+    if (secure)
+        cookie += '; secure=' + secure;
     document.cookie = cookie;
 }
 // 获取 cookie
 function getCookie() {
     var cookie = {};
     var all = document.cookie;
-    if (all === '') {
+    if (all === '')
         return cookie;
-    }
-    var list = all.split(';');
-    for (var i = 0, l = list.length; i < l; i++) {
+    var list = all.split('; ');
+    for (var i = 0; i < list.length; i++) {
         var item = list[i];
         var p = item.indexOf('=');
         var name = item.substring(0, p);

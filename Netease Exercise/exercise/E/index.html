@@ -259,7 +259,7 @@
                 <ul>
                     <li>
                         <</li>
-                            <li>1</li>
+                            <li id="pg">1</li>
                             <li>2</li>
                             <li>3</li>
                             <li>4</li>
@@ -398,22 +398,25 @@
     </div>
     <!-- wrap2 end -->
     <div class="login off" id="login">
-        <form class="login_form" id="login_form">
+        <form class="login_form" id="login_form" name="loginForm">
             <legend>登录 <span><a href="javascript:;" id="login_close">x</a></span></legend>
             <div class="name">
                 <label for="userName">用户名：</label>
-                <input id="userName" type="txt" name="uName" required>
+                <input id="userName" type="txt" name="userName" required>
             </div>
+            <div class="name_err err" id="name-err"></div>
             <div class="pwd">
                 <label for="password">密　码：</label>
                 <input id="password" name="password" type="password" class="u-txt" required>
             </div>
+            <div class="pwd_err err" id="pwd-err"></div>
             <div class="but" id="login_but">
-                <button name="loginBtn">登　录</button>
+                <button id="logBtn">登　录</button>
             </div>
         </form>
     </div>
     <!-- login end -->
+    <script type="text/javascript" src="http://cdn.bootcss.com/blueimp-md5/1.1.0/js/md5.min.js"></script>
     <script type="text/javascript" src='js/tool.js'></script>
     <script type="text/javascript" src='js/index.js'></script>
 </body>

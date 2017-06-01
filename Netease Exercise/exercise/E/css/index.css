@@ -542,10 +542,24 @@ a,a:hover{color:#ccc;}
     border: none;
   }
   /*login验证*/
-  .valid{
-    color: red;
+  .err{
+    color: #f00;
+  }
+  .name_err{
+    position: absolute;
+    top: 135px;
+    left: 130px;
+  }
+  .pwd_err{
+    position: absolute;
+    top: 185px;
+    left: 130px;
   }
 
+  .disabled{
+    cursor: default;
+    background-color: #ddd;
+  }
 
 
 

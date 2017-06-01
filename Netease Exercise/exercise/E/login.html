@@ -42,11 +42,11 @@
         (function(){
             var form = document.forms.loginForm,
                 nmsg = document.getElementById('message');
-
+                // md5加密
             function md5(msg){
               return msg;
             }
-
+            // 显示错误信息
             function showMessage(clazz,msg){
               if (!clazz){
                 nmsg.innerHTML = '';
@@ -57,24 +57,24 @@
                 nmsg.classList.add(clazz);
               }
             }
-
+            // 禁用登录按键
             function disableSubmit(disabled){
               form.loginBtn.disabled = !!disabled;
               var method = !disabled?'remove':'add';
                 form.loginBtn.classList[method]('j-disabled');
             }
-
+            // 输入验证
             function invalidInput(node,msg){
               showMessage('j-err',msg);
               node.classList.add('j-error');
               node.focus();
             }
-
+            // 清除验证提示
             function clearInvalid(node){
               showMessage();
               node.classList.remove('j-error');
             }
-
+            // 绑定手机号验证事件
             form.telephone.addEventListener(
               'invalid',function(event){
                 event.preventDefault();
@@ -82,7 +82,7 @@
               invalidInput(input,'请输入正确的手机号码');
               }
             );
-
+            // 重新输入时不显示之前的错误提示
             form.addEventListener(
                 'input',function(event){
                   // 还原错误状态
@@ -91,7 +91,7 @@
                     disableSubmit(false);
                 }
             );
-
+            // 绑定登录提交的事件
             form.addEventListener(
                 'submit',function(event){
                     // 密码验证
@@ -114,6 +114,7 @@
                     disableSubmit(true);
                 }
             );
+            // 绑定登录提示事件
             var frame = document.getElementById('result');
             frame.addEventListener(
               'load',function(event){

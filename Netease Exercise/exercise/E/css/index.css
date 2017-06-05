@@ -342,6 +342,7 @@ a,a:hover{color:#ccc;}
     border-right: 1px solid rgb(238,238,238);
     border-top: none;
     box-shadow: 0 1px 1px 0 rgba(6, 0, 1, 0.2);
+    overflow: hidden;
   }
   .content .aside .hot .hot-content{
     margin-top: 76px;
@@ -362,6 +363,10 @@ a,a:hover{color:#ccc;}
     background-color: #ccc;
     float: left;
     margin-right: 12px;
+  }
+  .content .aside .hot .hot-course .hc-img img{
+    height: 50px;
+    width: 50px;
   }
   .content .aside .hot .hot-course h3{
     width: 120px;

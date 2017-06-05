@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+</head>
+
+<body>
+    <div class="group" id="group">
+        <select name='options1'>
+        </select>
+        <select name='options2'>
+        </select>
+        <select name='options3'>
+        </select>
+    </div>
+    <script type="text/javascript">
+    var count = 0;
+    // limit - 列表的长度
+    // deep - 数据的层级数
+    // 返回一个测试数据列表
+    var genList = function(limit, deep) {
+        var ret = [];
+        if (!deep) {
+            return ret;
+        }
+        for (var i = 0, it; i < limit; i++) {
+            it = deep + '.' + i + '.' + (count++);
+            ret.push({
+                text: it,
+                value: it,
+                list: genList(limit, deep - 1)
+            });
+        }
+        return ret;
+    };
+
+    function cascade(selectList, data) {
+        // 取第n级的数据列表，这个很多同学也已经完成了，非常好
+        var getList = function(n) {
+            var ret = data;
+            for (var i = 0, it; i < n; i++) {
+                // 默认选中第一项
+                it = Math.max(0, selectList[i].selectedIndex);
+                ret = (ret[it] || {}).list;
+            }
+            return ret;
+        };
+
+        // 选择器填充，这个在课程里已经有介绍
+        var fillSelector = function(select, list) {
+            for (var i = select.length - 1; i >= 0; i--) {
+                select.remove(i);
+            }
+            if (!list || !list.length) {
+                return;
+            }
+            for (var i = 0, l = list.length, it; i < l; i++) {
+                it = list[i];
+                select.add(new Option(it.text, it.value));
+            }
+        };
+
+        // 第几级选择器变化事件
+        var onSelectChange = function(i) {
+            // 1. 填充第i+1级选择器
+            // 2. 触发第i+1级选择器的change逻辑
+            var next = i + 1;
+            if (next >= selectList.length) {
+                return;
+            }
+            fillAndChange(next);
+        };
+        // 填充第几级选择器并触发该级选择器的change逻辑
+        var fillAndChange = function(index) {
+            console.log(index);
+            fillSelector(
+                selectList[index],
+                getList(index)
+            );
+            onSelectChange(index);
+        };
+
+        // 事件辅助函数，保存索引，这个在JS课程中已经介绍
+        var helper = function(index) {
+            return function() {
+                onSelectChange(index);
+            };
+        };
+        for (var i = 0, l = selectList.length - 1; i < l; i++) {
+            // 这里可以实践一下前面学的闭包的知识
+            // 或者针对高版本用bind，如 onSelectChange.bind(null,i)
+            selectList[i].onchange = helper(i);
+        }
+
+        // 初始化数据
+        fillAndChange(0);
+    }
+
+    var data = genList(3, 3);
+    var selectList = document.getElementById('group').children;
+    cascade(selectList, data);
+    </script>
+</body>
+
+</html>

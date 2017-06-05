@@ -91,7 +91,7 @@ var uPwd = document.getElementById('pwd-err');
 var logBtn = document.getElementById('logBtn');
 
 form.addEventListener('submit', function(event) {
-_login();
+    _login();
 });
 // });
 
@@ -123,12 +123,14 @@ function _login() {
 
 // 获取课程
 (function() {
-getClass(2, 20, 10);
+    getClass(2, 20, 10);
 })();
+
+
 
 //获取hotClass
 (function() {
-
+    hotClass();
 })();
 
 
@@ -147,12 +149,22 @@ getClass(2, 20, 10);
 
 
 
-var page = document.getElementById('pg');
-page.addEventListener('click', function(event) {
+// var page = document.getElementById('pg');
+// page.addEventListener('click', function(event) {
 
-    getClass(1,20,10);
+//     getClass(1, 20, 10);
+// });
+
+var li = document.getElementById('paging').getElementsByTagName('li');
+console.log(li);
+
+
+for (var i = 0; i < li.length; i++) {
+    li[i].addEventListener('click',function(event){
+    console.log(event);
+
 });
-
+}
 
 
 
@@ -182,12 +194,18 @@ function hotClass() {
         data: {}, //请求参数
         success: function(res, xml) {
             var resp = JSON.parse(res);
-            var id = [];
-            for (var i = 0, l = resp.length; i < l; i++) {
-                id.push(resp[i].id);
+            // console.log(resp);
+            var hotClass = document.getElementById('hot-content').getElementsByTagName('ul')[0];
+            hotClass.innerHTML = '';
+            for (var i = 0; i < resp.length; i++) {
+                var hot_li = document.createElement('li');
+                hot_li.innerHTML = ' <div class="hot-course">\
+                                        <i class="hc-img"><img src="' + resp[i].smallPhotoUrl + '"></i>\
+                                        <h3>' + resp[i].name + '</h3>\
+                                        <div class="fans-number"><i class="htc-img"></i><span>' + resp[i].learnerCount + '</span></div>\
+                                        </div>';
+                hotClass.appendChild(hot_li);
             }
-            console.log(id[0]);
-            // return id;
         },
         fail: function(status) {
             console.log('someThing was wrong: ' + status);
@@ -209,7 +227,7 @@ function getClass(page, size, type) {
             course.innerHTML = '';
             for (var i = 0; i < size; i++) {
                 var diva = document.createElement('div');
-                diva.innerHTML = '  <i class="img"><img src="'+resp.list[i].middlePhotoUrl+'"></i>\
+                diva.innerHTML = '  <i class="img"><img src="' + resp.list[i].middlePhotoUrl + '"></i>\
                     <h3>' + resp.list[i].name + '</h3>\
                     <span>' + resp.list[i].provider + '</span>\
                     <div class="fans"><i></i><span>' + resp.list[i].learnerCount + '</span></div>\

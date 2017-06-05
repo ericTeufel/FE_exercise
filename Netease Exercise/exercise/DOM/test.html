@@ -1,28 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <title></title>
     <meta charset="utf-8">
 </head>
-
 <body>
-<form><input id="userName" name="userName"></form>
+    <div id="select-list">
+        <select name="year" id="year">
+            <option value="0">--</option>
+            <option value="1999">1999</option>
+            <option value="2000">2000</option>
+            <option value="2001">2001</option>
+        </select>年
+        <select name="month" id="month">
+            <option value="0">--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>月
+        <select name="date" id="date">
+            <option value="0">--</option>
+        </select>日
+    </div>
     <script type="text/javascript">
-var form = document.getElementsByTagName('form')[0];
-console.log(form.inputs[0]);
-// A.
-// form.inputs["userName"]
-
-// B.
-// form.getElementsByTagName("input")[0]
-
-// C.
-// form["userName"]
-
-// D.
-// form.inputs[0]
+    var isLeapYear = function(year) {
+        return ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0);
+    };
+    var genCalendar = function(startYear, endYear) {
+        var results = [],
+            monthDay = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+        results.push({
+            text: '--',
+            value: 0,
+            list: [{
+                text: '--',
+                value: 0,
+                list: [{
+                    text: '--',
+                    value: 0,
+                    list: []
+                }]
+            }]
+        });
+        for (var i = startYear; i < endYear + 1; i++) {
+            var yearObj = {};
+            yearObj.text = i;
+            yearObj.value = i;
+            yearObj.list = [];
+            for (var j = 0; j < 13; j++) {
+                var monthObj = {};
+                monthObj.text = (j === 0) ? '--' : j;
+                monthObj.value = j;
+                monthObj.list = [];
+                if (isLeapYear(i)) {
+                    monthDay[2] = 29;
+                } else {
+                    monthDay[2] = 28;
+                }
+                for (var k = 0; k < monthDay[j] + 1; k++) {
+                    var dayObj = {};
+                    dayObj.text = (k === 0) ? '--' : k;
+                    dayObj.value = k;
+                    dayObj.list = [];
+                    monthObj.list.push(dayObj);
+                }
+                yearObj.list.push(monthObj);
+            }
+            results.push(yearObj);
+        }
+        return results;
+    };
+    function cascade(selectList, data) {
+        var getList = function(n) {
+            var ret = data;
+            for (var i = 0, it; i < n; i++) {
+                it = Math.max(0, selectList[i].selectedIndex);
+                ret = (ret[it] || {}).list;
+            }
+            return ret;
+        };
+        var fillSelector = function(select, list) {
+            for (var i = select.length - 1; i >= 0; i--) {
+                select.remove(i);
+            }
+            if (!list || !list.length) {
+                return;
+            }
+            for (var i = 0, l = list.length, it; i < l; i++) {
+                it = list[i];
+                select.add(new Option(it.text, it.value));
+            }
+        };
+        var onSelectChange = function(i) {
+            var next = i + 1;
+            if (next >= selectList.length) {
+                return;
+            }
+            fillAndChange(next);
+        };
+        var fillAndChange = function(index) {
+            fillSelector(
+                selectList[index],
+                getList(index)
+            );
+            onSelectChange(index);
+        };
+        var helper = function(index) {
+            return function() {
+                onSelectChange(index);
+            };
+        };
+        for (var i = 0, l = selectList.length - 1; i < l; i++) {
+            selectList[i].onchange = helper(i);
+        }
+        fillAndChange(0);
+    }
+    var data = genCalendar(1991, 2018);
+    // console.log(data);
+    var parent = document.getElementById('select-list');
+    var selectList = parent.children;
+    cascade(selectList, data);
     </script>
 </body>
-
 </html>

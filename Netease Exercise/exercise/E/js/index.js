@@ -155,15 +155,23 @@ function _login() {
 //     getClass(1, 20, 10);
 // });
 
-var li = document.getElementById('paging').getElementsByTagName('li');
-console.log(li);
-
-
-for (var i = 0; i < li.length; i++) {
-    li[i].addEventListener('click',function(event){
-    console.log(event);
-
-});
+var lis = document.getElementById('paging').getElementsByTagName('li');
+for (var i = 0, len = lis.length; i < len; i++) {
+    (function(node, index) {
+        node.addEventListener('click', function(event) {
+            console.log(index);
+            if (index == 0) {
+                alert(index);
+                getClass(1, 20, 10);
+            } else if (index == lis.length - 1) {
+                alert(index);
+                getClass(lis.length - 2, 20, 10);
+            } else {
+                alert(index);
+                getClass(index, 20, 10);
+            }
+        });
+    })(lis[i], i);
 }
 
 

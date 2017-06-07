@@ -49,26 +49,18 @@
 
 /***/ }),
 /* 1 */
-/***/ (function(module, exports) {
-
-	/*
-	* @Author: Eric Jiang
-	* @Date:   2017-06-05 21:38:44
-	* @Last Modified by:   Eric Jiang
-	* @Last Modified time: 2017-06-06 01:11:39
-	*/
+/***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
-	class Test{
-	  constructor(){
-	    this.a = 'hello';
-	  }
-	}
 
-	let test = new Test();
+	__webpack_require__(2);
 
-	document.body.innerHTML = test.a;
+/***/ }),
+/* 2 */
+/***/ (function(module, exports) {
 
+	// 正则扩展
+	"use strict";
 
 /***/ })
 /******/ ]);

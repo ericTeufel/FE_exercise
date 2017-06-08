@@ -28,4 +28,16 @@
   // 中间放的是编码 要加u才能识别
   console.log(/\u{61}/.test('a'));
   console.log(/\u{61}/u.test('a'));
+
+  console.log(`\u{20BB7}`);
+
+  let s = '𠮷';
+  //.不能匹配任意字符 换行、回车 行分割 段分割不能识别 大于两个字节 要加u才能识别
+  console.log('u-1', /^.$/.test(s)); //false
+  console.log('u-2', /^.$/u.test(s)); //true
+
+  console.log('test-1', /𠮷{2}/.test('𠮷𠮷')); //false
+  console.log('test-2', /𠮷{2}/u.test('𠮷𠮷')); //true
+
+  //.不能匹配任意字符 换行、回车 行分割 段分割不能识别  加s修饰符 但是s只是提案 没在es6中实现 
 }

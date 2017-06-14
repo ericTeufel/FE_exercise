@@ -93,7 +93,6 @@ var logBtn = document.getElementById('logBtn');
 form.addEventListener('submit', function(event) {
     _login();
 });
-// });
 
 
 // 登录

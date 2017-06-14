@@ -8,7 +8,7 @@
   // 第二个修饰符会覆盖第一个中的修饰符
   let regex3 = new RegExp(/xyz/ig, 'i')
   console.log(regex3.flags);
-
+  console.log();
 }
 
 {
@@ -39,5 +39,5 @@
   console.log('test-1', /𠮷{2}/.test('𠮷𠮷')); //false
   console.log('test-2', /𠮷{2}/u.test('𠮷𠮷')); //true
 
-  //.不能匹配任意字符 换行、回车 行分割 段分割不能识别  加s修饰符 但是s只是提案 没在es6中实现 
+  //.不能匹配任意字符 换行、回车 行分割 段分割不能识别  加s修饰符 但是s只是提案 没在es6中实现
 }

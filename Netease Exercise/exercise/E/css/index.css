@@ -264,7 +264,6 @@ a,a:hover{color:#ccc;}
   background-position: -131px -47px;
 }
 .content .course .cell .fans span{
-  /*width:21px;*/
   height: 18px;
   position: absolute;
   left: 12px;
@@ -278,13 +277,7 @@ a,a:hover{color:#ccc;}
   margin: 5px 171px 0 6px;
   padding-bottom: 10px;
 }
-/*.course-row + .course-row{
-  margin-top: 21px;
-}
 
-.cell+ .cell{
-  margin-right: 19px;
-  }*/
   .cell{
     margin-right: 20px;
     margin-bottom: 20px;
@@ -429,6 +422,7 @@ a,a:hover{color:#ccc;}
     background-color: #9dd8b1;
     color: #fff;
     font-size:12px;}
+
     /*footer 版权*/
     .foot{
       height:262px;
@@ -563,6 +557,3 @@ a,a:hover{color:#ccc;}
       cursor: default;
       background-color: #ddd;
     }
-
-
-

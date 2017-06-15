@@ -31,21 +31,19 @@ function getCookie() {
 }
 
 
-// ajax仿JQuery封装
+// ajax
 function ajax(options) {
     options = options || {};
     options.type = (options.type || "GET").toUpperCase();
     options.dataType = options.dataType || "json";
     var params = formatParams(options.data);
 
-    //创建 - 非IE6 - 第一步
     if (window.XMLHttpRequest) {
         var xhr = new XMLHttpRequest();
-    } else { //IE6及其以下版本浏览器
+    } else {
         var xhr = new ActiveXObject('Microsoft.XMLHTTP');
     }
 
-    //接收 - 第三步
     xhr.onreadystatechange = function() {
         if (xhr.readyState == 4) {
             var status = xhr.status;
@@ -58,7 +56,6 @@ function ajax(options) {
         }
     }
 
-    //连接 和 发送 - 第二步
     if (options.type == "GET") {
         xhr.open("GET", options.url + "?" + params, true);
         xhr.send(null);
@@ -123,6 +120,3 @@ function serialize(data){
   }
   return pairs.join('&');
 }
-
-
-

@@ -98,13 +98,13 @@ form.addEventListener('submit', function(event) {
 // 登录
 function _login() {
     ajax({
-        url: "http://study.163.com/webDev/login.htm", //请求地址
-        type: "get", //请求方式
+        url: "http://study.163.com/webDev/login.htm",
+        type: "get",
         data: {
             userName: "95b9941b277caf1c77ee35fee66fc5f6",
             password: "a972aec008fd064f00ae77c3a6472cc2"
-        }, //请求参数
-        // dataType: "json",
+        },
+
         success: function(res, xml) {
             console.log(res);
 
@@ -116,15 +116,10 @@ function _login() {
     });
 }
 
-
-
-
-
 // 获取课程
 (function() {
-    getClass(2, 20, 10);
+    getClass(1, 20, 10);
 })();
-
 
 
 //获取hotClass
@@ -132,27 +127,6 @@ function _login() {
     hotClass();
 })();
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// var page = document.getElementById('pg');
-// page.addEventListener('click', function(event) {
-
-//     getClass(1, 20, 10);
-// });
 
 var lis = document.getElementById('paging').getElementsByTagName('li');
 for (var i = 0, len = lis.length; i < len; i++) {
@@ -268,24 +242,3 @@ function getNotice() {
         }
     });
 }
-
-
-
-// 仿jQuery调用 userName: "95b9941b277caf1c77ee35fee66fc5f6", password: "a972aec008fd064f00ae77c3a6472cc2"
-// var a = "95b9941b277caf1c77ee35fee66fc5f6";
-// var b = "a972aec008fd064f00ae77c3a6472cc2";
-// console.log(a);
-// ajax({
-//     url: "http://study.163.com/webDev/login.htm", //请求地址
-//     type: "get", //请求方式
-//     data: {
-//         userName: a,
-//         password: b
-//     }, //请求参数
-//     success: function(res, xml) {
-//         console.log(res);
-//     },
-//     fail: function(status) {
-//         console.log(status);
-//     }
-// });

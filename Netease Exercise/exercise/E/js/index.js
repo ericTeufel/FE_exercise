@@ -168,6 +168,7 @@ for (var i = 0, len = lis.length; i < len; i++) {
 
 
 // hotClass();
+// var hotClass = function(){} 
 function hotClass() {
     ajax({
         url: "http://study.163.com/webDev/hotcouresByCategory.htm", //请求地址
@@ -227,7 +228,7 @@ function getClass(page, size, type) {
 
 // // 导航关注
 // // getNotice();
-function getNotice() {
+var getNotice = function(){
     ajax({
         url: "http://study.163.com/webDev/attention.htm", //请求地址
         type: "get", //请求方式

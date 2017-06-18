@@ -224,7 +224,7 @@ a,a:hover{color:#ccc;}
 }
 .content .course .cell .img{
   display: block;
-    height: 125px;
+    height: 125px; 
     /*width: 100%;*/
     overflow: hidden;
   text-align: center;

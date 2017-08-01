@@ -2,498 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc0a5f04-a2af-48b2-8bc3-7c5b6150d743" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6/node_modules/cross-spawn/node_modules/lru-cache/lib/lru-cache.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6/node_modules/get-stream/node_modules/object-assign/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6/node_modules/get-stream/node_modules/object-assign/license" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6/node_modules/get-stream/node_modules/object-assign/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6/node_modules/get-stream/node_modules/object-assign/readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/npm-debug.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/build/webpack.test.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/config/test.env.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/e2e/custom-assertions/elementCount.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/e2e/nightwatch.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/e2e/runner.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/e2e/specs/test.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/unit/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/unit/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/unit/karma.conf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Vue_Exercise/test/test/unit/specs/Hello.spec.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/.babelrc" afterPath="$PROJECT_DIR$/ES6/.babelrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/app/js/class/lesson15.js" afterPath="$PROJECT_DIR$/ES6/app/js/class/lesson15.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/app/js/index.js" afterPath="$PROJECT_DIR$/ES6/app/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-core/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-core/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-generator/lib/generators/flow.js" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-generator/lib/generators/flow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-generator/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-generator/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/README.md" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/lib/targets-parser.js" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/lib/targets-parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/babel-preset-env/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/browserslist/CHANGELOG.md" afterPath="$PROJECT_DIR$/ES6/node_modules/browserslist/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/browserslist/README.md" afterPath="$PROJECT_DIR$/ES6/node_modules/browserslist/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/browserslist/index.js" afterPath="$PROJECT_DIR$/ES6/node_modules/browserslist/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/browserslist/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/browserslist/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/CHANGELOG.md" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/agents.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/agents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/browserVersions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/browserVersions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/aac.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/aac.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ac3-ec3.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ac3-ec3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/addeventlistener.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/addeventlistener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/alternate-stylesheet.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/alternate-stylesheet.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ambient-light.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ambient-light.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/apng.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/apng.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/arrow-functions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/arrow-functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/asmjs.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/asmjs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/async-functions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/async-functions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/atob-btoa.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/atob-btoa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audio-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audio-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audio.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audiotracks.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/audiotracks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/autofocus.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/autofocus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/aux-click.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/aux-click.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-attachment.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-attachment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-img-opts.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-img-opts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-position-x-y.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-position-x-y.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-repeat-round-space.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/background-repeat-round-space.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/battery-status.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/battery-status.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/beacon.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/beacon.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/beforeafterprint.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/beforeafterprint.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/blobbuilder.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/blobbuilder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/bloburls.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/bloburls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/border-image.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/border-image.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/border-radius.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/border-radius.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/broadcastchannel.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/broadcastchannel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/brotli.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/brotli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/calc.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/calc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas-blending.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas-blending.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas-text.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas-text.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ch-unit.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ch-unit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/chacha20-poly1305.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/chacha20-poly1305.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/channel-messaging.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/channel-messaging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/childnode-remove.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/childnode-remove.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/classlist.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/classlist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/client-hints-dpr-width-viewport.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/client-hints-dpr-width-viewport.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/clipboard.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/clipboard.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/comparedocumentposition.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/comparedocumentposition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/console-basic.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/console-basic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/const.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/const.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contenteditable.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contenteditable.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contentsecuritypolicy.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contentsecuritypolicy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contentsecuritypolicy2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/contentsecuritypolicy2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/cors.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/cors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/credential-management.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/credential-management.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/cryptography.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/cryptography.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-all.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-all.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-animation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-any-link.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-any-link.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-appearance.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-appearance.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-apply-rule.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-apply-rule.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-at-counter-style.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-at-counter-style.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-backdrop-filter.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-backdrop-filter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-background-offsets.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-background-offsets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-backgroundblendmode.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-backgroundblendmode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-boxdecorationbreak.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-boxdecorationbreak.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-boxshadow.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-boxshadow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-canvas.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-canvas.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-case-insensitive.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-case-insensitive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-clip-path.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-clip-path.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-containment.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-containment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-counters.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-counters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-crisp-edges.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-crisp-edges.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-cross-fade.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-cross-fade.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-default-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-default-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-descendant-gtgt.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-descendant-gtgt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-deviceadaptation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-deviceadaptation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-dir-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-dir-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-display-contents.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-display-contents.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-element-function.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-element-function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-exclusions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-exclusions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-featurequeries.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-featurequeries.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-filter-function.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-filter-function.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-filters.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-first-letter.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-first-letter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-first-line.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-first-line.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-fixed.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-fixed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-focus-within.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-focus-within.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-font-rendering-controls.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-font-rendering-controls.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-font-stretch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-font-stretch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-gencontent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-gencontent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-gradients.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-gradients.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-grid.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-grid.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hanging-punctuation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hanging-punctuation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-has.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-has.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hyphenate.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hyphenate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hyphens.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-hyphens.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-image-orientation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-image-orientation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-image-set.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-image-set.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-in-out-of-range.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-in-out-of-range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-indeterminate-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-indeterminate-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-initial-letter.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-initial-letter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-initial-value.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-initial-value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-letter-spacing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-letter-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-line-clamp.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-line-clamp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-logical-props.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-logical-props.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-marker-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-marker-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-masks.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-masks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-matches-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-matches-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-interaction.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-interaction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-resolution.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-resolution.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-scripting.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-media-scripting.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-mediaqueries.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-mediaqueries.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-mixblendmode.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-mixblendmode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-motion-paths.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-motion-paths.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-namespaces.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-namespaces.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-not-sel-list.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-not-sel-list.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-nth-child-of.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-nth-child-of.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-opacity.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-opacity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-optional-pseudo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-optional-pseudo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-overflow-anchor.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-overflow-anchor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-page-break.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-page-break.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-paged-media.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-paged-media.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-placeholder-shown.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-placeholder-shown.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-placeholder.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-placeholder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-read-only-write.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-read-only-write.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-rebeccapurple.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-rebeccapurple.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-reflections.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-reflections.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-regions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-regions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-repeating-gradients.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-repeating-gradients.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-resize.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-resize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-revert-value.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-revert-value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-rrggbbaa.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-rrggbbaa.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-scroll-behavior.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-scroll-behavior.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-scrollbar.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-scrollbar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sel2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sel2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sel3.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sel3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-selection.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-selection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-shapes.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-shapes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-snappoints.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-snappoints.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sticky.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-sticky.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-supports-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-supports-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-table.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-table.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-align-last.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-align-last.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-indent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-indent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-justify.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-justify.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-orientation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-orientation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-spacing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-text-spacing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-textshadow.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-textshadow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-touch-action-2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-touch-action-2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-touch-action.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-touch-action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-transitions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-transitions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-unicode-bidi.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-unicode-bidi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-unset-value.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-unset-value.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-variables.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-variables.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-widows-orphans.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-widows-orphans.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-writing-mode.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-writing-mode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-zoom.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css-zoom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-attr.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-boxsizing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-boxsizing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-colors.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-colors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors-grab.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors-grab.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors-newer.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors-newer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-cursors.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-tabsize.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/css3-tabsize.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/currentcolor.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/currentcolor.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/custom-elements.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/custom-elements.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/custom-elementsv1.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/custom-elementsv1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/customevent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/customevent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/datalist.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/datalist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dataset.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dataset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/datauri.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/datauri.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/details.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/details.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/deviceorientation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/deviceorientation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/devicepixelratio.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/devicepixelratio.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dialog.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dialog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dispatchevent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dispatchevent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-currentscript.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-currentscript.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-evaluate-xpath.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-evaluate-xpath.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-execcommand.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/document-execcommand.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/documenthead.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/documenthead.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dom-manip-convenience.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dom-manip-convenience.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dom-range.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dom-range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/domcontentloaded.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/domcontentloaded.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/domfocusin-domfocusout-events.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/domfocusin-domfocusout-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dommatrix.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dommatrix.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/download.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/download.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dragndrop.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/dragndrop.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/element-closest.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/element-closest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/element-from-point.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/element-from-point.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eme.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eme.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eot.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es5.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-class.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-class.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-module.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-module.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-number.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/es6-number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eventsource.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/eventsource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fetch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fetch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fieldset-disabled.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fieldset-disabled.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fileapi.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fileapi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filereader.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filereader.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filereadersync.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filereadersync.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filesystem.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/filesystem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flac.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flac.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flexbox.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flexbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flow-root.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/flow-root.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/focusin-focusout-events.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/focusin-focusout-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-feature.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-feature.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-kerning.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-kerning.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-loading.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-loading.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-size-adjust.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-size-adjust.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-smooth.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-smooth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-unicode-range.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-unicode-range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-variant-alternates.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/font-variant-alternates.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fontface.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fontface.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-attribute.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-attribute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-submit-attributes.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-submit-attributes.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-validation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/form-validation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/forms.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/forms.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fullscreen.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/fullscreen.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/gamepad.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/gamepad.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/geolocation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/geolocation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getboundingclientrect.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getboundingclientrect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getcomputedstyle.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getcomputedstyle.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getelementsbyclassname.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getelementsbyclassname.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getrandomvalues.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/getrandomvalues.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hardwareconcurrency.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hardwareconcurrency.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hashchange.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hashchange.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hevc.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hevc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hidden.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/hidden.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/high-resolution-time.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/high-resolution-time.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/history.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/history.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/html-media-capture.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/html-media-capture.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/html5semantic.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/html5semantic.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/http-live-streaming.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/http-live-streaming.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/http2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/http2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-sandbox.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-sandbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-seamless.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-seamless.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-srcdoc.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/iframe-srcdoc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/imagecapture.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/imagecapture.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ime.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ime.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/img-naturalwidth-naturalheight.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/img-naturalwidth-naturalheight.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/imports.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/imports.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indeterminate-checkbox.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indeterminate-checkbox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indexeddb.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indexeddb.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indexeddb2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/indexeddb2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/inline-block.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/inline-block.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/innertext.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/innertext.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-autocomplete-onoff.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-autocomplete-onoff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-color.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-color.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-datetime.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-datetime.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-email-tel-url.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-email-tel-url.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-event.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-event.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-file-accept.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-file-accept.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-file-multiple.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-file-multiple.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-inputmode.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-inputmode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-minlength.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-minlength.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-number.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-number.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-pattern.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-pattern.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-placeholder.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-placeholder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-range.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-range.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-search.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/input-search.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/insert-adjacent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/insert-adjacent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/insertadjacenthtml.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/insertadjacenthtml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/internationalization.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/internationalization.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/intersectionobserver.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/intersectionobserver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/intrinsic-width.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/intrinsic-width.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/jpeg2000.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/jpeg2000.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/jpegxr.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/jpegxr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/json.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/json.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/kerning-pairs-ligatures.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/kerning-pairs-ligatures.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-charcode.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-charcode.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-code.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-code.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-getmodifierstate.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-getmodifierstate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-key.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-key.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-location.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-location.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-which.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/keyboardevent-which.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/lazyload.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/lazyload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/let.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/let.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-icon-png.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-icon-png.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-icon-svg.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-icon-svg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-dns-prefetch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-dns-prefetch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-preconnect.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-preconnect.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-prefetch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-prefetch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-preload.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-preload.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-prerender.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/link-rel-prerender.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/matchesselector.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/matchesselector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/matchmedia.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/matchmedia.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mathml.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mathml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/maxlength.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/maxlength.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/media-attribute.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/media-attribute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/media-session-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/media-session-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediacapture-fromelement.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediacapture-fromelement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediarecorder.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediarecorder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediasource.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mediasource.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/menu.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/menu.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/meter.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/meter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/midi.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/midi.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/minmaxwh.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/minmaxwh.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mp3.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mp3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mpeg4.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mpeg4.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/multibackgrounds.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/multibackgrounds.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/multicolumn.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/multicolumn.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mutation-events.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mutation-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mutationobserver.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/mutationobserver.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/namevalue-storage.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/namevalue-storage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/nav-timing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/nav-timing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/netinfo.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/netinfo.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/node-contains.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/node-contains.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/node-parentelement.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/node-parentelement.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/notifications.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/notifications.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/object-fit.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/object-fit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/object-observe.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/object-observe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/objectrtc.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/objectrtc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/offline-apps.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/offline-apps.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ogg-vorbis.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ogg-vorbis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ogv.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ogv.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ol-reversed.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ol-reversed.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/once-event-listener.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/once-event-listener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/online-status.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/online-status.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/opus.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/opus.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/outline.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/outline.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pad-start-end.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pad-start-end.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/page-transition-events.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/page-transition-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pagevisibility.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pagevisibility.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/passive-event-listener.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/passive-event-listener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/payment-request.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/payment-request.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/permissions-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/permissions-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/picture.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/picture.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ping.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ping.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/png-alpha.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/png-alpha.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointer-events.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointer-events.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointer.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointerlock.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/pointerlock.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/progress.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/progress.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/promises.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/promises.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/proximity.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/proximity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/proxy.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/proxy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/publickeypinning.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/publickeypinning.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/push-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/push-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/queryselector.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/queryselector.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/readonly-attr.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/readonly-attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/referrer-policy.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/referrer-policy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/registerprotocolhandler.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/registerprotocolhandler.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rel-noopener.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rel-noopener.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rel-noreferrer.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rel-noreferrer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rellist.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rellist.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rem.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rem.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/requestanimationframe.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/requestanimationframe.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/requestidlecallback.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/requestidlecallback.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/resource-timing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/resource-timing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rest-parameters.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rest-parameters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rtcpeerconnection.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/rtcpeerconnection.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ruby.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ruby.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/same-site-cookie-attribute.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/same-site-cookie-attribute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/screen-orientation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/screen-orientation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/script-async.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/script-async.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/script-defer.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/script-defer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/scrollintoview.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/scrollintoview.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/scrollintoviewifneeded.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/scrollintoviewifneeded.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sdch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sdch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/selection-api.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/selection-api.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/serviceworkers.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/serviceworkers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/setimmediate.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/setimmediate.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sha-2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sha-2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/shadowdom.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/shadowdom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/shadowdomv1.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/shadowdomv1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sharedworkers.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sharedworkers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sni.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sni.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/spdy.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/spdy.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/speech-recognition.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/speech-recognition.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/speech-synthesis.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/speech-synthesis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/spellcheck-attribute.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/spellcheck-attribute.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sql-storage.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/sql-storage.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/srcset.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/srcset.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stopimmediatepropagation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stopimmediatepropagation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stream.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stream.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stricttransportsecurity.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/stricttransportsecurity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/style-scoped.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/style-scoped.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/subresource-integrity.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/subresource-integrity.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-css.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-css.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-filters.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-filters.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-fonts.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-fonts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-fragment.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-fragment.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-html.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-html.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-html5.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-html5.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-img.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-img.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-smil.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg-smil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/svg.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tabindex-attr.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tabindex-attr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/template-literals.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/template-literals.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/template.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/template.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/testfeat.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/testfeat.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-decoration.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-decoration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-emphasis.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-emphasis.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-overflow.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-overflow.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-size-adjust.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-size-adjust.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-stroke.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/text-stroke.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/textcontent.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/textcontent.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/textencoder.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/textencoder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-1.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-3.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/tls1-3.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/token-binding.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/token-binding.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/touch.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/touch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/transforms2d.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/transforms2d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/transforms3d.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/transforms3d.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ttf.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/ttf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/typedarrays.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/typedarrays.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/u2f.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/u2f.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/upgradeinsecurerequests.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/upgradeinsecurerequests.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/url.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/url.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/urlsearchparams.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/urlsearchparams.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/use-strict.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/use-strict.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/user-select-none.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/user-select-none.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/user-timing.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/user-timing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/vibration.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/vibration.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/video.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/video.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/videotracks.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/videotracks.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/viewport-units.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/viewport-units.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wai-aria.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wai-aria.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wasm.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wasm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wav.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wbr-element.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wbr-element.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-animation.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-animation.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-app-manifest.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-app-manifest.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-bluetooth.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-bluetooth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-share.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/web-share.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webgl.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webgl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webgl2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webgl2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webm.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webp.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/websockets.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/websockets.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webvr.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webvr.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webvtt.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webvtt.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webworkers.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/webworkers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/will-change.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/will-change.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/woff.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/woff.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/woff2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/woff2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/word-break.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/word-break.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wordwrap.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/wordwrap.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/x-doc-messaging.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/x-doc-messaging.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/x-frame-options.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/x-frame-options.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhr2.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhr2.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhtml.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhtml.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhtmlsmil.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xhtmlsmil.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xml-serializer.js" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/data/features/xml-serializer.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/caniuse-lite/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/cross-spawn/node_modules/lru-cache/README.md" afterPath="$PROJECT_DIR$/ES6/node_modules/cross-spawn/node_modules/lru-cache/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/cross-spawn/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/cross-spawn/node_modules/lru-cache/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/full-chromium-versions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/full-chromium-versions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/full-versions.js" afterPath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/full-versions.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/electron-to-chromium/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/yargs/CHANGELOG.md" afterPath="$PROJECT_DIR$/ES6/node_modules/yargs/CHANGELOG.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/yargs/README.md" afterPath="$PROJECT_DIR$/ES6/node_modules/yargs/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/node_modules/yargs/package.json" afterPath="$PROJECT_DIR$/ES6/node_modules/yargs/package.json" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/1.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netesaeNote/close.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netesaeNote/html/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netesaeNote/index.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/netesaeNote/index.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/1.html" afterPath="$PROJECT_DIR$/1.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/package.json" afterPath="$PROJECT_DIR$/ES6/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/server/public/js/cp.min.js" afterPath="$PROJECT_DIR$/ES6/server/public/js/cp.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ES6/server/public/js/index.js" afterPath="$PROJECT_DIR$/ES6/server/public/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/.eslintrc.js" afterPath="$PROJECT_DIR$/Vue_Exercise/test/.eslintrc.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/.gitignore" afterPath="$PROJECT_DIR$/Vue_Exercise/test/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/README.md" afterPath="$PROJECT_DIR$/Vue_Exercise/test/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/build/dev-server.js" afterPath="$PROJECT_DIR$/Vue_Exercise/test/build/dev-server.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/build/webpack.prod.conf.js" afterPath="$PROJECT_DIR$/Vue_Exercise/test/build/webpack.prod.conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/package.json" afterPath="$PROJECT_DIR$/Vue_Exercise/test/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/src/App.vue" afterPath="$PROJECT_DIR$/Vue_Exercise/test/src/App.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Vue_Exercise/test/src/components/Hello.vue" afterPath="$PROJECT_DIR$/Vue_Exercise/test/src/components/Hello.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/H5 Exercises/混合布局exercise.html" afterPath="$PROJECT_DIR$/H5 Exercises/混合布局exercise.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js" afterPath="$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/demo.html" afterPath="$PROJECT_DIR$/demo.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prototype.html" afterPath="$PROJECT_DIR$/prototype.html" />
     </list>
     <ignored path="FE-Exercise.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -510,25 +30,40 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="FE-Exercise" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
-              <folding>
-                <marker date="1497618699000" expanded="true" signature="4676:5037" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="tool.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/tool.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="46">
+                  <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="662">
+                  <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -545,6 +80,13 @@
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>false</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>false</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
@@ -552,6 +94,7 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/ES6/node_modules" />
     <handled-path value="$PROJECT_DIR$/ES6/server/node_modules" />
+    <handled-path value="$PROJECT_DIR$/JQuery/todo/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="237" />
@@ -559,18 +102,11 @@
     <option name="width" value="1420" />
     <option name="height" value="878" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
-    <OptionsSetting value="true" id="Add" />
-    <OptionsSetting value="true" id="Remove" />
-    <OptionsSetting value="true" id="Checkout" />
-    <OptionsSetting value="true" id="Update" />
-    <OptionsSetting value="true" id="Status" />
-    <OptionsSetting value="true" id="Edit" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
-    <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
+    <navigator proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -583,118 +119,26 @@
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Netease Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Netease Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Netease Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="FE-Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Netease Exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="exercise" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="E" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
-    <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
-    <property name="settings.editor.splitter.proportion" value="0.2" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="project" working-dir="">
@@ -719,33 +163,38 @@
       <workItem from="1496763161448" duration="87000" />
       <workItem from="1497448012859" duration="159000" />
       <workItem from="1498053769461" duration="230000" />
+      <workItem from="1500903911067" duration="57000" />
+      <workItem from="1501174839341" duration="142000" />
+      <workItem from="1501417795951" duration="98000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1176000" />
+    <option name="totallyTimeSpent" value="1473000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="237" y="109" width="1420" height="878" extended-state="0" />
-    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32957748" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12537493" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
@@ -765,10 +214,63 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="3045">
+          <caret line="203" column="37" lean-forward="true" selection-start-line="203" selection-start-column="37" selection-end-line="203" selection-end-column="37" />
           <folding>
-            <marker date="1497618699000" expanded="true" signature="4676:5037" ph="..." />
+            <marker date="1499147483000" expanded="true" signature="4676:5037" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="35" lean-forward="true" selection-start-line="26" selection-start-column="35" selection-end-line="26" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2175">
+          <caret line="145" column="11" lean-forward="false" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+          <folding>
+            <marker date="1499147483000" expanded="true" signature="4676:5037" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/123.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="28" column="17" lean-forward="true" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1499147483000" expanded="true" signature="4676:5037" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1499147483000" expanded="true" signature="4676:5037" ph="..." />
           </folding>
         </state>
       </provider>
@@ -776,52 +278,82 @@
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/DOM/表单应用_登录.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/DOM/表单应用_登录.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1395">
-          <caret line="93" column="7" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
+          <caret line="93" column="7" lean-forward="false" selection-start-line="93" selection-start-column="7" selection-end-line="93" selection-end-column="7" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/DOM/输入框通用光标接口.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/DOM/modal.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <caret line="23" column="17" lean-forward="false" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/DOM/表单应用_登录.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
-          <caret line="9" column="66" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
+          <caret line="9" column="66" lean-forward="false" selection-start-line="9" selection-start-column="66" selection-end-line="9" selection-end-column="66" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ES6/app/js/class/lesson12.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+          <caret line="5" column="4" lean-forward="false" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-412">
+          <caret line="24" column="22" lean-forward="true" selection-start-line="24" selection-start-column="22" selection-end-line="24" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/123.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
+        <state relative-caret-position="669">
+          <caret line="245" column="0" lean-forward="true" selection-start-line="245" selection-start-column="0" selection-end-line="245" selection-end-column="0" />
           <folding>
-            <marker date="1497618699000" expanded="true" signature="4676:5037" ph="..." />
+            <marker date="1499147483000" expanded="true" signature="4676:5037" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/js/tool.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="11" column="29" lean-forward="false" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Netease Exercise/exercise/E/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="69" column="13" lean-forward="true" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>

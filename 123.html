@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title></title>
+    </head>
+    <body>
+        <input type="text" name="1" value=1 id="input">
+        <script type="text/javascript">
+            var i = document.getElementById('input');
+            var c = 0;
+            setInterval(function(){
+                if (c<10) {
+
+                    for (var i = 0; i < 10; i++) {
+                        console.log(i+c);
+                    }
+                c++;
+                }else {
+                    c=0;
+                    for (var i = 0; i < 10; i++) {
+                        console.log(i+c);
+                    }
+                }
+
+
+
+            },1000);
+        </script>
+    </body>
+</html>

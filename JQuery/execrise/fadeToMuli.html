@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #pic {
+            width: 500px;
+            height: 100px;
+            margin: 0 auto;
+            background: red;
+            margin-top: -100px;
+        }
+
+        .par {
+            width: 100%;
+            height: 1000px;
+            background: #ccc;
+        }
+
+        .par .move {
+            width: 200px;
+            height: 200px;
+            background: blue;
+            float: left;
+            margin: 50px;
+            border-radius: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pic"></div>
+    <div class="par">
+        <div class="move" id="move1"></div>
+        <div class="move" id="move2"></div>
+        <div class="move" id="move3"></div>
+        <div class="move" id="move4"></div>
+    </div>
+
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            // $('#pic').animate({'margin-top':'0'},3000,function(){
+            //     setTimeout(function(){
+            //         $('#pic').animate({'margin-top':'-100px'},3000)
+            // },1000)
+            //});
+            $('#pic').animate({'margin-top':'0'},3000,function(){
+                //delay写在运动之前，延迟多久执行 fadein等也是一样的写法
+                $(this).delay(1000).animate({'margin-top':'-100px'},3000,function(){
+                    console.log('finished');
+                });
+            });
+
+            $('.move').mouseenter(function() {
+                $(this).stop().animate({
+                    'margin': '10px'
+                }, 1000);
+                //$(this).find('.move').stop().animate({},1000)
+            });
+            $('.move').mouseout(function() {
+                $(this).stop().animate({
+                    'margin': '50px'
+                }, 1000);
+            })
+        });
+    </script>
+</body>
+
+</html>

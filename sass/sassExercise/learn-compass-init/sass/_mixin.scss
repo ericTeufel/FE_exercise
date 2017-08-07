@@ -1,0 +1,28 @@
+@mixin col-6 {
+    width: 50%;
+    float: left;
+}
+
+@mixin col ($width:50%){
+    width:$width;
+    float: left;
+}
+
+@mixin col-sm ($width:50%) {
+    @if type-of($width) != number {
+        @error "$width must be a number , which you enter was #{$width}";
+    }
+    @if not unitless($width) {
+        @if unit($width) != "%"{
+            @error"$width should be a % which you enter was :#{$width} ";
+        }
+    }@else{
+        @warn "$width should be a % which you enter was :#{$width} ";
+        $width:(percentage($width)/100);
+    }
+
+    @media (min-width:768px){
+        width: $width;
+        float:left;
+    }
+}

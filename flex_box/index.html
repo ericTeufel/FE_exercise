@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrap{
+            height: 500px;
+
+            display: flex;
+            background-color: #ccc;
+            flex-direction: row;
+            flex-wrap:wrap;
+            flex-flow: row wrap;
+            /*justify-content: space-between;*/
+            align-items: baseline;
+            align-content: space-around;
+
+        }
+        .wrap div{
+            height: 100px;
+            width: 200px;
+            /*margin: 0 auto;*/
+            background-color: rgb(125, 198, 231);
+            flex-grow: 1;
+            flex-basis: 19px;
+        }
+        .wrap div:first-child{
+            background-color: blue;
+            flex-grow: 9;
+        }
+        .wrap div:last-child{
+            background-color: red;
+        }
+        .wrap div:nth-of-type(10){
+            order: 3;
+            background-color: yellow;
+        }
+        .wrap div:nth-child(11){
+            order: 1;
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+        <div>11</div>
+        <div>12</div>
+        <div>13</div>
+        <div>14</div>
+        <div>15</div>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style media="screen">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: #111;
+            color: #fff;
+        }
+        a{
+            color: #fff;
+            text-decoration: none;
+        }
+        nav{
+            text-align: center;
+            height: 100px;
+            text-transform: capitalize;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        nav a{
+            background: rgba(255,255,255, .2);
+            flex-grow: 2;
+            display: flex;
+            align-items: center;
+        }
+        span{
+            flex: 1;
+        }
+        a:hover{
+            background: rgba(255,255,255, .4);
+        }
+        .sign{
+            background: rgba(255,255,255, .1);
+            flex-grow: 1;
+        }
+        @media (max-width:460px) {
+            /*body{
+                background-color: red;
+            }*/
+            nav a{
+                flex-basis: 25%;
+            }
+            .sign{
+                height: 30px;
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#"><span>首页</span></a>
+        <a href="#"><span>视频</span></a>
+        <a href="#"><span>代码</span></a>
+        <a href="#"><span>课程</span></a>
+        <a href="#" class="sign sign_in"><span>登录</span></a>
+        <a href="#" class="sign sign_up"><span>注册</span></a>
+
+    </nav>
+</body>
+</html>

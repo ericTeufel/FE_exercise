@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>lunbo</title>
+    <style media="screen">
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    #container{
+        position: relative;
+        width: 1652px;
+        height: 460px;
+        overflow: hidden;
+    }
+    #container #con{
+        position: absolute;
+        width: 6608px;
+        height: 100%;
+
+    }
+    #container #con img{
+        float: left;
+    }
+    #container ul{
+        position: absolute;
+        top: 420px;
+        right: 25px;
+    }
+    #container ul li{
+        float: left;
+        margin-left: 2px;
+        width: 40px;
+        height: 25px;
+        background-color: rgba(0, 0, 0, .3);
+        list-style: none;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.5);
+    }
+    #container ul li:hover, #container ul .on{
+        background-color: rgba(0, 0, 0, 0.7) ;
+        color: rgba(255, 255, 255, 0.9) ;
+    }
+
+    .circle{
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background-color: blue;
+        position: absolute;
+        top: 500px;
+        left: 0;
+    }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="con" >
+            <!-- img[src=img/banner$.jpg]*3 -->
+            <img src="img/banner1.jpg" alt="">
+            <img src="img/banner2.jpg" alt="">
+            <img src="img/banner3.jpg" alt="">
+            <img src="img/banner1.jpg" alt="">
+        </div>
+        <ul>
+            <li class="on">1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+    </div>
+
+ <!--<button type="button" id="btn" name="button">btn</button>-->
+<!--<button type="button" id="stop" name="button">stop</button>-->
+<!--<button type="button" id="finish" name="button">finfish</button>-->
+<!--<div class="circle"></div>-->
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+
+            // // 元素身上有多个运动 stop会停止现在执行的运动，开始执行下一个运动
+             //                 finfish会停止所有运动，将状态改变为运动序列中最后一个运动的结束状态
+//             $('#btn').click(function(){
+//                 $('.circle').animate({'left':'500px'},3000);
+//             })
+//             $('#stop').click(function(){
+//                 //暂停
+//                 $('.circle').stop();
+//             })
+//             $('#finish').click(function(){
+//                 // 立即完成动画
+//                 $('.circle').finish();
+//             })
+
+
+
+
+
+
+
+
+
+            var c = 0;
+            var flag = 1;//是否可以点击装态 0不可点击 1可以点击
+            function run(){
+                if (c == 3) {
+                    $('#container #con').css({'left':0});
+                    c = 1;
+                }else {
+                    c++;
+                }
+                var l = -1652*c;
+                flag = 0;
+                $('#container #con').animate({'left':l+'px'},1200,function(){
+                    flag = 1;
+                });
+                if (c == 3) {
+                    $('#container ul li').eq(0).addClass('on').siblings('li').removeClass('on');
+                }else {
+                    $('#container ul li').eq(c).addClass('on').siblings('li').removeClass('on');
+                }
+            }
+            var timer = setInterval(run,3000);
+
+            $("#container").find('ul li').click(function(){
+                if (flag == 0) {
+                    return;
+                }
+                clearInterval(timer);
+                c = $(this).index();
+                var left = c*(-1652);
+                $("#container").find("#con").stop().animate({'left':left+'px',},800,function(){
+                    timer = setInterval(run,3000);
+                });
+                $(this).addClass('on').siblings('li').removeClass('on');
+
+
+            });
+
+
+
+        })
+    </script>
+</body>
+
+</html>

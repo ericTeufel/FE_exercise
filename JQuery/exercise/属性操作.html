@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style media="screen">
+
+    </style>
+</head>
+
+<body>
+    <h1 class="123" id="title">123</h1>
+    <button type="button" id="btn" name="button" class="btn-info">btn</button>
+    <script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $('#btn').click(function(){
+                var mes = $('#title').attr('class');
+                console.log(mes);
+                 $('#title').attr('class','666');
+                //  prop一般用来操作元素的特定属性 比如id class a标签的href img的src input的value
+                //  attr一般用来操作非特定属性 比如自定义属性
+                //  能给元素提供特殊功能或效果的就属于特定属性
+                var mes2 =$('#title').prop('class');
+                console.log(mes2);
+
+            })
+        })
+    </script>
+</body>
+
+</html>
